@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "إرسال الملاحظات",
   "desktop.menu.reportBug": "الإبلاغ عن خلل",
   "desktop.menu.ariaLabel": "قائمة OpenCode",
-
   "desktop.updater.dialog.checkFailed.message": "فشل التحقق من وجود تحديثات.",
   "desktop.updater.dialog.checkFailed.title": "خطأ في التحديث",
   "desktop.updater.dialog.upToDate.message": "لديك أحدث إصدار.",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "التحديث جاهز",
   "desktop.updater.dialog.restart": "إعادة التشغيل",
   "desktop.updater.dialog.later": "لاحقًا",
-
   "desktop.recovery.action.relaunch": "إعادة تشغيل التطبيق",
   "desktop.recovery.action.exportLogs": "تصدير السجلات",
   "desktop.recovery.action.keepWaiting": "متابعة الانتظار",
@@ -65,13 +63,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "النافذة: {{window}}\nعنوان URL: {{url}}\nالخطأ: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "النافذة: {{window}}\nالسبب: {{reason}}\nالرمز: {{code}}",
   "desktop.recovery.unknown": "<غير معروف>",
-
   "desktop.dialog.chooseFolder": "اختيار مجلد",
   "desktop.dialog.chooseFile": "اختيار ملف",
   "desktop.dialog.saveFile": "حفظ الملف",
   "desktop.dialog.files": "الملفات",
   "desktop.server.local": "الخادم المحلي",
-
   "desktop.wsl.error.windowsOnly": "لا يتوفر WSL إلا على Windows",
   "desktop.wsl.error.unavailable": "WSL غير متاح",
   "desktop.wsl.error.listInstalled": "فشل سرد توزيعات WSL المثبتة",
@@ -93,10 +89,8 @@ export const dict = {
   "desktop.wsl.error.healthTimeout": "انتهت مهلة فحص سلامة العملية المصاحبة للتوزيعة {{distro}} بعد {{timeout}}ms",
   "desktop.wsl.error.commandTimeout": "انتهت مهلة {{command}} {{args}} بعد {{timeout}}ms",
   "desktop.wsl.error.failedPort": "فشل الحصول على المنفذ",
-
   "desktop.picker.error.notSelected": "لم يحدد منتقي الملفات ملفًا",
   "desktop.picker.error.sizeLimit": "تتجاوز المرفقات المحددة الحد البالغ {{limit}} MB",
-
   "command.category.suggested": "مقترح",
   "command.category.view": "عرض",
   "command.category.project": "مشروع",
@@ -197,7 +191,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "موصى به",
   "dialog.provider.opencode.note": "نماذج مختارة تتضمن Claude و GPT و Gemini والمزيد",
   "dialog.provider.opencode.tagline": "نماذج موثوقة ومحسنة",
-  "dialog.provider.opencodeGo.tagline": "اشتراك منخفض التكلفة للجميع",
   "dialog.provider.anthropic.note": "وصول مباشر إلى نماذج Claude، بما فيها Pro و Max",
   "dialog.provider.copilot.note": "نماذج ذكاء اصطناعي للمساعدة في البرمجة عبر GitHub Copilot",
   "dialog.provider.openai.note": "نماذج GPT لمهام الذكاء الاصطناعي العامة السريعة والمتقدمة",
@@ -228,13 +221,6 @@ export const dict = {
   "provider.connect.apiKey.label": "مفتاح API لـ {{provider}}",
   "provider.connect.apiKey.placeholder": "مفتاح API",
   "provider.connect.apiKey.required": "مفتاح API مطلوب",
-  "provider.connect.opencodeZen.line1":
-    "يمنحك OpenCode Zen الوصول إلى مجموعة مختارة من النماذج الموثوقة والمحسنة لوكلاء البرمجة.",
-  "provider.connect.opencodeZen.line2":
-    "باستخدام مفتاح API واحد، ستحصل على إمكانية الوصول إلى نماذج مثل Claude و GPT و Gemini و GLM والمزيد.",
-  "provider.connect.opencodeZen.visit.prefix": "قم بزيارة ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " للحصول على مفتاح API الخاص بك.",
   "provider.connect.oauth.code.visit.prefix": "قم بزيارة ",
   "provider.connect.oauth.code.visit.link": "هذا الرابط",
   "provider.connect.oauth.code.visit.suffix":
@@ -783,10 +769,8 @@ export const dict = {
   "terminal.connectionLost.description": "انقطع اتصال المحطة الطرفية. يمكن أن يحدث هذا عند إعادة تشغيل الخادم.",
   "terminal.connectTicket.csrfError": "رُفضت تذكرة اتصال PTY بسبب فحوصات الأصل أو CSRF. تحقق من إعداد CORS للخادم.",
   "terminal.connectTicket.statusError": "فشلت تذكرة اتصال PTY بالحالة {{status}}",
-
   "titlebar.update": "تحديث",
   "titlebar.updateVersion": "تحديث {{version}}",
-
   "common.closeTab": "إغلاق علامة التبويب",
   "common.dismiss": "إهمال",
   "common.requestFailed": "فشل الطلب",
@@ -1071,7 +1055,6 @@ export const dict = {
   "common.time.daysAgo.short": "قبل {{count}} ي",
   "settings.providers.connected.environmentDescription": "متصل من متغيرات البيئة الخاصة بك",
   "settings.providers.custom.description": "أضف موفرًا متوافقًا مع OpenAI باستخدام عنوان URL الأساسي.",
-
   "app.server.unreachable": "تعذر الوصول إلى {{server}}",
   "app.server.retrying": "جارٍ إعادة المحاولة تلقائيًا...",
   "app.server.otherServers": "خوادم أخرى",

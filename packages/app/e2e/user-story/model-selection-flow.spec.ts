@@ -4,9 +4,9 @@ import { expectAppVisible } from "../utils/waits"
 
 const directory = "C:/OpenCode/NewProject"
 
-test("creates a session in a new project, connects OpenCode Go, and selects its model", async ({ page }) => {
-  let connectedGo = false
-  let pendingGo = false
+test("creates a session in a new project, connects a provider, and selects its model", async ({ page }) => {
+  let connectedProvider = false
+  let pendingProvider = false
   const connections: Array<{ integrationID: string; body: unknown }> = []
 
   await mockOpenCodeServer(page, {
@@ -34,28 +34,28 @@ test("creates a session in a new project, connects OpenCode Go, and selects its 
           },
         },
         {
-          id: "opencode-go",
-          name: "OpenCode Go",
+          id: "anthropic",
+          name: "Anthropic",
           models: {
-            "go-model-1": {
-              id: "go-model-1",
-              name: "Go Model 1",
+            "claude-model-1": {
+              id: "claude-model-1",
+              name: "Claude Model 1",
               cost: { input: 1, output: 1 },
               limit: { context: 200_000 },
             },
           },
         },
       ],
-      connected: connectedGo ? ["opencode", "opencode-go"] : ["opencode"],
+      connected: connectedProvider ? ["opencode", "anthropic"] : ["opencode"],
       default: { providerID: "opencode", modelID: "free-model" },
     }),
-    integrationMethods: { "opencode-go": [{ type: "api", label: "API key" }] },
+    integrationMethods: { anthropic: [{ type: "api", label: "API key" }] },
     onConnectKey: (input) => {
       connections.push(input)
-      if (input.integrationID === "opencode-go") pendingGo = true
+      if (input.integrationID === "anthropic") pendingProvider = true
     },
     onInstanceDispose: () => {
-      if (pendingGo) connectedGo = true
+      if (pendingProvider) connectedProvider = true
     },
     sessions: [],
     pageMessages: () => ({ items: [] }),
@@ -81,17 +81,17 @@ test("creates a session in a new project, connects OpenCode Go, and selects its 
   await modelControl.click()
   await expect(page.locator('[data-section="free-models"]')).toContainText("Free models provided by OpenCode")
 
-  await page.locator('[data-provider-id="opencode-go"]').click()
-  await page.locator('[data-input="provider-api-key"]').fill("mock-go-api-key")
+  await page.locator('[data-provider-id="anthropic"]').click()
+  await page.locator('[data-input="provider-api-key"]').fill("mock-api-key")
   await page.locator('[data-action="provider-connect-submit"]').click()
   await expect(page.locator('[data-component="dialog-v2"]')).toHaveCount(0)
-  expect(connections).toEqual([{ integrationID: "opencode-go", body: { type: "api", key: "mock-go-api-key" } }])
+  expect(connections).toEqual([{ integrationID: "anthropic", body: { type: "api", key: "mock-api-key" } }])
 
   await expect(modelControl).toHaveAttribute("data-control-type", "popover")
   await modelControl.click()
-  const goModel = page.locator('[data-option-key="opencode-go:go-model-1"]')
-  await expect(goModel).toBeVisible()
-  await goModel.click()
+  const providerModel = page.locator('[data-option-key="anthropic:claude-model-1"]')
+  await expect(providerModel).toBeVisible()
+  await providerModel.click()
 
-  await expect(modelControl).toContainText("Go Model 1")
+  await expect(modelControl).toContainText("Claude Model 1")
 })

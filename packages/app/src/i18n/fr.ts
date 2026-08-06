@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "Envoyer des commentaires",
   "desktop.menu.reportBug": "Signaler un bogue",
   "desktop.menu.ariaLabel": "Menu OpenCode",
-
   "desktop.updater.dialog.checkFailed.message": "La recherche de mises à jour a échoué.",
   "desktop.updater.dialog.checkFailed.title": "Erreur de mise à jour",
   "desktop.updater.dialog.upToDate.message": "Vous êtes à jour.",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "Mise à jour prête",
   "desktop.updater.dialog.restart": "Redémarrer",
   "desktop.updater.dialog.later": "Plus tard",
-
   "desktop.recovery.action.relaunch": "Relancer",
   "desktop.recovery.action.exportLogs": "Exporter les journaux",
   "desktop.recovery.action.keepWaiting": "Continuer d'attendre",
@@ -66,13 +64,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "Fenêtre : {{window}}\nURL : {{url}}\nErreur : {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "Fenêtre : {{window}}\nMotif : {{reason}}\nCode : {{code}}",
   "desktop.recovery.unknown": "<inconnu>",
-
   "desktop.dialog.chooseFolder": "Sélectionner un dossier",
   "desktop.dialog.chooseFile": "Sélectionner un fichier",
   "desktop.dialog.saveFile": "Enregistrer le fichier",
   "desktop.dialog.files": "Fichiers",
   "desktop.server.local": "Serveur local",
-
   "desktop.wsl.error.windowsOnly": "WSL est disponible uniquement sous Windows",
   "desktop.wsl.error.unavailable": "WSL est indisponible",
   "desktop.wsl.error.listInstalled": "Impossible de répertorier les distributions WSL installées",
@@ -95,10 +91,8 @@ export const dict = {
     "La vérification de l'état du processus auxiliaire pour {{distro}} a dépassé le délai de {{timeout}} ms",
   "desktop.wsl.error.commandTimeout": "{{command}} {{args}} a dépassé le délai de {{timeout}} ms",
   "desktop.wsl.error.failedPort": "Impossible d'obtenir le port",
-
   "desktop.picker.error.notSelected": "Aucun fichier n'a été sélectionné dans le sélecteur",
   "desktop.picker.error.sizeLimit": "Les pièces jointes sélectionnées dépassent la limite de {{limit}} Mo",
-
   "command.category.suggested": "Suggéré",
   "command.category.view": "Affichage",
   "command.category.project": "Projet",
@@ -199,7 +193,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "Recommandé",
   "dialog.provider.opencode.note": "Modèles sélectionnés incluant Claude, GPT, Gemini et plus",
   "dialog.provider.opencode.tagline": "Modèles optimisés et fiables",
-  "dialog.provider.opencodeGo.tagline": "Abonnement abordable pour tous",
   "dialog.provider.anthropic.note": "Connectez-vous avec Claude Pro/Max ou une clé API",
   "dialog.provider.copilot.note": "Connectez-vous avec Copilot ou une clé API",
   "dialog.provider.openai.note": "Connectez-vous avec ChatGPT Pro/Plus ou une clé API",
@@ -230,13 +223,6 @@ export const dict = {
   "provider.connect.apiKey.label": "Clé API {{provider}}",
   "provider.connect.apiKey.placeholder": "Clé API",
   "provider.connect.apiKey.required": "La clé API est requise",
-  "provider.connect.opencodeZen.line1":
-    "OpenCode Zen vous donne accès à un ensemble sélectionné de modèles fiables et optimisés pour les agents de codage.",
-  "provider.connect.opencodeZen.line2":
-    "Avec une seule clé API, vous aurez accès à des modèles tels que Claude, GPT, Gemini, GLM et plus encore.",
-  "provider.connect.opencodeZen.visit.prefix": "Visitez ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " pour récupérer votre clé API.",
   "provider.connect.oauth.code.visit.prefix": "Visitez ",
   "provider.connect.oauth.code.visit.link": "ce lien",
   "provider.connect.oauth.code.visit.suffix":
@@ -1089,7 +1075,6 @@ export const dict = {
   "common.time.daysAgo.short": "il y a {{count}} j",
   "settings.providers.connected.environmentDescription": "Connecté à partir de vos variables d'environnement",
   "settings.providers.custom.description": "Ajouter un fournisseur compatible avec OpenAI via l'URL de base.",
-
   "app.server.unreachable": "Impossible de joindre {{server}}",
   "app.server.retrying": "Nouvelle tentative automatique...",
   "app.server.otherServers": "Autres serveurs",
@@ -1180,7 +1165,6 @@ export const dict = {
   "terminal.connectTicket.csrfError":
     "Le ticket de connexion PTY a été rejeté par les contrôles d'origine ou CSRF. Vérifiez la configuration CORS du serveur.",
   "terminal.connectTicket.statusError": "Le ticket de connexion PTY a échoué avec le statut {{status}}",
-
   "titlebar.update": "Mettre à jour",
   "titlebar.updateVersion": "Mettre à jour {{version}}",
 }

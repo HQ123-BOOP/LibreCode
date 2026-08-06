@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "प्रतिक्रिया साझा करें",
   "desktop.menu.reportBug": "बग रिपोर्ट करें",
   "desktop.menu.ariaLabel": "OpenCode मेन्यू",
-
   "desktop.updater.dialog.checkFailed.message": "अपडेट की जाँच विफल रही।",
   "desktop.updater.dialog.checkFailed.title": "अपडेट त्रुटि",
   "desktop.updater.dialog.upToDate.message": "आप नवीनतम संस्करण का उपयोग कर रहे हैं।",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "अपडेट तैयार है",
   "desktop.updater.dialog.restart": "पुनः आरंभ करें",
   "desktop.updater.dialog.later": "बाद में",
-
   "desktop.recovery.action.relaunch": "पुनः लॉन्च करें",
   "desktop.recovery.action.exportLogs": "लॉग निर्यात करें",
   "desktop.recovery.action.keepWaiting": "प्रतीक्षा जारी रखें",
@@ -66,13 +64,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "विंडो: {{window}}\nURL: {{url}}\nत्रुटि: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "विंडो: {{window}}\nकारण: {{reason}}\nकोड: {{code}}",
   "desktop.recovery.unknown": "<अज्ञात>",
-
   "desktop.dialog.chooseFolder": "फ़ोल्डर चुनें",
   "desktop.dialog.chooseFile": "फ़ाइल चुनें",
   "desktop.dialog.saveFile": "फ़ाइल सहेजें",
   "desktop.dialog.files": "फ़ाइलें",
   "desktop.server.local": "स्थानीय सर्वर",
-
   "desktop.wsl.error.windowsOnly": "WSL केवल Windows पर उपलब्ध है",
   "desktop.wsl.error.unavailable": "WSL उपलब्ध नहीं है",
   "desktop.wsl.error.listInstalled": "इंस्टॉल किए गए WSL डिस्ट्रो की सूची नहीं बनाई जा सकी",
@@ -94,10 +90,8 @@ export const dict = {
   "desktop.wsl.error.healthTimeout": "{{distro}} के Sidecar की स्वास्थ्य जाँच {{timeout}}ms के बाद समय-सीमा पार कर गई",
   "desktop.wsl.error.commandTimeout": "{{command}} {{args}} ने {{timeout}}ms के बाद समय-सीमा पार कर दी",
   "desktop.wsl.error.failedPort": "पोर्ट प्राप्त नहीं किया जा सका",
-
   "desktop.picker.error.notSelected": "पिकर में फ़ाइल नहीं चुनी गई",
   "desktop.picker.error.sizeLimit": "चुने गए अटैचमेंट {{limit}} MB की सीमा से अधिक हैं",
-
   "command.category.suggested": "सुझाए गए",
   "command.category.view": "दृश्य",
   "command.category.project": "प्रोजेक्ट",
@@ -198,7 +192,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "अनुशंसित",
   "dialog.provider.opencode.note": "Claude, GPT, Gemini और अधिक सहित क्यूरेटेड मॉडल",
   "dialog.provider.opencode.tagline": "विश्वसनीय अनुकूलित मॉडल",
-  "dialog.provider.opencodeGo.tagline": "सभी के लिए कम लागत वाली सदस्यता",
   "dialog.provider.anthropic.note": "प्रो और मैक्स सहित Claude मॉडल तक सीधी पहुँच",
   "dialog.provider.copilot.note": "GitHub Copilot के माध्यम से कोडिंग सहायता के लिए AI मॉडल",
   "dialog.provider.openai.note": "तेज़, सक्षम सामान्य AI कार्यों के लिए GPT मॉडल",
@@ -229,12 +222,6 @@ export const dict = {
   "provider.connect.apiKey.label": "{{provider}} API कुंजी",
   "provider.connect.apiKey.placeholder": "API कुंजी",
   "provider.connect.apiKey.required": "API कुंजी आवश्यक है",
-  "provider.connect.opencodeZen.line1":
-    "OpenCode Zen आपको कोडिंग एजेंटों के लिए चुने गए विश्वसनीय, अनुकूलित मॉडलों तक पहुँच देता है।",
-  "provider.connect.opencodeZen.line2": "एक API कुंजी से आपको Claude, GPT, Gemini, GLM जैसे कई मॉडलों तक पहुँच मिलेगी।",
-  "provider.connect.opencodeZen.visit.prefix": "यहाँ जाएँ: ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " अपनी API कुंजी प्राप्त करने के लिए।",
   "provider.connect.oauth.code.visit.prefix": "यहाँ जाएँ: ",
   "provider.connect.oauth.code.visit.link": "इस लिंक",
   "provider.connect.oauth.code.visit.suffix":

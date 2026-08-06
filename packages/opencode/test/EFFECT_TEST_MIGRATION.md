@@ -61,7 +61,6 @@ Prefer small reusable fake boundary layers in `test/fake/*`:
 
 ```ts
 AuthTest.empty
-AccountTest.empty
 NpmTest.noop
 SkillTest.empty
 ProviderTest.fake().layer
@@ -139,8 +138,6 @@ test migrations are active:
 - `test/bus/bus-effect.test.ts` — `Deferred`, streams, scoped fibers.
 - `test/agent/plugin-agent-regression.test.ts` — real service layers plus
   fake boundary layers.
-- `test/account/service.test.ts` — service-level live tests, typed errors,
-  fake HTTP clients.
 
 ## Migration Queue Policy
 

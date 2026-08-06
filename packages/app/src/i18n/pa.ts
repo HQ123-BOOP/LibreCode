@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "اپنی رائے سانجھی کرو",
   "desktop.menu.reportBug": "خرابی دی رپورٹ کرو",
   "desktop.menu.ariaLabel": "OpenCode مینو",
-
   "desktop.updater.dialog.checkFailed.message": "اپ ڈیٹ دی پڑتال ناکام ہو گئی۔",
   "desktop.updater.dialog.checkFailed.title": "اپ ڈیٹ دی غلطی",
   "desktop.updater.dialog.upToDate.message": "تہاڈے کول تازہ ترین ورژن اے۔",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "اپ ڈیٹ تیار اے",
   "desktop.updater.dialog.restart": "دوبارہ شروع کرو",
   "desktop.updater.dialog.later": "پچھوں",
-
   "desktop.recovery.action.relaunch": "دوبارہ چلاؤ",
   "desktop.recovery.action.exportLogs": "لاگ برآمد کرو",
   "desktop.recovery.action.keepWaiting": "اڈیک جاری رکھو",
@@ -65,13 +63,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "ونڈو: {{window}}\nURL: {{url}}\nغلطی: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "ونڈو: {{window}}\nکارن: {{reason}}\nکوڈ: {{code}}",
   "desktop.recovery.unknown": "<نامعلوم>",
-
   "desktop.dialog.chooseFolder": "فولڈر چنو",
   "desktop.dialog.chooseFile": "فائل چنو",
   "desktop.dialog.saveFile": "فائل محفوظ کرو",
   "desktop.dialog.files": "فائلاں",
   "desktop.server.local": "مقامی سرور",
-
   "desktop.wsl.error.windowsOnly": "WSL صرف Windows تے دستیاب اے",
   "desktop.wsl.error.unavailable": "WSL دستیاب نئیں",
   "desktop.wsl.error.listInstalled": "انسٹال کیتے WSL ڈسٹرو دی فہرست نئیں بن سکی",
@@ -93,10 +89,8 @@ export const dict = {
   "desktop.wsl.error.healthTimeout": "{{distro}} دے sidecar دی صحت پڑتال لئی مقرر ویلا {{timeout}}ms پچھوں مُک گیا",
   "desktop.wsl.error.commandTimeout": "{{command}} {{args}} لئی مقرر ویلا {{timeout}}ms پچھوں مُک گیا",
   "desktop.wsl.error.failedPort": "پورٹ نئیں مل سکی",
-
   "desktop.picker.error.notSelected": "چونکار ولوں فائل نئیں چنی گئی",
   "desktop.picker.error.sizeLimit": "چنیاں منسلک فائلاں {{limit}} MB دی حد توں ودھ نیں",
-
   "command.category.suggested": "تجویز کیتا گیا",
   "command.category.view": "نظارہ",
   "command.category.project": "پروجیکٹ",
@@ -197,7 +191,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "سفارش کیتی",
   "dialog.provider.opencode.note": "Claude، GPT، Gemini تے ہور سمیت کیوریٹڈ ماڈل",
   "dialog.provider.opencode.tagline": "قابل اعتماد اصلاح شدہ ماڈل",
-  "dialog.provider.opencodeGo.tagline": "ہر اک لئی گھٹ قیمت دی رکنیت",
   "dialog.provider.anthropic.note": "پرو تے میکس سمیت Claude ماڈل تک براہ راست رسائی",
   "dialog.provider.copilot.note": "GitHub Copilot دے ذریعے کوڈنگ دی مدد لئی اے آئی ماڈل",
   "dialog.provider.openai.note": "تیز تے صلاحیت والے عام AI کماں لئی GPT ماڈل",
@@ -228,13 +221,6 @@ export const dict = {
   "provider.connect.apiKey.label": "{{provider}} API کلید",
   "provider.connect.apiKey.placeholder": "API کلید",
   "provider.connect.apiKey.required": "API کلید دی لوڑ اے",
-  "provider.connect.opencodeZen.line1":
-    "زین تہانوں کوڈنگ ایجنٹاں لئی قابل اعتماد مرضی دے ماڈلاں دے اک کیوریٹڈ سیٹ تک رسائی فراہم کردا اے۔",
-  "provider.connect.opencodeZen.line2":
-    "اک API کلید دے نال تہانوں Claude، GPT، Gemini، GLM تے ہور ماڈلاں تک رسائی ملے گی۔",
-  "provider.connect.opencodeZen.visit.prefix": "ویکھو ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " اپنی API کلید حاصل کرن لئی۔",
   "provider.connect.oauth.code.visit.prefix": "ویکھو ",
   "provider.connect.oauth.code.visit.link": "ایہہ لنک",
   "provider.connect.oauth.code.visit.suffix":

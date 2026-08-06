@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "Enviar comentarios",
   "desktop.menu.reportBug": "Informar de un error",
   "desktop.menu.ariaLabel": "Menú de OpenCode",
-
   "desktop.updater.dialog.checkFailed.message": "No se pudo buscar actualizaciones.",
   "desktop.updater.dialog.checkFailed.title": "Error de actualización",
   "desktop.updater.dialog.upToDate.message": "Estás al día.",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "Actualización lista",
   "desktop.updater.dialog.restart": "Reiniciar",
   "desktop.updater.dialog.later": "Más tarde",
-
   "desktop.recovery.action.relaunch": "Volver a iniciar",
   "desktop.recovery.action.exportLogs": "Exportar registros",
   "desktop.recovery.action.keepWaiting": "Seguir esperando",
@@ -66,13 +64,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "Ventana: {{window}}\nURL: {{url}}\nError: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "Ventana: {{window}}\nMotivo: {{reason}}\nCódigo: {{code}}",
   "desktop.recovery.unknown": "<desconocido>",
-
   "desktop.dialog.chooseFolder": "Elegir una carpeta",
   "desktop.dialog.chooseFile": "Elegir un archivo",
   "desktop.dialog.saveFile": "Guardar archivo",
   "desktop.dialog.files": "Archivos",
   "desktop.server.local": "Servidor local",
-
   "desktop.wsl.error.windowsOnly": "WSL solo está disponible en Windows",
   "desktop.wsl.error.unavailable": "WSL no está disponible",
   "desktop.wsl.error.listInstalled": "No se pudieron listar las distribuciones WSL instaladas",
@@ -95,10 +91,8 @@ export const dict = {
     "Se agotó el tiempo de espera de la comprobación de estado del sidecar de {{distro}} tras {{timeout}} ms",
   "desktop.wsl.error.commandTimeout": "Se agotó el tiempo de espera de {{command}} {{args}} tras {{timeout}} ms",
   "desktop.wsl.error.failedPort": "No se pudo obtener el puerto",
-
   "desktop.picker.error.notSelected": "No se seleccionó ningún archivo en el selector",
   "desktop.picker.error.sizeLimit": "Los adjuntos seleccionados superan el límite de {{limit}} MB",
-
   "command.category.suggested": "Sugerido",
   "command.category.view": "Ver",
   "command.category.project": "Proyecto",
@@ -117,11 +111,9 @@ export const dict = {
   "command.category.workspace": "Espacio de trabajo",
   "command.category.settings": "Ajustes",
   "command.logs.export": "Exportar registros",
-
   "theme.scheme.system": "Sistema",
   "theme.scheme.light": "Claro",
   "theme.scheme.dark": "Oscuro",
-
   "command.sidebar.toggle": "Mostrar u ocultar barra lateral",
   "command.project.open": "Abrir proyecto",
   "command.project.previous": "Proyecto anterior",
@@ -135,17 +127,13 @@ export const dict = {
   "command.session.previous.unseen": "Sesión no leída anterior",
   "command.session.next.unseen": "Siguiente sesión no leída",
   "command.session.archive": "Archivar sesión",
-
   "command.palette": "Paleta de comandos",
-
   "command.theme.cycle": "Cambiar tema",
   "command.theme.set": "Usar tema: {{theme}}",
   "command.theme.scheme.cycle": "Cambiar esquema de color",
   "command.theme.scheme.set": "Usar esquema de color: {{scheme}}",
-
   "command.language.cycle": "Cambiar idioma",
   "command.language.set": "Usar idioma: {{language}}",
-
   "command.session.new": "Nueva sesión",
   "command.file.open": "Abrir archivo",
   "command.tab.close": "Cerrar pestaña",
@@ -192,13 +180,11 @@ export const dict = {
   "command.session.share.description": "Compartir esta sesión y copiar la URL al portapapeles",
   "command.session.unshare": "Dejar de compartir sesión",
   "command.session.unshare.description": "Dejar de compartir esta sesión",
-
   "palette.search.placeholder": "Buscar archivos, comandos y sesiones",
   "palette.search.placeholder.home": "Buscar comandos y sesiones",
   "palette.empty": "No se encontraron resultados",
   "palette.group.commands": "Comandos",
   "palette.group.files": "Archivos",
-
   "dialog.provider.search.placeholder": "Buscar proveedores",
   "dialog.provider.empty": "No se encontraron proveedores",
   "dialog.provider.group.popular": "Populares",
@@ -207,27 +193,22 @@ export const dict = {
   "dialog.provider.tag.recommended": "Recomendado",
   "dialog.provider.opencode.note": "Selección de modelos como Claude, GPT, Gemini y otros",
   "dialog.provider.opencode.tagline": "Modelos optimizados y fiables",
-  "dialog.provider.opencodeGo.tagline": "Suscripción económica para todos",
   "dialog.provider.anthropic.note": "Acceso directo a modelos Claude, incluidos Pro y Max",
   "dialog.provider.copilot.note": "Modelos de IA para asistencia de codificación a través de GitHub Copilot",
   "dialog.provider.openai.note": "Modelos GPT para tareas de IA generales rápidas y capaces",
   "dialog.provider.google.note": "Modelos Gemini para respuestas rápidas y estructuradas",
   "dialog.provider.openrouter.note": "Accede a todos los modelos compatibles desde un solo proveedor",
   "dialog.provider.vercel.note": "Acceso unificado a modelos de IA con enrutamiento inteligente",
-
   "dialog.model.select.title": "Seleccionar modelo",
   "dialog.model.search.placeholder": "Buscar modelos",
   "dialog.model.empty": "Sin resultados de modelos",
   "dialog.model.manage": "Gestionar modelos",
   "dialog.model.manage.description": "Personalizar qué modelos aparecen en el selector de modelos.",
   "dialog.model.manage.provider.toggle": "Mostrar u ocultar todos los modelos de {{provider}}",
-
   "dialog.model.unpaid.freeModels.title": "Modelos gratuitos proporcionados por OpenCode",
   "dialog.model.unpaid.addMore.title": "Añadir más modelos de proveedores populares",
   "dialog.model.unpaid.viewMoreProviders": "Ver más de 70 proveedores",
-
   "dialog.provider.viewAll": "Ver más proveedores",
-
   "provider.connect.title": "Conectar {{provider}}",
   "provider.connect.title.anthropicProMax": "Iniciar sesión con Claude Pro/Max",
   "provider.connect.selectMethod": "Seleccionar método de inicio de sesión para {{provider}}.",
@@ -242,13 +223,6 @@ export const dict = {
   "provider.connect.apiKey.label": "Clave API de {{provider}}",
   "provider.connect.apiKey.placeholder": "Clave API",
   "provider.connect.apiKey.required": "La clave API es obligatoria",
-  "provider.connect.opencodeZen.line1":
-    "OpenCode Zen te da acceso a un conjunto curado de modelos fiables optimizados para agentes de programación.",
-  "provider.connect.opencodeZen.line2":
-    "Con una sola clave API obtendrás acceso a modelos como Claude, GPT, Gemini, GLM y más.",
-  "provider.connect.opencodeZen.visit.prefix": "Visita ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " para obtener tu clave API.",
   "provider.connect.oauth.code.visit.prefix": "Visita ",
   "provider.connect.oauth.code.visit.link": "este enlace",
   "provider.connect.oauth.code.visit.suffix":
@@ -264,7 +238,6 @@ export const dict = {
   "provider.connect.oauth.auto.confirmationCode": "Código de confirmación",
   "provider.connect.toast.connected.title": "{{provider}} conectado",
   "provider.connect.toast.connected.description": "Los modelos de {{provider}} ahora están disponibles para usar.",
-
   "provider.custom.title": "Proveedor personalizado",
   "provider.custom.unavailable": "Los proveedores personalizados no están disponibles en este servidor",
   "provider.custom.description.prefix": "Configurar un proveedor compatible con OpenAI. Ver la ",
@@ -303,10 +276,8 @@ export const dict = {
   "provider.custom.error.baseURL.format": "Debe comenzar con http:// o https://",
   "provider.custom.error.required": "Obligatorio",
   "provider.custom.error.duplicate": "Duplicado",
-
   "provider.disconnect.toast.disconnected.title": "{{provider}} desconectado",
   "provider.disconnect.toast.disconnected.description": "Los modelos de {{provider}} ya no están disponibles.",
-
   "model.tag.free": "Gratis",
   "model.tag.latest": "Más reciente",
   "model.provider.anthropic": "Anthropic",
@@ -328,7 +299,6 @@ export const dict = {
   "model.tooltip.reasoning.allowed": "Permite razonamiento",
   "model.tooltip.reasoning.none": "Sin razonamiento",
   "model.tooltip.context": "Límite de contexto {{limit}}",
-
   "common.search.placeholder": "Buscar",
   "common.goBack": "Volver",
   "common.goForward": "Avanzar",
@@ -344,7 +314,6 @@ export const dict = {
   "common.saving": "Guardando...",
   "common.default": "Predeterminado",
   "common.attachment": "adjunto",
-
   "prompt.placeholder.shell": "Introduce comando de shell... {{example}}",
   "prompt.placeholder.normal": 'Pregunta cualquier cosa... "{{example}}"',
   "prompt.placeholder.simple": "Pregunta cualquier cosa...",
@@ -355,7 +324,6 @@ export const dict = {
   "prompt.mode.shell.exit": "esc para salir",
   "session.child.promptDisabled": "No se pueden enviar prompts a las sesiones de subagentes.",
   "session.child.backToParent": "Volver a la sesión principal.",
-
   "prompt.example.1": "Arreglar un TODO en el código",
   "prompt.example.2": "¿Qué tecnologías usa este proyecto?",
   "prompt.example.3": "Arreglar pruebas rotas",
@@ -381,7 +349,6 @@ export const dict = {
   "prompt.example.23": "Añadir paginación a esta lista",
   "prompt.example.24": "Crear un comando CLI para...",
   "prompt.example.25": "¿Cómo funcionan las variables de entorno aquí?",
-
   "prompt.popover.emptyResults": "Sin resultados coincidentes",
   "prompt.popover.emptyCommands": "Sin comandos coincidentes",
   "prompt.dropzone.label": "Suelta aquí imágenes, archivos PDF o archivos de texto",
@@ -402,7 +369,6 @@ export const dict = {
   "prompt.attachment.remove": "Eliminar adjunto",
   "prompt.action.send": "Enviar",
   "prompt.action.stop": "Detener",
-
   "prompt.toast.pasteUnsupported.title": "Adjunto no compatible",
   "prompt.toast.attachmentDuplicate.title": "Este archivo ya se ha subido",
   "prompt.toast.pasteUnsupported.description":
@@ -415,22 +381,17 @@ export const dict = {
   "prompt.toast.commandSendFailed.title": "Fallo al enviar comando",
   "prompt.toast.promptSendFailed.title": "Fallo al enviar prompt",
   "prompt.toast.promptSendFailed.description": "No se pudo recuperar la sesión",
-
   "dialog.mcp.title": "Servidores MCP",
   "dialog.mcp.description": "{{enabled}} de {{total}} habilitados",
   "dialog.mcp.empty": "No hay servidores MCP configurados",
-
   "dialog.lsp.empty": "Servidores LSP detectados automáticamente por tipo de archivo",
   "dialog.plugins.empty": "Plugins configurados en opencode.json",
-
   "mcp.status.connected": "conectado",
   "mcp.status.failed": "fallido",
   "mcp.status.needs_auth": "requiere autenticación",
   "mcp.auth.clickToAuthenticate": "Haz clic para autenticar",
   "mcp.status.disabled": "deshabilitado",
-
   "dialog.fork.empty": "No hay mensajes desde donde bifurcar",
-
   "dialog.directory.search.placeholder": "Buscar carpetas",
   "dialog.directory.empty": "No se encontraron carpetas",
   "dialog.directory.action.selectFile": "Seleccionar archivo",
@@ -438,7 +399,6 @@ export const dict = {
   "dialog.directory.root": "Raíz",
   "dialog.directory.parent": "Carpeta superior",
   "dialog.directory.readError": "No se puede leer esta carpeta",
-
   "dialog.server.title": "Servidores",
   "dialog.server.description": "Cambiar el servidor de OpenCode al que se conecta esta aplicación.",
   "dialog.server.search.placeholder": "Buscar servidores",
@@ -461,7 +421,6 @@ export const dict = {
   "dialog.server.default.set": "Establecer servidor actual como predeterminado",
   "dialog.server.default.clear": "Limpiar",
   "dialog.server.action.remove": "Eliminar servidor",
-
   "dialog.server.menu.edit": "Editar",
   "dialog.server.menu.default": "Establecer como predeterminado",
   "dialog.server.menu.defaultRemove": "Quitar como predeterminado",
@@ -537,7 +496,6 @@ export const dict = {
   "wsl.onboarding.desktopVersion": "escritorio {{version}}",
   "wsl.onboarding.versionMismatch": "La versión instalada no coincide con la versión de la aplicación de escritorio.",
   "wsl.onboarding.adding": "Añadiendo...",
-
   "help.tabs.toast.ariaLabel": "Presentamos las pestañas. Organiza tu trabajo y las sesiones activas con pestañas",
   "help.tabs.toast.dismiss": "Descartar información sobre las pestañas",
   "help.tabs.title": "Presentamos las pestañas",
@@ -553,7 +511,6 @@ export const dict = {
   "help.tabs.persistence": "Cuando vuelvas a abrir la aplicación, las pestañas seguirán abiertas.",
   "help.tabs.worktrees":
     "El nuevo diseño aún no admite Git Worktrees, pero estarán disponibles pronto. Si prefieres seguir usando el diseño anterior, puedes cambiar de diseño en Ajustes. Ten en cuenta que el nuevo diseño será permanente dentro de unas semanas.",
-
   "dialog.project.edit.title": "Editar proyecto",
   "dialog.project.edit.name": "Nombre",
   "dialog.project.edit.icon": "Icono",
@@ -566,7 +523,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup.description":
     "Se ejecuta después de crear un nuevo espacio de trabajo (árbol de trabajo).",
   "dialog.project.edit.worktree.startup.placeholder": "p. ej. bun install",
-
   "context.breakdown.title": "Desglose del contexto",
   "context.breakdown.note":
     'Desglose aproximado de tokens de entrada. "Otro" incluye definiciones de herramientas y sobrecarga.',
@@ -575,10 +531,8 @@ export const dict = {
   "context.breakdown.assistant": "Asistente",
   "context.breakdown.tool": "Llamadas a herramientas",
   "context.breakdown.other": "Otro",
-
   "context.systemPrompt.title": "Prompt del sistema",
   "context.rawMessages.title": "Mensajes en bruto",
-
   "context.stats.session": "Sesión",
   "context.stats.messages": "Mensajes",
   "context.stats.provider": "Proveedor",
@@ -595,13 +549,11 @@ export const dict = {
   "context.stats.totalCost": "Costo total",
   "context.stats.sessionCreated": "Sesión creada",
   "context.stats.lastActivity": "Última actividad",
-
   "context.usage.tokens": "Tokens",
   "context.usage.usage": "Uso",
   "context.usage.cost": "Costo",
   "context.usage.clickToView": "Haz clic para ver contexto",
   "context.usage.view": "Ver uso del contexto",
-
   "language.en": "English",
   "language.zh": "简体中文",
   "language.zht": "繁體中文",
@@ -620,50 +572,38 @@ export const dict = {
   "language.uk": "Українська",
   "language.th": "ไทย",
   "language.tr": "Türkçe",
-
   "toast.language.title": "Idioma",
   "toast.language.description": "Cambiado a {{language}}",
-
   "toast.theme.title": "Tema cambiado",
   "toast.scheme.title": "Esquema de color",
-
   "toast.workspace.enabled.title": "Espacios de trabajo habilitados",
   "toast.workspace.enabled.description": "Ahora se muestran varios worktrees en la barra lateral",
   "toast.workspace.disabled.title": "Espacios de trabajo deshabilitados",
   "toast.workspace.disabled.description": "Solo se muestra el worktree principal en la barra lateral",
-
   "toast.permissions.autoaccept.on.title": "Aceptando permisos automáticamente",
   "toast.permissions.autoaccept.on.description": "Las solicitudes de permisos se aprobarán automáticamente",
   "toast.permissions.autoaccept.off.title": "Se dejó de aceptar permisos automáticamente",
   "toast.permissions.autoaccept.off.description": "Las solicitudes de permisos requerirán aprobación",
-
   "toast.model.none.title": "Ningún modelo seleccionado",
   "toast.model.none.description": "Conecta un proveedor para resumir esta sesión",
-
   "toast.file.loadFailed.title": "Fallo al cargar archivo",
   "toast.file.listFailed.title": "Fallo al listar archivos",
-
   "toast.context.noLineSelection.title": "Sin selección de líneas",
   "toast.context.noLineSelection.description": "Primero selecciona un rango de líneas en una pestaña de archivo.",
-
   "toast.session.share.copyFailed.title": "Fallo al copiar URL al portapapeles",
   "toast.session.share.success.title": "Sesión compartida",
   "toast.session.share.success.description": "Enlace para compartir copiado al portapapeles.",
   "toast.session.share.failed.title": "Fallo al compartir sesión",
   "toast.session.share.failed.description": "Ocurrió un error al compartir la sesión",
-
   "toast.session.unshare.success.title": "La sesión dejó de compartirse",
   "toast.session.unshare.success.description": "La sesión dejó de compartirse correctamente.",
   "toast.session.unshare.failed.title": "Fallo al dejar de compartir sesión",
   "toast.session.unshare.failed.description": "Ocurrió un error al dejar de compartir la sesión",
-
   "toast.session.listFailed.title": "Fallo al cargar sesiones para {{project}}",
-
   "toast.update.title": "Actualización disponible",
   "toast.update.description": "Una nueva versión de OpenCode ({{version}}) está disponible para instalar.",
   "toast.update.action.installRestart": "Instalar y reiniciar",
   "toast.update.action.notYet": "Todavía no",
-
   "error.page.title": "Algo salió mal",
   "error.page.description": "Ocurrió un error al cargar la aplicación.",
   "error.page.description.localServerStartup": "Ocurrió un error al iniciar el servidor local.",
@@ -678,13 +618,10 @@ export const dict = {
   "error.page.report.prefix": "Informa de este error al equipo de OpenCode",
   "error.page.report.discord": "en Discord",
   "error.page.version": "Versión: {{version}}",
-
   "error.dev.rootNotFound":
     "Elemento raíz no encontrado. ¿Olvidaste añadirlo a tu index.html? ¿O tal vez el atributo id está mal escrito?",
-
   "error.serverSync.connectFailed": "No se pudo conectar al servidor. ¿Hay un servidor ejecutándose en `{{url}}`?",
   "directory.error.invalidUrl": "URL de directorio inválida.",
-
   "error.chain.unknown": "Error desconocido",
   "error.chain.causedBy": "Causado por:",
   "error.chain.apiError": "Error de API",
@@ -706,17 +643,14 @@ export const dict = {
   "error.chain.configFrontmatterError": "Fallo al analizar frontmatter en {{path}}:\n{{message}}",
   "error.chain.configInvalid": "El archivo de configuración en {{path}} es inválido",
   "error.chain.configInvalidWithMessage": "El archivo de configuración en {{path}} es inválido: {{message}}",
-
   "notification.permission.title": "Permiso requerido",
   "notification.permission.description": "{{sessionTitle}} en {{projectName}} necesita permiso",
   "notification.question.title": "Pregunta",
   "notification.question.description": "{{sessionTitle}} en {{projectName}} tiene una pregunta",
   "notification.action.goToSession": "Ir a sesión",
-
   "notification.session.responseReady.title": "Respuesta lista",
   "notification.session.error.title": "Error de sesión",
   "notification.session.error.fallbackDescription": "Ocurrió un error",
-
   "home.recentProjects": "Proyectos recientes",
   "home.empty.title": "Sin proyectos recientes",
   "home.empty.description": "Empieza abriendo un proyecto local",
@@ -737,7 +671,6 @@ export const dict = {
   "home.sessions.group.older": "Anteriores",
   "home.providerTip":
     "Conéctate a más de 75 proveedores para usar otros modelos, como Claude, GPT, Gemini y muchos más",
-
   "session.tab.session": "Sesión",
   "session.tab.review": "Revisión",
   "session.tab.context": "Contexto",
@@ -758,18 +691,15 @@ export const dict = {
   "session.review.noChanges": "Sin cambios",
   "session.review.noUncommittedChanges": "Aún no hay cambios sin confirmar",
   "session.review.noBranchChanges": "Aún no hay cambios en la rama",
-
   "session.files.selectToOpen": "Selecciona un archivo para abrir",
   "session.files.all": "Todos los archivos",
   "session.files.empty": "Sin archivos",
   "session.files.binaryContent": "Archivo binario (no se puede mostrar el contenido)",
-
   "session.messages.renderEarlier": "Mostrar mensajes anteriores",
   "session.messages.loadingEarlier": "Cargando mensajes anteriores...",
   "session.messages.loadEarlier": "Cargar mensajes anteriores",
   "session.messages.loading": "Cargando mensajes...",
   "session.messages.jumpToLatest": "Ir al mensaje más reciente",
-
   "session.context.addToContext": "Añadir {{selection}} al contexto",
   "session.todo.title": "Tareas",
   "session.todo.collapse": "Contraer",
@@ -792,7 +722,6 @@ export const dict = {
   "session.revertDock.collapse": "Contraer mensajes revertidos",
   "session.revertDock.expand": "Expandir mensajes revertidos",
   "session.revertDock.restore": "Restaurar mensaje",
-
   "session.new.title": "Construye lo que quieras",
   "session.new.project.new": "Nuevo proyecto",
   "session.new.project.search": "Buscar proyectos",
@@ -806,7 +735,6 @@ export const dict = {
   "session.new.workspace.existing": "Espacio de trabajo…",
   "session.new.git.none": "Sin Git",
   "session.new.lastModified": "Última modificación",
-
   "session.header.search.placeholder": "Buscar {{project}}",
   "session.header.searchFiles": "Buscar archivos",
   "session.header.openIn": "Abrir en",
@@ -814,7 +742,6 @@ export const dict = {
   "session.header.open.ariaLabel": "Abrir en {{app}}",
   "session.header.open.menu": "Opciones de apertura",
   "session.header.open.copyPath": "Copiar ruta",
-
   "status.popover.trigger": "Estado",
   "status.popover.ariaLabel": "Configuraciones del servidor",
   "status.popover.tab.servers": "Servidores",
@@ -822,7 +749,6 @@ export const dict = {
   "status.popover.tab.lsp": "LSP",
   "status.popover.tab.plugins": "Plugins",
   "status.popover.action.manageServers": "Gestionar servidores",
-
   "session.share.popover.title": "Publicar en la web",
   "session.share.popover.description.shared":
     "Esta sesión es pública en la web. Es accesible para cualquiera con el enlace.",
@@ -836,10 +762,8 @@ export const dict = {
   "session.share.action.view": "Ver",
   "session.share.copy.copied": "Copiado",
   "session.share.copy.copyLink": "Copiar enlace",
-
   "lsp.tooltip.none": "Sin servidores LSP",
   "lsp.label.connected": "{{count}} LSP",
-
   "prompt.loading": "Cargando prompt...",
   "terminal.loading": "Cargando terminal...",
   "terminal.title": "Terminal",
@@ -851,10 +775,8 @@ export const dict = {
   "terminal.connectTicket.csrfError":
     "El ticket de conexión PTY fue rechazado por las comprobaciones de origen o CSRF. Comprueba la configuración CORS del servidor.",
   "terminal.connectTicket.statusError": "El ticket de conexión PTY falló con {{status}}",
-
   "titlebar.update": "Actualizar",
   "titlebar.updateVersion": "Actualizar {{version}}",
-
   "common.closeTab": "Cerrar pestaña",
   "common.dismiss": "Descartar",
   "common.requestFailed": "Solicitud fallida",
@@ -868,7 +790,6 @@ export const dict = {
   "common.edit": "Editar",
   "common.loadMore": "Cargar más",
   "common.key.esc": "ESC",
-
   "sidebar.menu.toggle": "Mostrar u ocultar menú",
   "sidebar.nav.projectsAndSessions": "Proyectos y sesiones",
   "sidebar.settings": "Ajustes",
@@ -883,9 +804,7 @@ export const dict = {
   "sidebar.project.clearNotifications": "Borrar notificaciones",
   "sidebar.empty.title": "No hay proyectos abiertos",
   "sidebar.empty.description": "Abre un proyecto para empezar",
-
   "app.name.desktop": "OpenCode Desktop",
-
   "settings.section.desktop": "Escritorio",
   "settings.section.server": "Servidor",
   "settings.tab.general": "General",
@@ -893,7 +812,6 @@ export const dict = {
   "settings.desktop.section.wsl": "WSL",
   "settings.desktop.wsl.title": "Integración con WSL",
   "settings.desktop.wsl.description": "Ejecutar el servidor OpenCode dentro de WSL en Windows.",
-
   "settings.general.section.appearance": "Apariencia",
   "settings.general.section.advanced": "Avanzado",
   "settings.general.section.notifications": "Notificaciones del sistema",
@@ -901,7 +819,6 @@ export const dict = {
   "settings.general.section.sounds": "Efectos de sonido",
   "settings.general.section.feed": "Feed",
   "settings.general.section.display": "Pantalla",
-
   "settings.general.row.language.title": "Idioma",
   "settings.general.row.language.description": "Cambiar el idioma de visualización para OpenCode",
   "settings.general.row.shell.title": "Shell del terminal",
@@ -966,11 +883,9 @@ export const dict = {
   "settings.general.row.wayland.description": "Deshabilitar el uso alternativo de X11 en Wayland. Requiere reiniciar.",
   "settings.general.row.wayland.tooltip":
     "En Linux con monitores de frecuencia de actualización mixta, Wayland nativo puede ser más estable.",
-
   "settings.general.row.releaseNotes.title": "Notas de la versión",
   "settings.general.row.releaseNotes.description":
     'Mostrar ventanas emergentes de "Novedades" después de las actualizaciones',
-
   "settings.updates.row.startup.title": "Buscar actualizaciones al iniciar",
   "settings.updates.row.startup.description": "Buscar actualizaciones automáticamente cuando se inicia OpenCode",
   "settings.updates.row.check.title": "Buscar actualizaciones",
@@ -1027,7 +942,6 @@ export const dict = {
   "sound.option.yup04": "Sí 04",
   "sound.option.yup05": "Sí 05",
   "sound.option.yup06": "Sí 06",
-
   "settings.general.notifications.agent.title": "Agente",
   "settings.general.notifications.agent.description":
     "Mostrar notificación del sistema cuando el agente termine o necesite atención",
@@ -1036,14 +950,12 @@ export const dict = {
     "Mostrar notificación del sistema cuando se requiera un permiso",
   "settings.general.notifications.errors.title": "Errores",
   "settings.general.notifications.errors.description": "Mostrar notificación del sistema cuando ocurra un error",
-
   "settings.general.sounds.agent.title": "Agente",
   "settings.general.sounds.agent.description": "Reproducir sonido cuando el agente termine o necesite atención",
   "settings.general.sounds.permissions.title": "Permisos",
   "settings.general.sounds.permissions.description": "Reproducir sonido cuando se requiera un permiso",
   "settings.general.sounds.errors.title": "Errores",
   "settings.general.sounds.errors.description": "Reproducir sonido cuando ocurra un error",
-
   "settings.shortcuts.title": "Atajos de teclado",
   "settings.shortcuts.reset.button": "Restablecer a valores predeterminados",
   "settings.shortcuts.reset.toast.title": "Atajos restablecidos",
@@ -1055,14 +967,12 @@ export const dict = {
   "settings.shortcuts.pressKeys": "Presiona teclas",
   "settings.shortcuts.search.placeholder": "Buscar atajos",
   "settings.shortcuts.search.empty": "No se encontraron atajos",
-
   "settings.shortcuts.group.general": "General",
   "settings.shortcuts.group.session": "Sesión",
   "settings.shortcuts.group.navigation": "Navegación",
   "settings.shortcuts.group.modelAndAgent": "Modelo y agente",
   "settings.shortcuts.group.terminal": "Terminal",
   "settings.shortcuts.group.prompt": "Prompt",
-
   "settings.providers.title": "Proveedores",
   "settings.providers.description": "La configuración de proveedores estará disponible aquí.",
   "settings.providers.section.connected": "Proveedores conectados",
@@ -1080,16 +990,13 @@ export const dict = {
   "settings.commands.description": "La configuración de comandos estará disponible aquí.",
   "settings.mcp.title": "MCP",
   "settings.mcp.description": "La configuración de MCP estará disponible aquí.",
-
   "settings.permissions.title": "Permisos",
   "settings.permissions.description": "Controla qué herramientas puede usar el servidor por defecto.",
   "settings.permissions.section.tools": "Herramientas",
   "settings.permissions.toast.updateFailed.title": "Fallo al actualizar permisos",
-
   "settings.permissions.action.allow": "Permitir",
   "settings.permissions.action.ask": "Preguntar",
   "settings.permissions.action.deny": "Denegar",
-
   "settings.permissions.tool.read.title": "Leer",
   "settings.permissions.tool.read.description": "Leer un archivo (coincide con la ruta del archivo)",
   "settings.permissions.tool.edit.title": "Editar",
@@ -1118,12 +1025,10 @@ export const dict = {
   "settings.permissions.tool.external_directory.description": "Acceder a archivos fuera del directorio del proyecto",
   "settings.permissions.tool.doom_loop.title": "Bucle infinito",
   "settings.permissions.tool.doom_loop.description": "Detectar llamadas a herramientas repetidas con entrada idéntica",
-
   "session.delete.failed.title": "Fallo al eliminar sesión",
   "session.delete.title": "Eliminar sesión",
   "session.delete.confirm": '¿Eliminar sesión "{{name}}"?',
   "session.delete.button": "Eliminar sesión",
-
   "workspace.new": "Nuevo espacio de trabajo",
   "workspace.type.local": "local",
   "workspace.type.sandbox": "sandbox",
@@ -1163,7 +1068,6 @@ export const dict = {
   "common.time.daysAgo.short": "hace {{count}} d",
   "settings.providers.connected.environmentDescription": "Conectado desde tus variables de entorno",
   "settings.providers.custom.description": "Añade un proveedor compatible con OpenAI por su URL base.",
-
   "app.server.unreachable": "No se pudo conectar con {{server}}",
   "app.server.retrying": "Reintentando automáticamente...",
   "app.server.otherServers": "Otros servidores",

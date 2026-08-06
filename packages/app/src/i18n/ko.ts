@@ -94,7 +94,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "추천",
   "dialog.provider.opencode.note": "Claude, GPT, Gemini 등을 포함한 엄선된 모델",
   "dialog.provider.opencode.tagline": "신뢰할 수 있는 최적화 모델",
-  "dialog.provider.opencodeGo.tagline": "모두를 위한 저렴한 구독",
   "dialog.provider.anthropic.note": "Pro 및 Max를 포함한 Claude 모델에 직접 액세스",
   "dialog.provider.copilot.note": "GitHub Copilot을 통한 코딩 지원용 AI 모델",
   "dialog.provider.openai.note": "빠르고 강력한 범용 AI 작업을 위한 GPT 모델",
@@ -125,12 +124,6 @@ export const dict = {
   "provider.connect.apiKey.label": "{{provider}} API 키",
   "provider.connect.apiKey.placeholder": "API 키",
   "provider.connect.apiKey.required": "API 키가 필요합니다",
-  "provider.connect.opencodeZen.line1":
-    "OpenCode Zen은 코딩 에이전트를 위해 최적화된 신뢰할 수 있는 엄선된 모델에 대한 액세스를 제공합니다.",
-  "provider.connect.opencodeZen.line2": "단일 API 키로 Claude, GPT, Gemini, GLM 등 다양한 모델에 액세스할 수 있습니다.",
-  "provider.connect.opencodeZen.visit.prefix": "다음 ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": "을 방문하여 API 키를 받으세요.",
   "provider.connect.oauth.code.visit.prefix": "다음 ",
   "provider.connect.oauth.code.visit.link": "이 링크",
   "provider.connect.oauth.code.visit.suffix":
@@ -786,7 +779,6 @@ export const dict = {
   "common.time.daysAgo.short": "{{count}}일 전",
   "settings.providers.connected.environmentDescription": "환경 변수에서 연결됨",
   "settings.providers.custom.description": "기본 URL로 OpenAI 호환 공급자를 추가합니다.",
-
   "app.server.unreachable": "{{server}}에 연결할 수 없습니다",
   "app.server.retrying": "자동으로 재시도 중...",
   "app.server.otherServers": "다른 서버",
@@ -874,10 +866,8 @@ export const dict = {
   "terminal.connectTicket.csrfError":
     "PTY 연결 티켓이 오리진 또는 CSRF 검사에서 거부되었습니다. 서버의 CORS 구성을 확인하세요.",
   "terminal.connectTicket.statusError": "PTY 연결 티켓 실패(상태: {{status}})",
-
   "titlebar.update": "업데이트",
   "titlebar.updateVersion": "업데이트 {{version}}",
-
   "command.project.previous": "이전 프로젝트",
   "command.project.next": "다음 프로젝트",
   "command.project.index": "{{index}}번 프로젝트로 전환",
@@ -890,7 +880,6 @@ export const dict = {
   "common.clear": "지우기",
   "session.child.promptDisabled": "하위 에이전트 세션에는 프롬프트를 입력할 수 없습니다.",
   "session.child.backToParent": "메인 세션으로 돌아가기.",
-
   "wsl.server.add": "WSL 서버 추가",
   "wsl.server.addShort": "WSL 추가",
   "wsl.server.label": "WSL",
@@ -959,11 +948,9 @@ export const dict = {
   "wsl.onboarding.desktopVersion": "데스크톱 {{version}}",
   "wsl.onboarding.versionMismatch": "설치된 버전이 데스크톱 앱 버전과 일치하지 않습니다.",
   "wsl.onboarding.adding": "추가 중...",
-
   "language.uk": "Українська",
   "error.page.description.localServerStartup": "로컬 서버를 시작하는 동안 오류가 발생했습니다.",
   "error.page.action.exportLogs": "로그 내보내기",
-
   "home.title": "홈",
   "home.projects": "프로젝트",
   "home.project.add": "프로젝트 추가",
@@ -980,7 +967,6 @@ export const dict = {
   "home.sessions.group.yesterday": "어제",
   "home.sessions.group.older": "이전",
   "home.providerTip": "75개 이상의 공급자에 연결하여 Claude, GPT, Gemini 등의 다른 모델을 사용하세요",
-
   "session.tab.unknown": "알 수 없는 세션",
   "session.error.notFound": "이 세션을 찾을 수 없습니다",
   "session.error.notFound.description": "이 탭은 이 서버에 더 이상 존재하지 않는 세션을 가리킵니다.",
@@ -1000,10 +986,8 @@ export const dict = {
   "session.new.workspace.local": "로컬 저장소",
   "session.new.workspace.existing": "작업 공간…",
   "session.new.git.none": "Git 없음",
-
   "sidebar.empty.title": "열린 프로젝트 없음",
   "sidebar.empty.description": "프로젝트를 열어 시작하세요",
-
   "settings.general.section.advanced": "고급",
   "settings.general.row.shell.title": "터미널 셸",
   "settings.general.row.shell.description":
@@ -1036,9 +1020,7 @@ export const dict = {
   "settings.general.row.pinchZoom.description": "트랙패드 핀치 및 Ctrl-스크롤 제스처로 확대/축소 허용",
   "settings.updates.action.downloading": "다운로드 중...",
   "settings.updates.action.installing": "설치 중...",
-
   "command.logs.export": "로그 내보내기",
-
   "help.tabs.toast.ariaLabel": "탭을 소개합니다. 탭으로 작업과 활성 세션을 정리하세요",
   "help.tabs.toast.dismiss": "탭 정보 닫기",
   "help.tabs.title": "탭 소개",
@@ -1053,7 +1035,6 @@ export const dict = {
   "help.tabs.persistence": "앱을 다시 열어도 탭은 그대로 열려 있습니다.",
   "help.tabs.worktrees":
     "새 디자인은 아직 Git Worktrees를 지원하지 않지만 곧 지원할 예정입니다. 이전 레이아웃을 계속 사용하려면 설정에서 레이아웃을 전환할 수 있습니다. 단, 몇 주 후에는 새 레이아웃이 영구 적용됩니다.",
-
   "desktop.menu.app": "OpenCode",
   "desktop.menu.file": "파일",
   "desktop.menu.edit": "편집",
@@ -1099,7 +1080,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "피드백 보내기",
   "desktop.menu.reportBug": "버그 신고",
   "desktop.menu.ariaLabel": "OpenCode 메뉴",
-
   "desktop.updater.dialog.checkFailed.message": "업데이트를 확인하지 못했습니다.",
   "desktop.updater.dialog.checkFailed.title": "업데이트 오류",
   "desktop.updater.dialog.upToDate.message": "최신 버전을 사용 중입니다.",
@@ -1108,7 +1088,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "업데이트 준비 완료",
   "desktop.updater.dialog.restart": "다시 시작",
   "desktop.updater.dialog.later": "나중에",
-
   "desktop.recovery.action.relaunch": "다시 실행",
   "desktop.recovery.action.exportLogs": "로그 내보내기",
   "desktop.recovery.action.keepWaiting": "계속 기다리기",
@@ -1120,13 +1099,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "윈도우: {{window}}\nURL: {{url}}\n오류: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "윈도우: {{window}}\n원인: {{reason}}\n코드: {{code}}",
   "desktop.recovery.unknown": "<알 수 없음>",
-
   "desktop.dialog.chooseFolder": "폴더 선택",
   "desktop.dialog.chooseFile": "파일 선택",
   "desktop.dialog.saveFile": "파일 저장",
   "desktop.dialog.files": "파일",
   "desktop.server.local": "로컬 서버",
-
   "desktop.wsl.error.windowsOnly": "WSL은 Windows에서만 사용할 수 있습니다",
   "desktop.wsl.error.unavailable": "WSL을 사용할 수 없습니다",
   "desktop.wsl.error.listInstalled": "설치된 WSL 배포판 목록을 가져오지 못했습니다",
@@ -1148,7 +1125,6 @@ export const dict = {
   "desktop.wsl.error.healthTimeout": "{{distro}} 사이드카의 상태 확인이 {{timeout}}ms 후 시간 초과되었습니다",
   "desktop.wsl.error.commandTimeout": "{{command}} {{args}} 명령이 {{timeout}}ms 후 시간 초과되었습니다",
   "desktop.wsl.error.failedPort": "포트를 가져오지 못했습니다",
-
   "desktop.picker.error.notSelected": "선택기에서 파일을 선택하지 않았습니다",
   "desktop.picker.error.sizeLimit": "선택한 첨부 파일이 {{limit}} MB 제한을 초과합니다",
 }

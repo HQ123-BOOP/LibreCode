@@ -68,17 +68,6 @@ export const dict = {
   "ui.sessionTurn.retry.attempt": "ครั้งที่ {{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - ครั้งที่ {{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "ขณะนี้ Gemini มีการใช้งานหนาแน่นมาก",
-  "ui.sessionTurn.error.freeUsageExceeded": "เกินขีดจำกัดการใช้งานฟรี",
-  "ui.sessionTurn.error.addCredits": "เพิ่มเครดิต",
-
-  "dialog.usageExceeded.freeTier.title": "ถึงขีดจำกัดฟรีแล้ว",
-  "dialog.usageExceeded.freeTier.description":
-    "สมัครสมาชิก OpenCode Go เพื่อการเข้าถึงโมเดลโอเพนซอร์สที่ดีที่สุดอย่างเชื่อถือได้ เริ่มต้นที่ $5/เดือน",
-  "dialog.usageExceeded.freeTier.actionLabel": "สมัครสมาชิก",
-  "dialog.usageExceeded.accountRateLimit.title": "ถึงขีดจำกัดของ Go แล้ว",
-  "dialog.usageExceeded.accountRateLimit.description":
-    "ถึงขีดจำกัดการใช้งานแล้ว หากต้องการใช้โมเดลนี้ต่อในตอนนี้ ให้เปิดใช้งานจากยอดคงเหลือที่มี",
-  "dialog.usageExceeded.accountRateLimit.actionLabel": "เปิดการตั้งค่า",
 
   "ui.sessionTurn.status.delegating": "กำลังมอบหมายงาน",
   "ui.sessionTurn.status.planning": "กำลังวางแผนขั้นตอนถัดไป",
@@ -215,3 +204,4 @@ export const dict = {
   "ui.message.duration.seconds": "{{count}} วินาที",
   "ui.message.duration.minutesSeconds": "{{minutes}} นาที {{seconds}} วินาที",
 }
+

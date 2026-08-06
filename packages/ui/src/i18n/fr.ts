@@ -70,17 +70,6 @@ export const dict = {
   "ui.sessionTurn.retry.attempt": "tentative n°{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - tentative n°{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini est en surchauffe",
-  "ui.sessionTurn.error.freeUsageExceeded": "Limite d'utilisation gratuite dépassée",
-  "ui.sessionTurn.error.addCredits": "Ajouter des crédits",
-
-  "dialog.usageExceeded.freeTier.title": "Limite gratuite atteinte",
-  "dialog.usageExceeded.freeTier.description":
-    "Abonnez-vous à OpenCode Go pour un accès fiable aux meilleurs modèles à code source ouvert, à partir de 5 $ US par mois.",
-  "dialog.usageExceeded.freeTier.actionLabel": "S'abonner",
-  "dialog.usageExceeded.accountRateLimit.title": "Limite Go atteinte",
-  "dialog.usageExceeded.accountRateLimit.description":
-    "Limite d'utilisation atteinte. Pour continuer à utiliser ce modèle maintenant, activez l'utilisation de votre solde disponible.",
-  "dialog.usageExceeded.accountRateLimit.actionLabel": "Ouvrir les paramètres",
 
   "ui.sessionTurn.status.delegating": "Délégation du travail",
   "ui.sessionTurn.status.planning": "Planification des prochaines étapes",
@@ -221,3 +210,4 @@ export const dict = {
   "ui.message.duration.seconds": "{{count}} s",
   "ui.message.duration.minutesSeconds": "{{minutes}} min {{seconds}} s",
 }
+

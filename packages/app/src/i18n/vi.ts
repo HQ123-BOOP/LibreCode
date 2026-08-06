@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "Chia sẻ phản hồi",
   "desktop.menu.reportBug": "Báo cáo lỗi",
   "desktop.menu.ariaLabel": "Menu OpenCode",
-
   "desktop.updater.dialog.checkFailed.message": "Không kiểm tra được bản cập nhật.",
   "desktop.updater.dialog.checkFailed.title": "Lỗi cập nhật",
   "desktop.updater.dialog.upToDate.message": "Bạn đang dùng phiên bản mới nhất.",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "Bản cập nhật đã sẵn sàng",
   "desktop.updater.dialog.restart": "Khởi động lại",
   "desktop.updater.dialog.later": "Để sau",
-
   "desktop.recovery.action.relaunch": "Khởi chạy lại",
   "desktop.recovery.action.exportLogs": "Xuất nhật ký",
   "desktop.recovery.action.keepWaiting": "Tiếp tục chờ",
@@ -65,13 +63,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "Cửa sổ: {{window}}\nURL: {{url}}\nLỗi: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "Cửa sổ: {{window}}\nLý do: {{reason}}\nMã: {{code}}",
   "desktop.recovery.unknown": "<không xác định>",
-
   "desktop.dialog.chooseFolder": "Chọn thư mục",
   "desktop.dialog.chooseFile": "Chọn tệp",
   "desktop.dialog.saveFile": "Lưu tệp",
   "desktop.dialog.files": "Tệp",
   "desktop.server.local": "Máy chủ cục bộ",
-
   "desktop.wsl.error.windowsOnly": "WSL chỉ khả dụng trên Windows",
   "desktop.wsl.error.unavailable": "WSL không khả dụng",
   "desktop.wsl.error.listInstalled": "Không liệt kê được các bản phân phối WSL đã cài đặt",
@@ -94,10 +90,8 @@ export const dict = {
     "Sidecar kiểm tra tình trạng của {{distro}} đã hết thời gian chờ sau {{timeout}}ms",
   "desktop.wsl.error.commandTimeout": "{{command}} {{args}} đã hết thời gian chờ sau {{timeout}}ms",
   "desktop.wsl.error.failedPort": "Không lấy được cổng",
-
   "desktop.picker.error.notSelected": "Không có tệp nào được chọn trong bộ chọn tệp",
   "desktop.picker.error.sizeLimit": "Các tệp đính kèm đã chọn vượt quá giới hạn {{limit}} MB",
-
   "command.category.suggested": "Đề xuất",
   "command.category.view": "Xem",
   "command.category.project": "Dự án",
@@ -198,7 +192,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "Đề xuất",
   "dialog.provider.opencode.note": "Các mô hình được tuyển chọn, gồm Claude, GPT, Gemini và nhiều mô hình khác",
   "dialog.provider.opencode.tagline": "Các mô hình tối ưu hóa đáng tin cậy",
-  "dialog.provider.opencodeGo.tagline": "Đăng ký chi phí thấp cho mọi người",
   "dialog.provider.anthropic.note": "Truy cập trực tiếp các mô hình Claude, bao gồm Pro và Max",
   "dialog.provider.copilot.note": "Các mô hình AI hỗ trợ lập trình qua GitHub Copilot",
   "dialog.provider.openai.note": "Các mô hình GPT nhanh và mạnh mẽ cho tác vụ AI đa dụng",
@@ -229,13 +222,6 @@ export const dict = {
   "provider.connect.apiKey.label": "Khóa API {{provider}}",
   "provider.connect.apiKey.placeholder": "khóa API",
   "provider.connect.apiKey.required": "Cần có khóa API",
-  "provider.connect.opencodeZen.line1":
-    "OpenCode Zen cho phép bạn truy cập một bộ mô hình được tuyển chọn, tối ưu hóa và đáng tin cậy dành cho tác nhân lập trình.",
-  "provider.connect.opencodeZen.line2":
-    "Chỉ với một khóa API, bạn sẽ có quyền truy cập vào các mô hình như Claude, GPT, Gemini, GLM và hơn thế nữa.",
-  "provider.connect.opencodeZen.visit.prefix": "Truy cập ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " để lấy khóa API của bạn.",
   "provider.connect.oauth.code.visit.prefix": "Truy cập ",
   "provider.connect.oauth.code.visit.link": "liên kết này",
   "provider.connect.oauth.code.visit.suffix":

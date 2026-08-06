@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "Надіслати відгук",
   "desktop.menu.reportBug": "Повідомити про помилку",
   "desktop.menu.ariaLabel": "Меню OpenCode",
-
   "desktop.updater.dialog.checkFailed.message": "Не вдалося перевірити наявність оновлень.",
   "desktop.updater.dialog.checkFailed.title": "Помилка оновлення",
   "desktop.updater.dialog.upToDate.message": "У вас найновіша версія.",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "Оновлення готове",
   "desktop.updater.dialog.restart": "Перезапустити",
   "desktop.updater.dialog.later": "Пізніше",
-
   "desktop.recovery.action.relaunch": "Запустити повторно",
   "desktop.recovery.action.exportLogs": "Експортувати журнали",
   "desktop.recovery.action.keepWaiting": "Продовжити очікування",
@@ -66,13 +64,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "Вікно: {{window}}\nURL: {{url}}\nПомилка: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "Вікно: {{window}}\nПричина: {{reason}}\nКод: {{code}}",
   "desktop.recovery.unknown": "<невідомо>",
-
   "desktop.dialog.chooseFolder": "Виберіть папку",
   "desktop.dialog.chooseFile": "Виберіть файл",
   "desktop.dialog.saveFile": "Зберегти файл",
   "desktop.dialog.files": "Файли",
   "desktop.server.local": "Локальний сервер",
-
   "desktop.wsl.error.windowsOnly": "WSL доступна лише у Windows",
   "desktop.wsl.error.unavailable": "WSL недоступна",
   "desktop.wsl.error.listInstalled": "Не вдалося отримати список встановлених дистрибутивів WSL",
@@ -95,10 +91,8 @@ export const dict = {
     "Час очікування перевірки працездатності sidecar для {{distro}} минув через {{timeout}}мс",
   "desktop.wsl.error.commandTimeout": "Час очікування {{command}} {{args}} минув через {{timeout}}мс",
   "desktop.wsl.error.failedPort": "Не вдалося отримати порт",
-
   "desktop.picker.error.notSelected": "Засіб вибору не повернув вибраний файл",
   "desktop.picker.error.sizeLimit": "Вибрані вкладення перевищують обмеження в {{limit}} МБ",
-
   "command.category.suggested": "Рекомендовані",
   "command.category.view": "Вигляд",
   "command.category.project": "Проєкт",
@@ -117,11 +111,9 @@ export const dict = {
   "command.category.workspace": "Робоча область",
   "command.category.settings": "Налаштування",
   "command.logs.export": "Експортувати журнали",
-
   "theme.scheme.system": "Системна",
   "theme.scheme.light": "Світла",
   "theme.scheme.dark": "Темна",
-
   "command.sidebar.toggle": "Перемкнути бічну панель",
   "command.project.open": "Відкрити проєкт",
   "command.project.previous": "Попередній проєкт",
@@ -135,17 +127,13 @@ export const dict = {
   "command.session.previous.unseen": "Попередня непрочитана сесія",
   "command.session.next.unseen": "Наступна непрочитана сесія",
   "command.session.archive": "Архівувати сесію",
-
   "command.palette": "Палітра команд",
-
   "command.theme.cycle": "Перемкнути тему",
   "command.theme.set": "Використати тему: {{theme}}",
   "command.theme.scheme.cycle": "Перемкнути кольорову схему",
   "command.theme.scheme.set": "Використати кольорову схему: {{scheme}}",
-
   "command.language.cycle": "Перемкнути мову",
   "command.language.set": "Використати мову: {{language}}",
-
   "command.session.new": "Нова сесія",
   "command.file.open": "Відкрити файл",
   "command.tab.close": "Закрити вкладку",
@@ -192,13 +180,11 @@ export const dict = {
   "command.session.share.description": "Поділитися цією сесією та скопіювати URL у буфер обміну",
   "command.session.unshare": "Припинити поширення сесії",
   "command.session.unshare.description": "Припинити поширення цієї сесії",
-
   "palette.search.placeholder": "Пошук файлів, команд і сесій",
   "palette.search.placeholder.home": "Пошук команд і сесій",
   "palette.empty": "Результатів не знайдено",
   "palette.group.commands": "Команди",
   "palette.group.files": "Файли",
-
   "dialog.provider.search.placeholder": "Пошук провайдерів",
   "dialog.provider.empty": "Провайдерів не знайдено",
   "dialog.provider.group.popular": "Популярні",
@@ -207,27 +193,22 @@ export const dict = {
   "dialog.provider.tag.recommended": "Рекомендовані",
   "dialog.provider.opencode.note": "Відібрані моделі, включаючи Claude, GPT, Gemini та інші",
   "dialog.provider.opencode.tagline": "Надійні оптимізовані моделі",
-  "dialog.provider.opencodeGo.tagline": "Недорога підписка для всіх",
   "dialog.provider.anthropic.note": "Прямий доступ до моделей Claude, включаючи Pro та Max",
   "dialog.provider.copilot.note": "Моделі ШІ для допомоги в кодуванні через GitHub Copilot",
   "dialog.provider.openai.note": "Моделі GPT для швидких і універсальних завдань ШІ",
   "dialog.provider.google.note": "Моделі Gemini для швидких структурованих відповідей",
   "dialog.provider.openrouter.note": "Доступ до всіх підтримуваних моделей від одного провайдера",
   "dialog.provider.vercel.note": "Уніфікований доступ до моделей ШІ з інтелектуальною маршрутизацією",
-
   "dialog.model.select.title": "Вибрати модель",
   "dialog.model.search.placeholder": "Пошук моделей",
   "dialog.model.empty": "Моделей не знайдено",
   "dialog.model.manage": "Керувати моделями",
   "dialog.model.manage.description": "Налаштуйте, які моделі відображатимуться у виборі моделей.",
   "dialog.model.manage.provider.toggle": "Перемкнути всі моделі {{provider}}",
-
   "dialog.model.unpaid.freeModels.title": "Безкоштовні моделі від OpenCode",
   "dialog.model.unpaid.addMore.title": "Додати більше моделей від популярних провайдерів",
   "dialog.model.unpaid.viewMoreProviders": "Переглянути ще понад 70 провайдерів",
-
   "dialog.provider.viewAll": "Показати більше провайдерів",
-
   "provider.connect.title": "Підключити {{provider}}",
   "provider.connect.title.anthropicProMax": "Увійти з Claude Pro/Max",
   "provider.connect.selectMethod": "Виберіть спосіб входу для {{provider}}.",
@@ -242,13 +223,6 @@ export const dict = {
   "provider.connect.apiKey.label": "Ключ API {{provider}}",
   "provider.connect.apiKey.placeholder": "Ключ API",
   "provider.connect.apiKey.required": "Ключ API обов'язковий",
-  "provider.connect.opencodeZen.line1":
-    "OpenCode Zen надає доступ до відібраного набору надійних оптимізованих моделей для агентів кодування.",
-  "provider.connect.opencodeZen.line2":
-    "З одним ключем API ви отримаєте доступ до таких моделей, як Claude, GPT, Gemini, GLM та інших.",
-  "provider.connect.opencodeZen.visit.prefix": "Відвідайте ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": ", щоб отримати ключ API.",
   "provider.connect.oauth.code.visit.prefix": "Відвідайте ",
   "provider.connect.oauth.code.visit.link": "це посилання",
   "provider.connect.oauth.code.visit.suffix":
@@ -264,7 +238,6 @@ export const dict = {
   "provider.connect.oauth.auto.confirmationCode": "Код підтвердження",
   "provider.connect.toast.connected.title": "{{provider}} підключено",
   "provider.connect.toast.connected.description": "Моделі {{provider}} тепер доступні для використання.",
-
   "provider.custom.title": "Користувацький провайдер",
   "provider.custom.unavailable": "Користувацькі провайдери недоступні на цьому сервері",
   "provider.custom.description.prefix": "Налаштуйте провайдера, сумісного з OpenAI. Перегляньте ",
@@ -303,10 +276,8 @@ export const dict = {
   "provider.custom.error.baseURL.format": "Має починатися з http:// або https://",
   "provider.custom.error.required": "Обов'язково",
   "provider.custom.error.duplicate": "Дублікат",
-
   "provider.disconnect.toast.disconnected.title": "{{provider}} відключено",
   "provider.disconnect.toast.disconnected.description": "Моделі {{provider}} більше недоступні.",
-
   "model.tag.free": "Безкоштовно",
   "model.tag.latest": "Остання",
   "model.provider.anthropic": "Anthropic",
@@ -328,7 +299,6 @@ export const dict = {
   "model.tooltip.reasoning.allowed": "Підтримує мислення",
   "model.tooltip.reasoning.none": "Без мислення",
   "model.tooltip.context": "Ліміт контексту {{limit}}",
-
   "common.search.placeholder": "Пошук",
   "common.goBack": "Назад",
   "common.goForward": "Вперед",
@@ -345,7 +315,6 @@ export const dict = {
   "common.saving": "Збереження...",
   "common.default": "За замовчуванням",
   "common.attachment": "вкладення",
-
   "prompt.placeholder.shell": "Введіть команду термінала... {{example}}",
   "prompt.placeholder.normal": 'Запитайте що завгодно... "{{example}}"',
   "prompt.placeholder.simple": "Запитайте що завгодно...",
@@ -356,7 +325,6 @@ export const dict = {
   "prompt.mode.shell.exit": "esc для виходу",
   "session.child.promptDisabled": "Сесії підагентів не можна надсилати запити.",
   "session.child.backToParent": "Назад до основної сесії.",
-
   "prompt.example.1": "Виправити TODO у коді",
   "prompt.example.2": "Який технологічний стек цього проєкту?",
   "prompt.example.3": "Виправити зламані тести",
@@ -382,7 +350,6 @@ export const dict = {
   "prompt.example.23": "Додати посторінкову навігацію до цього списку",
   "prompt.example.24": "Створити команду CLI для...",
   "prompt.example.25": "Як тут працюють змінні середовища?",
-
   "prompt.popover.emptyResults": "Немає відповідних результатів",
   "prompt.popover.emptyCommands": "Немає відповідних команд",
   "prompt.dropzone.label": "Перетягніть сюди зображення, PDF або текстові файли",
@@ -403,7 +370,6 @@ export const dict = {
   "prompt.attachment.remove": "Видалити вкладення",
   "prompt.action.send": "Надіслати",
   "prompt.action.stop": "Зупинити",
-
   "prompt.toast.pasteUnsupported.title": "Непідтримуване вкладення",
   "prompt.toast.attachmentDuplicate.title": "Цей файл уже завантажено",
   "prompt.toast.pasteUnsupported.description": "Сюди можна прикріплювати лише зображення, PDF або текстові файли.",
@@ -415,22 +381,17 @@ export const dict = {
   "prompt.toast.commandSendFailed.title": "Не вдалося надіслати команду",
   "prompt.toast.promptSendFailed.title": "Не вдалося надіслати запит",
   "prompt.toast.promptSendFailed.description": "Не вдалося отримати сесію",
-
   "dialog.mcp.title": "MCP",
   "dialog.mcp.description": "{{enabled}} з {{total}} увімкнено",
   "dialog.mcp.empty": "MCP не налаштовано",
-
   "dialog.lsp.empty": "Сервери LSP автоматично виявляються за типами файлів",
   "dialog.plugins.empty": "Плагіни налаштовані в opencode.json",
-
   "mcp.status.connected": "підключено",
   "mcp.status.failed": "помилка",
   "mcp.status.needs_auth": "потрібна авторизація",
   "mcp.status.disabled": "вимкнено",
   "mcp.auth.clickToAuthenticate": "Натисніть для автентифікації",
-
   "dialog.fork.empty": "Немає повідомлень для відгалуження",
-
   "dialog.directory.search.placeholder": "Пошук папок",
   "dialog.directory.empty": "Папок не знайдено",
   "dialog.directory.action.selectFile": "Вибрати файл",
@@ -438,11 +399,9 @@ export const dict = {
   "dialog.directory.root": "Корінь",
   "dialog.directory.parent": "Батьківська папка",
   "dialog.directory.readError": "Не вдалося прочитати цю папку",
-
   "app.server.unreachable": "Не вдалося зв'язатися із {{server}}",
   "app.server.retrying": "Автоматична повторна спроба...",
   "app.server.otherServers": "Інші сервери",
-
   "dialog.server.title": "Сервери",
   "dialog.server.description": "Перемкніть сервер OpenCode, до якого підключається ця програма.",
   "dialog.server.search.placeholder": "Пошук серверів",
@@ -467,7 +426,6 @@ export const dict = {
   "dialog.server.default.set": "Встановити поточний сервер як сервер за замовчуванням",
   "dialog.server.default.clear": "Очистити",
   "dialog.server.action.remove": "Видалити сервер",
-
   "dialog.server.menu.edit": "Редагувати",
   "dialog.server.menu.default": "Встановити за замовчуванням",
   "dialog.server.menu.defaultRemove": "Скасувати використання за замовчуванням",
@@ -543,7 +501,6 @@ export const dict = {
   "wsl.onboarding.desktopVersion": "десктопний застосунок {{version}}",
   "wsl.onboarding.versionMismatch": "Встановлена версія не відповідає версії десктопного застосунку.",
   "wsl.onboarding.adding": "Додавання...",
-
   "help.tabs.toast.ariaLabel": "Представляємо вкладки. Упорядковуйте роботу й активні сесії за допомогою вкладок",
   "help.tabs.toast.dismiss": "Закрити інформацію про вкладки",
   "help.tabs.title": "Представляємо вкладки",
@@ -560,7 +517,6 @@ export const dict = {
   "help.tabs.worktrees":
     "Новий дизайн поки не підтримує робочі дерева Git, але ця можливість незабаром з'явиться. Тож якщо ви бажаєте й надалі користуватися попереднім макетом, перемикатися між макетами можна в налаштуваннях. Зауважте, що за кілька тижнів новий макет стане постійним.",
   "server.row.noUsername": "без імені користувача",
-
   "dialog.project.edit.title": "Редагувати проєкт",
   "dialog.project.edit.name": "Назва",
   "dialog.project.edit.icon": "Іконка",
@@ -572,12 +528,10 @@ export const dict = {
   "dialog.project.edit.worktree.startup": "Скрипт запуску робочої області",
   "dialog.project.edit.worktree.startup.description": "Виконується після створення нової робочої області (worktree).",
   "dialog.project.edit.worktree.startup.placeholder": "напр. bun install",
-
   "dialog.releaseNotes.action.getStarted": "Розпочати",
   "dialog.releaseNotes.action.next": "Далі",
   "dialog.releaseNotes.action.hideFuture": "Не показувати це в майбутньому",
   "dialog.releaseNotes.media.alt": "Попередній перегляд релізу",
-
   "context.breakdown.title": "Розподіл контексту",
   "context.breakdown.note":
     'Приблизний розподіл вхідних токенів. "Інше" включає визначення інструментів і накладні витрати.',
@@ -586,10 +540,8 @@ export const dict = {
   "context.breakdown.assistant": "Асистент",
   "context.breakdown.tool": "Виклики інструментів",
   "context.breakdown.other": "Інше",
-
   "context.systemPrompt.title": "Системний запит",
   "context.rawMessages.title": "Необроблені повідомлення",
-
   "context.stats.session": "Сесія",
   "context.stats.messages": "Повідомлення",
   "context.stats.provider": "Провайдер",
@@ -606,13 +558,11 @@ export const dict = {
   "context.stats.totalCost": "Загальна вартість",
   "context.stats.sessionCreated": "Сесію створено",
   "context.stats.lastActivity": "Остання активність",
-
   "context.usage.tokens": "Токени",
   "context.usage.usage": "Використання",
   "context.usage.cost": "Вартість",
   "context.usage.clickToView": "Натисніть, щоб переглянути контекст",
   "context.usage.view": "Переглянути використання контексту",
-
   "language.en": "English",
   "language.zh": "简体中文",
   "language.zht": "繁體中文",
@@ -631,51 +581,39 @@ export const dict = {
   "language.uk": "Українська",
   "language.th": "ไทย",
   "language.tr": "Türkçe",
-
   "toast.language.title": "Мова",
   "toast.language.description": "Перемкнено на {{language}}",
-
   "toast.theme.title": "Тему змінено",
   "toast.scheme.title": "Кольорова схема",
-
   "toast.workspace.enabled.title": "Робочі області увімкнено",
   "toast.workspace.enabled.description": "Кілька робочих дерев тепер відображаються на бічній панелі",
   "toast.workspace.disabled.title": "Робочі області вимкнено",
   "toast.workspace.disabled.description": "Тільки головне робоче дерево відображається на бічній панелі",
-
   "toast.permissions.autoaccept.on.title": "Автоматичне прийняття дозволів",
   "toast.permissions.autoaccept.on.description": "Запити дозволів будуть автоматично схвалюватися",
   "toast.permissions.autoaccept.off.title": "Автоматичне прийняття дозволів зупинено",
   "toast.permissions.autoaccept.off.description": "Запити дозволів вимагатимуть схвалення",
-
   "toast.model.none.title": "Модель не вибрано",
   "toast.model.none.description": "Підключіть провайдера, щоб підсумувати цю сесію",
-
   "toast.file.loadFailed.title": "Не вдалося завантажити файл",
   "toast.file.listFailed.title": "Не вдалося отримати список файлів",
-
   "toast.context.noLineSelection.title": "Не вибрано рядків",
   "toast.context.noLineSelection.description": "Спочатку виберіть діапазон рядків у вкладці файлу.",
-
   "toast.session.share.copyFailed.title": "Не вдалося скопіювати URL у буфер обміну",
   "toast.session.share.success.title": "Сесію опубліковано",
   "toast.session.share.success.description": "Посилання скопійовано в буфер обміну!",
   "toast.session.share.failed.title": "Не вдалося опублікувати сесію",
   "toast.session.share.failed.description": "Під час публікації сесії сталася помилка",
-
   "toast.session.unshare.success.title": "Поширення сесії припинено",
   "toast.session.unshare.success.description": "Поширення сесії успішно припинено!",
   "toast.session.unshare.failed.title": "Не вдалося припинити поширення сесії",
   "toast.session.unshare.failed.description": "Під час припинення поширення сесії сталася помилка",
-
   "toast.session.listFailed.title": "Не вдалося завантажити сесії для {{project}}",
   "toast.project.reloadFailed.title": "Не вдалося перезавантажити {{project}}",
-
   "toast.update.title": "Доступне оновлення",
   "toast.update.description": "Нова версія OpenCode ({{version}}) тепер доступна для встановлення.",
   "toast.update.action.installRestart": "Встановити та перезапустити",
   "toast.update.action.notYet": "Не зараз",
-
   "error.page.title": "Щось пішло не так",
   "error.page.description": "Під час завантаження програми сталася помилка.",
   "error.page.description.localServerStartup": "Під час запуску локального сервера сталася помилка.",
@@ -691,10 +629,8 @@ export const dict = {
   "error.page.report.prefix": "Будь ласка, повідомте про цю помилку команді OpenCode",
   "error.page.report.discord": "у Discord",
   "error.page.version": "Версія: {{version}}",
-
   "error.dev.rootNotFound":
     "Кореневий елемент не знайдено. Ви забули додати його до index.html? Або, можливо, атрибут id було написано з помилкою?",
-
   "error.serverSync.connectFailed": "Не вдалося підключитися до сервера. Чи працює сервер за адресою `{{url}}`?",
   "error.serverSDK.noServerAvailable": "Сервер недоступний",
   "error.serverSDK.serverNotAvailable": "Сервер недоступний",
@@ -703,7 +639,6 @@ export const dict = {
   "error.childStore.persistedProjectIconCreateFailed": "Не вдалося створити постійну іконку проєкту",
   "error.childStore.storeCreateFailed": "Не вдалося створити сховище",
   "directory.error.invalidUrl": "Недійсний каталог у URL.",
-
   "error.chain.unknown": "Невідома помилка",
   "error.server.invalidConfiguration": "Недійсна конфігурація",
   "error.chain.causedBy": "Причина:",
@@ -726,17 +661,14 @@ export const dict = {
   "error.chain.configFrontmatterError": "Не вдалося розібрати frontmatter у {{path}}:\n{{message}}",
   "error.chain.configInvalid": "Файл конфігурації {{path}} недійсний",
   "error.chain.configInvalidWithMessage": "Файл конфігурації {{path}} недійсний: {{message}}",
-
   "notification.permission.title": "Потрібен дозвіл",
   "notification.permission.description": "{{sessionTitle}} у {{projectName}} потребує дозволу",
   "notification.question.title": "Запитання",
   "notification.question.description": "{{sessionTitle}} у {{projectName}} має запитання",
   "notification.action.goToSession": "Перейти до сесії",
-
   "notification.session.responseReady.title": "Відповідь готова",
   "notification.session.error.title": "Помилка сесії",
   "notification.session.error.fallbackDescription": "Сталася помилка",
-
   "home.recentProjects": "Нещодавні проєкти",
   "home.empty.title": "Немає нещодавніх проєктів",
   "home.empty.description": "Почніть, відкривши локальний проєкт",
@@ -757,7 +689,6 @@ export const dict = {
   "home.sessions.group.older": "Раніше",
   "home.providerTip":
     "Підключіться до понад 75 провайдерів, щоб використовувати інші моделі, зокрема Claude, GPT, Gemini та інші",
-
   "session.tab.session": "Сесія",
   "session.tab.review": "Огляд",
   "session.tab.context": "Контекст",
@@ -781,18 +712,15 @@ export const dict = {
   "session.review.noChanges": "Немає змін",
   "session.review.noUncommittedChanges": "Ще немає незафіксованих змін",
   "session.review.noBranchChanges": "Ще немає змін у гілці",
-
   "session.files.selectToOpen": "Виберіть файл для відкриття",
   "session.files.all": "Усі файли",
   "session.files.empty": "Немає файлів",
   "session.files.binaryContent": "Двійковий файл (вміст неможливо відобразити)",
-
   "session.messages.renderEarlier": "Відобразити раніші повідомлення",
   "session.messages.loadingEarlier": "Завантаження раніших повідомлень...",
   "session.messages.loadEarlier": "Завантажити раніші повідомлення",
   "session.messages.loading": "Завантаження повідомлень...",
   "session.messages.jumpToLatest": "Перейти до останніх",
-
   "session.context.addToContext": "Додати {{selection}} до контексту",
   "session.todo.title": "Завдання",
   "session.todo.collapse": "Згорнути",
@@ -820,7 +748,6 @@ export const dict = {
   "session.revertDock.collapse": "Згорнути скасовані повідомлення",
   "session.revertDock.expand": "Розгорнути скасовані повідомлення",
   "session.revertDock.restore": "Відновити повідомлення",
-
   "session.new.title": "Створити що завгодно",
   "session.new.project.new": "Новий проєкт",
   "session.new.project.search": "Пошук проєктів",
@@ -834,7 +761,6 @@ export const dict = {
   "session.new.workspace.existing": "Робоча область…",
   "session.new.git.none": "Немає Git",
   "session.new.lastModified": "Востаннє змінено",
-
   "session.header.search.placeholder": "Пошук {{project}}",
   "session.header.searchFiles": "Пошук файлів",
   "session.header.openIn": "Відкрити в",
@@ -861,7 +787,6 @@ export const dict = {
   "session.header.open.app.androidStudio": "Android Studio",
   "session.header.open.app.powershell": "PowerShell",
   "session.header.open.app.sublimeText": "Sublime Text",
-
   "status.popover.trigger": "Статус",
   "status.popover.ariaLabel": "Конфігурації серверів",
   "status.popover.tab.servers": "Сервери",
@@ -869,7 +794,6 @@ export const dict = {
   "status.popover.tab.lsp": "LSP",
   "status.popover.tab.plugins": "Плагіни",
   "status.popover.action.manageServers": "Керувати серверами",
-
   "session.share.popover.title": "Опублікувати в інтернеті",
   "session.share.popover.description.shared":
     "Ця сесія є публічною в інтернеті. Вона доступна будь-кому за посиланням.",
@@ -883,10 +807,8 @@ export const dict = {
   "session.share.action.view": "Переглянути",
   "session.share.copy.copied": "Скопійовано",
   "session.share.copy.copyLink": "Копіювати посилання",
-
   "lsp.tooltip.none": "Немає серверів LSP",
   "lsp.label.connected": "{{count}} LSP",
-
   "prompt.loading": "Завантаження запиту...",
   "terminal.loading": "Завантаження термінала...",
   "terminal.title": "Термінал",
@@ -899,10 +821,8 @@ export const dict = {
   "terminal.connectTicket.csrfError":
     "Квиток підключення PTY відхилено через перевірку джерела або CSRF. Перевірте конфігурацію CORS сервера.",
   "terminal.connectTicket.statusError": "Помилка квитка підключення PTY зі статусом {{status}}",
-
   "titlebar.update": "Оновити",
   "titlebar.updateVersion": "Оновити {{version}}",
-
   "common.closeTab": "Закрити вкладку",
   "common.dismiss": "Відхилити",
   "common.moreCountSuffix": " (ще {{count}})",
@@ -932,12 +852,10 @@ export const dict = {
   "common.key.pageDown": "Page Down",
   "common.key.insert": "Insert",
   "common.unknown": "невідомо",
-
   "common.time.justNow": "Щойно",
   "common.time.minutesAgo.short": "{{count}} хв тому",
   "common.time.hoursAgo.short": "{{count}} год тому",
   "common.time.daysAgo.short": "{{count}} дн тому",
-
   "sidebar.menu.toggle": "Перемкнути меню",
   "sidebar.nav.projectsAndSessions": "Проєкти та сесії",
   "sidebar.settings": "Налаштування",
@@ -953,7 +871,6 @@ export const dict = {
   "sidebar.project.clearNotifications": "Очистити сповіщення",
   "sidebar.empty.title": "Немає відкритих проєктів",
   "sidebar.empty.description": "Відкрийте проєкт, щоб почати",
-
   "debugBar.ariaLabel": "Діагностика продуктивності розробки",
   "debugBar.na": "н/д",
   "debugBar.nav.label": "NAV",
@@ -985,9 +902,7 @@ export const dict = {
   "debugBar.direction.tip": "Примусово задати напрямок макета всієї програми, не змінюючи вибрану мову",
   "debugBar.direction.ltr": "LTR",
   "debugBar.direction.rtl": "RTL",
-
   "app.name.desktop": "OpenCode Desktop",
-
   "settings.section.desktop": "Десктопний застосунок",
   "settings.section.server": "Сервер",
   "settings.tab.general": "Загальні",
@@ -995,7 +910,6 @@ export const dict = {
   "settings.desktop.section.wsl": "WSL",
   "settings.desktop.wsl.title": "Інтеграція WSL",
   "settings.desktop.wsl.description": "Запускати сервер OpenCode всередині WSL на Windows.",
-
   "settings.general.section.appearance": "Зовнішній вигляд",
   "settings.general.section.advanced": "Додатково",
   "settings.general.section.notifications": "Системні сповіщення",
@@ -1003,7 +917,6 @@ export const dict = {
   "settings.general.section.sounds": "Звукові ефекти",
   "settings.general.section.feed": "Стрічка",
   "settings.general.section.display": "Дисплей",
-
   "settings.general.row.language.title": "Мова",
   "settings.general.row.language.description": "Змінити мову інтерфейсу OpenCode",
   "settings.general.row.shell.title": "Командна оболонка термінала",
@@ -1063,15 +976,12 @@ export const dict = {
   "settings.general.row.pinchZoom.title": "Масштабування щипком",
   "settings.general.row.pinchZoom.description":
     "Дозволити масштабування жестом щипка на трекпаді та прокручуванням із Ctrl",
-
   "settings.general.row.wayland.title": "Використовувати нативний Wayland",
   "settings.general.row.wayland.description": "Вимкнути резервний X11 на Wayland. Потребує перезапуску.",
   "settings.general.row.wayland.tooltip":
     "На Linux з моніторами з різною частотою оновлення нативний Wayland може бути більш стабільним.",
-
   "settings.general.row.releaseNotes.title": "Нотатки до релізу",
   "settings.general.row.releaseNotes.description": 'Показувати спливаючі вікна "Що нового" після оновлень',
-
   "settings.updates.row.startup.title": "Перевіряти оновлення під час запуску",
   "settings.updates.row.startup.description": "Автоматично перевіряти наявність оновлень під час запуску OpenCode",
   "settings.updates.row.check.title": "Перевірити оновлення",
@@ -1128,7 +1038,6 @@ export const dict = {
   "sound.option.yup04": "Yup 04",
   "sound.option.yup05": "Yup 05",
   "sound.option.yup06": "Yup 06",
-
   "settings.general.notifications.agent.title": "Агент",
   "settings.general.notifications.agent.description":
     "Показувати системне сповіщення, коли агент завершує роботу або потребує уваги",
@@ -1136,14 +1045,12 @@ export const dict = {
   "settings.general.notifications.permissions.description": "Показувати системне сповіщення, коли потрібен дозвіл",
   "settings.general.notifications.errors.title": "Помилки",
   "settings.general.notifications.errors.description": "Показувати системне сповіщення, коли виникає помилка",
-
   "settings.general.sounds.agent.title": "Агент",
   "settings.general.sounds.agent.description": "Відтворювати звук, коли агент завершує роботу або потребує уваги",
   "settings.general.sounds.permissions.title": "Дозволи",
   "settings.general.sounds.permissions.description": "Відтворювати звук, коли потрібен дозвіл",
   "settings.general.sounds.errors.title": "Помилки",
   "settings.general.sounds.errors.description": "Відтворювати звук, коли виникає помилка",
-
   "settings.shortcuts.title": "Клавіатурні скорочення",
   "settings.shortcuts.reset.button": "Відновити стандартні",
   "settings.shortcuts.reset.toast.title": "Клавіатурні скорочення відновлено",
@@ -1154,14 +1061,12 @@ export const dict = {
   "settings.shortcuts.pressKeys": "Натисніть клавіші",
   "settings.shortcuts.search.placeholder": "Пошук клавіатурних скорочень",
   "settings.shortcuts.search.empty": "Клавіатурних скорочень не знайдено",
-
   "settings.shortcuts.group.general": "Загальні",
   "settings.shortcuts.group.session": "Сесія",
   "settings.shortcuts.group.navigation": "Навігація",
   "settings.shortcuts.group.modelAndAgent": "Модель та агент",
   "settings.shortcuts.group.terminal": "Термінал",
   "settings.shortcuts.group.prompt": "Запит",
-
   "settings.providers.title": "Провайдери",
   "settings.providers.description": "Налаштування провайдерів будуть доступні тут.",
   "settings.providers.section.connected": "Підключені провайдери",
@@ -1181,16 +1086,13 @@ export const dict = {
   "settings.commands.description": "Налаштування команд будуть доступні тут.",
   "settings.mcp.title": "MCP",
   "settings.mcp.description": "Налаштування MCP будуть доступні тут.",
-
   "settings.permissions.title": "Дозволи",
   "settings.permissions.description": "Керуйте тим, які інструменти сервер може використовувати за замовчуванням.",
   "settings.permissions.section.tools": "Інструменти",
   "settings.permissions.toast.updateFailed.title": "Не вдалося оновити дозволи",
-
   "settings.permissions.action.allow": "Дозволити",
   "settings.permissions.action.ask": "Запитувати",
   "settings.permissions.action.deny": "Заборонити",
-
   "settings.permissions.tool.read.title": "Читання",
   "settings.permissions.tool.read.description": "Читання файлу (відповідає шляху файлу)",
   "settings.permissions.tool.edit.title": "Редагування",
@@ -1220,12 +1122,10 @@ export const dict = {
   "settings.permissions.tool.doom_loop.title": "Цикл приреченості",
   "settings.permissions.tool.doom_loop.description":
     "Виявлення повторюваних викликів інструментів з однаковими вхідними даними",
-
   "session.delete.failed.title": "Не вдалося видалити сесію",
   "session.delete.title": "Видалити сесію",
   "session.delete.confirm": 'Видалити сесію "{{name}}"?',
   "session.delete.button": "Видалити сесію",
-
   "workspace.new": "Нова робоча область",
   "workspace.type.local": "локальна",
   "workspace.type.sandbox": "пісочниця",

@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "Bagikan umpan balik",
   "desktop.menu.reportBug": "Laporkan bug",
   "desktop.menu.ariaLabel": "Menu OpenCode",
-
   "desktop.updater.dialog.checkFailed.message": "Pemeriksaan pembaruan gagal.",
   "desktop.updater.dialog.checkFailed.title": "Kesalahan pembaruan",
   "desktop.updater.dialog.upToDate.message": "Versi Anda sudah terbaru.",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "Pembaruan siap",
   "desktop.updater.dialog.restart": "Mulai ulang",
   "desktop.updater.dialog.later": "Nanti",
-
   "desktop.recovery.action.relaunch": "Luncurkan ulang",
   "desktop.recovery.action.exportLogs": "Ekspor log",
   "desktop.recovery.action.keepWaiting": "Tetap tunggu",
@@ -65,14 +63,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "Jendela: {{window}}\nURL: {{url}}\nKesalahan: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "Jendela: {{window}}\nAlasan: {{reason}}\nKode: {{code}}",
   "desktop.recovery.unknown": "<tidak diketahui>",
-
   "desktop.dialog.chooseFolder": "Pilih folder",
   "desktop.dialog.chooseFile": "Pilih berkas",
   "desktop.dialog.saveFile": "Simpan berkas",
   "desktop.dialog.files": "Berkas",
-
   "desktop.server.local": "Server lokal",
-
   "desktop.wsl.error.windowsOnly": "WSL hanya tersedia di Windows",
   "desktop.wsl.error.unavailable": "WSL tidak tersedia",
   "desktop.wsl.error.listInstalled": "Gagal menampilkan daftar distro WSL yang terinstal",
@@ -95,10 +90,8 @@ export const dict = {
     "Pemeriksaan kesehatan sidecar untuk {{distro}} kehabisan waktu setelah {{timeout}}ms",
   "desktop.wsl.error.commandTimeout": "{{command}} {{args}} kehabisan waktu setelah {{timeout}}ms",
   "desktop.wsl.error.failedPort": "Gagal mendapatkan porta",
-
   "desktop.picker.error.notSelected": "Berkas tidak dipilih melalui pemilih",
   "desktop.picker.error.sizeLimit": "Lampiran yang dipilih melebihi batas {{limit}} MB",
-
   "command.category.suggested": "Disarankan",
   "command.category.view": "Tampilan",
   "command.category.project": "Proyek",
@@ -117,11 +110,9 @@ export const dict = {
   "command.category.workspace": "Ruang kerja",
   "command.category.settings": "Pengaturan",
   "command.logs.export": "Ekspor log",
-
   "theme.scheme.system": "Sistem",
   "theme.scheme.light": "Terang",
   "theme.scheme.dark": "Gelap",
-
   "command.sidebar.toggle": "Alihkan panel samping",
   "command.project.open": "Buka proyek",
   "command.project.previous": "Proyek sebelumnya",
@@ -135,17 +126,13 @@ export const dict = {
   "command.session.previous.unseen": "Sesi sebelumnya yang belum dibaca",
   "command.session.next.unseen": "Sesi berikutnya yang belum dibaca",
   "command.session.archive": "Arsipkan sesi",
-
   "command.palette": "Palet perintah",
-
   "command.theme.cycle": "Ganti tema",
   "command.theme.set": "Gunakan tema: {{theme}}",
   "command.theme.scheme.cycle": "Ganti skema warna",
   "command.theme.scheme.set": "Gunakan skema warna: {{scheme}}",
-
   "command.language.cycle": "Ganti bahasa",
   "command.language.set": "Gunakan bahasa: {{language}}",
-
   "command.session.new": "Sesi baru",
   "command.file.open": "Buka berkas",
   "command.tab.close": "Tutup tab",
@@ -192,13 +179,11 @@ export const dict = {
   "command.session.share.description": "Bagikan sesi ini dan salin URL ke papan klip",
   "command.session.unshare": "Hentikan berbagi",
   "command.session.unshare.description": "Hentikan berbagi sesi ini",
-
   "palette.search.placeholder": "Cari berkas, perintah, dan sesi",
   "palette.search.placeholder.home": "Cari perintah dan sesi",
   "palette.empty": "Hasil tidak ditemukan",
   "palette.group.commands": "Perintah",
   "palette.group.files": "Berkas",
-
   "dialog.provider.search.placeholder": "Cari penyedia",
   "dialog.provider.empty": "Penyedia tidak ditemukan",
   "dialog.provider.group.popular": "Populer",
@@ -207,27 +192,22 @@ export const dict = {
   "dialog.provider.tag.recommended": "Direkomendasikan",
   "dialog.provider.opencode.note": "Model pilihan, termasuk Claude, GPT, Gemini, dan lainnya",
   "dialog.provider.opencode.tagline": "Model andal yang dioptimalkan",
-  "dialog.provider.opencodeGo.tagline": "Langganan terjangkau untuk semua orang",
   "dialog.provider.anthropic.note": "Akses langsung ke model Claude, termasuk Pro dan Max",
   "dialog.provider.copilot.note": "Model AI untuk bantuan pengodean melalui GitHub Copilot",
   "dialog.provider.openai.note": "Model GPT untuk tugas AI umum yang cepat dan mumpuni",
   "dialog.provider.google.note": "Model Gemini untuk respons cepat dan terstruktur",
   "dialog.provider.openrouter.note": "Akses semua model yang didukung dari satu penyedia",
   "dialog.provider.vercel.note": "Akses terpadu ke model AI dengan perutean cerdas",
-
   "dialog.model.select.title": "Pilih model",
   "dialog.model.search.placeholder": "Cari model",
   "dialog.model.empty": "Tidak ada hasil model",
   "dialog.model.manage": "Kelola model",
   "dialog.model.manage.description": "Sesuaikan model mana yang muncul di pemilih model.",
   "dialog.model.manage.provider.toggle": "Alihkan semua model {{provider}}",
-
   "dialog.model.unpaid.freeModels.title": "Model gratis disediakan oleh OpenCode",
   "dialog.model.unpaid.addMore.title": "Tambahkan lebih banyak model dari penyedia populer",
   "dialog.model.unpaid.viewMoreProviders": "Lihat 70+ penyedia lainnya",
-
   "dialog.provider.viewAll": "Tampilkan lebih banyak penyedia",
-
   "provider.connect.title": "Hubungkan {{provider}}",
   "provider.connect.title.anthropicProMax": "Masuk dengan Claude Pro/Max",
   "provider.connect.selectMethod": "Pilih metode masuk untuk {{provider}}.",
@@ -242,13 +222,6 @@ export const dict = {
   "provider.connect.apiKey.label": "Kunci API {{provider}}",
   "provider.connect.apiKey.placeholder": "Kunci API",
   "provider.connect.apiKey.required": "Kunci API diperlukan",
-  "provider.connect.opencodeZen.line1":
-    "OpenCode Zen memberi Anda akses ke serangkaian model andal yang dioptimalkan untuk agen pengodean.",
-  "provider.connect.opencodeZen.line2":
-    "Dengan satu kunci API, Anda akan mendapatkan akses ke model seperti Claude, GPT, Gemini, GLM dan lainnya.",
-  "provider.connect.opencodeZen.visit.prefix": "Kunjungi ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " untuk mendapatkan kunci API Anda.",
   "provider.connect.oauth.code.visit.prefix": "Kunjungi ",
   "provider.connect.oauth.code.visit.link": "tautan ini",
   "provider.connect.oauth.code.visit.suffix":
@@ -264,7 +237,6 @@ export const dict = {
   "provider.connect.oauth.auto.confirmationCode": "Kode konfirmasi",
   "provider.connect.toast.connected.title": "{{provider}} terhubung",
   "provider.connect.toast.connected.description": "Model {{provider}} sekarang tersedia untuk digunakan.",
-
   "provider.custom.title": "Penyedia kustom",
   "provider.custom.unavailable": "Penyedia kustom tidak tersedia di server ini",
   "provider.custom.description.prefix": "Konfigurasikan penyedia yang kompatibel dengan OpenAI. Lihat ",
@@ -302,10 +274,8 @@ export const dict = {
   "provider.custom.error.baseURL.format": "Harus dimulai dengan http:// atau https://",
   "provider.custom.error.required": "Diperlukan",
   "provider.custom.error.duplicate": "Duplikat",
-
   "provider.disconnect.toast.disconnected.title": "{{provider}} terputus",
   "provider.disconnect.toast.disconnected.description": "Model {{provider}} tidak lagi tersedia.",
-
   "model.tag.free": "Gratis",
   "model.tag.latest": "Terbaru",
   "model.provider.anthropic": "Anthropic",
@@ -327,7 +297,6 @@ export const dict = {
   "model.tooltip.reasoning.allowed": "Mengizinkan penalaran",
   "model.tooltip.reasoning.none": "Tanpa penalaran",
   "model.tooltip.context": "Batas konteks {{limit}}",
-
   "common.search.placeholder": "Cari",
   "common.goBack": "Navigasi mundur",
   "common.goForward": "Navigasi maju",
@@ -344,7 +313,6 @@ export const dict = {
   "common.saving": "Menyimpan...",
   "common.default": "Bawaan",
   "common.attachment": "lampiran",
-
   "prompt.placeholder.shell": "Masukkan perintah shell... {{example}}",
   "prompt.placeholder.normal": 'Tanyakan apa saja... "{{example}}"',
   "prompt.placeholder.simple": "Tanyakan apa saja...",
@@ -355,7 +323,6 @@ export const dict = {
   "prompt.mode.shell.exit": "esc untuk keluar",
   "session.child.promptDisabled": "Sesi subagen tidak dapat diberi prompt.",
   "session.child.backToParent": "Kembali ke sesi utama.",
-
   "prompt.example.1": "Perbaiki TODO di basis kode",
   "prompt.example.2": "Apa tumpukan teknologi proyek ini?",
   "prompt.example.3": "Perbaiki tes yang rusak",
@@ -381,7 +348,6 @@ export const dict = {
   "prompt.example.23": "Tambahkan paginasi ke daftar ini",
   "prompt.example.24": "Buat perintah CLI untuk...",
   "prompt.example.25": "Bagaimana cara kerja variabel lingkungan di sini?",
-
   "prompt.popover.emptyResults": "Tidak ada hasil yang cocok",
   "prompt.popover.emptyCommands": "Tidak ada perintah yang cocok",
   "prompt.dropzone.label": "Letakkan gambar, PDF, atau berkas teks di sini",
@@ -402,7 +368,6 @@ export const dict = {
   "prompt.attachment.remove": "Hapus lampiran",
   "prompt.action.send": "Kirim",
   "prompt.action.stop": "Hentikan",
-
   "prompt.toast.pasteUnsupported.title": "Lampiran tidak didukung",
   "prompt.toast.pasteUnsupported.description": "Hanya gambar, PDF, atau berkas teks yang dapat dilampirkan di sini.",
   "prompt.toast.attachmentDuplicate.title": "Berkas ini sudah diunggah",
@@ -414,22 +379,17 @@ export const dict = {
   "prompt.toast.commandSendFailed.title": "Gagal mengirim perintah",
   "prompt.toast.promptSendFailed.title": "Gagal mengirim prompt",
   "prompt.toast.promptSendFailed.description": "Tidak dapat mengambil sesi",
-
   "dialog.mcp.title": "MCP",
   "dialog.mcp.description": "{{enabled}} dari {{total}} diaktifkan",
   "dialog.mcp.empty": "Tidak ada MCP yang dikonfigurasi",
-
   "dialog.lsp.empty": "LSP terdeteksi otomatis dari jenis berkas",
   "dialog.plugins.empty": "Plugin dikonfigurasi di opencode.json",
-
   "mcp.status.connected": "terhubung",
   "mcp.status.failed": "gagal",
   "mcp.status.needs_auth": "perlu autentikasi",
   "mcp.status.disabled": "nonaktif",
   "mcp.auth.clickToAuthenticate": "Klik untuk mengautentikasi",
-
   "dialog.fork.empty": "Tidak ada pesan yang dapat dicabangkan",
-
   "dialog.directory.search.placeholder": "Cari folder",
   "dialog.directory.empty": "Folder tidak ditemukan",
   "dialog.directory.action.selectFile": "Pilih berkas",
@@ -437,11 +397,9 @@ export const dict = {
   "dialog.directory.root": "Akar",
   "dialog.directory.parent": "Induk",
   "dialog.directory.readError": "Tidak dapat membaca folder ini",
-
   "app.server.unreachable": "Tidak dapat menjangkau {{server}}",
   "app.server.retrying": "Mencoba ulang secara otomatis...",
   "app.server.otherServers": "Server lainnya",
-
   "dialog.server.title": "Server",
   "dialog.server.description": "Ganti server OpenCode mana yang terhubung dengan aplikasi ini.",
   "dialog.server.search.placeholder": "Cari server",
@@ -466,7 +424,6 @@ export const dict = {
   "dialog.server.default.set": "Tetapkan server saat ini sebagai bawaan",
   "dialog.server.default.clear": "Hapus",
   "dialog.server.action.remove": "Hapus server",
-
   "dialog.server.menu.edit": "Sunting",
   "dialog.server.menu.default": "Tetapkan sebagai bawaan",
   "dialog.server.menu.defaultRemove": "Hapus bawaan",
@@ -542,7 +499,6 @@ export const dict = {
   "wsl.onboarding.desktopVersion": "desktop {{version}}",
   "wsl.onboarding.versionMismatch": "Versi terinstal tidak cocok dengan versi aplikasi desktop.",
   "wsl.onboarding.adding": "Menambahkan...",
-
   "help.tabs.toast.ariaLabel": "Memperkenalkan Tab. Atur pekerjaan dan sesi aktif Anda dengan tab",
   "help.tabs.toast.dismiss": "Tutup informasi tentang Tab",
   "help.tabs.title": "Memperkenalkan Tab",
@@ -558,7 +514,6 @@ export const dict = {
   "help.tabs.worktrees":
     "Desain baru belum mendukung Git Worktrees, tetapi dukungan tersebut akan segera hadir. Jika Anda ingin tetap menggunakan tata letak sebelumnya, Anda dapat beralih antartata letak di Pengaturan. Perlu diingat bahwa tata letak baru akan menjadi permanen dalam beberapa minggu.",
   "server.row.noUsername": "tanpa nama pengguna",
-
   "dialog.project.edit.title": "Sunting proyek",
   "dialog.project.edit.name": "Nama",
   "dialog.project.edit.icon": "Ikon",
@@ -570,12 +525,10 @@ export const dict = {
   "dialog.project.edit.worktree.startup": "Skrip awal ruang kerja",
   "dialog.project.edit.worktree.startup.description": "Berjalan setelah membuat ruang kerja (worktree) baru.",
   "dialog.project.edit.worktree.startup.placeholder": "mis. bun install",
-
   "dialog.releaseNotes.action.getStarted": "Mulai",
   "dialog.releaseNotes.action.next": "Berikutnya",
   "dialog.releaseNotes.action.hideFuture": "Jangan tampilkan ini di masa depan",
   "dialog.releaseNotes.media.alt": "Pratinjau rilis",
-
   "context.breakdown.title": "Rincian Konteks",
   "context.breakdown.note": 'Perkiraan rincian token masukan. "Lainnya" mencakup definisi alat dan beban tambahan.',
   "context.breakdown.system": "Sistem",
@@ -583,10 +536,8 @@ export const dict = {
   "context.breakdown.assistant": "Asisten",
   "context.breakdown.tool": "Panggilan Alat",
   "context.breakdown.other": "Lainnya",
-
   "context.systemPrompt.title": "Prompt Sistem",
   "context.rawMessages.title": "Pesan mentah",
-
   "context.stats.session": "Sesi",
   "context.stats.messages": "Pesan",
   "context.stats.provider": "Penyedia",
@@ -603,13 +554,11 @@ export const dict = {
   "context.stats.totalCost": "Total Biaya",
   "context.stats.sessionCreated": "Sesi Dibuat",
   "context.stats.lastActivity": "Aktivitas Terakhir",
-
   "context.usage.tokens": "Token",
   "context.usage.usage": "Penggunaan",
   "context.usage.cost": "Biaya",
   "context.usage.clickToView": "Klik untuk melihat konteks",
   "context.usage.view": "Lihat penggunaan konteks",
-
   "language.en": "English",
   "language.zh": "简体中文",
   "language.zht": "繁體中文",
@@ -630,48 +579,37 @@ export const dict = {
   "language.tr": "Türkçe",
   "toast.language.title": "Bahasa",
   "toast.language.description": "Beralih ke {{language}}",
-
   "toast.theme.title": "Tema diganti",
   "toast.scheme.title": "Skema warna",
-
   "toast.workspace.enabled.title": "Ruang kerja diaktifkan",
   "toast.workspace.enabled.description": "Beberapa worktree sekarang ditampilkan di panel samping",
   "toast.workspace.disabled.title": "Ruang kerja dinonaktifkan",
   "toast.workspace.disabled.description": "Hanya worktree utama yang ditampilkan di panel samping",
-
   "toast.permissions.autoaccept.on.title": "Menerima izin secara otomatis",
   "toast.permissions.autoaccept.on.description": "Permintaan izin akan disetujui secara otomatis",
   "toast.permissions.autoaccept.off.title": "Berhenti menerima izin otomatis",
   "toast.permissions.autoaccept.off.description": "Permintaan izin akan memerlukan persetujuan",
-
   "toast.model.none.title": "Tidak ada model dipilih",
   "toast.model.none.description": "Hubungkan penyedia untuk meringkas sesi ini",
-
   "toast.file.loadFailed.title": "Gagal memuat berkas",
   "toast.file.listFailed.title": "Gagal mendaftar berkas",
-
   "toast.context.noLineSelection.title": "Tidak ada pilihan baris",
   "toast.context.noLineSelection.description": "Pilih rentang baris di tab berkas terlebih dahulu.",
-
   "toast.session.share.copyFailed.title": "Gagal menyalin URL ke papan klip",
   "toast.session.share.success.title": "Sesi dibagikan",
   "toast.session.share.success.description": "URL berbagi disalin ke papan klip!",
   "toast.session.share.failed.title": "Gagal membagikan sesi",
   "toast.session.share.failed.description": "Terjadi kesalahan saat membagikan sesi",
-
   "toast.session.unshare.success.title": "Berbagi sesi dihentikan",
   "toast.session.unshare.success.description": "Berbagi sesi berhasil dihentikan!",
   "toast.session.unshare.failed.title": "Gagal menghentikan berbagi sesi",
   "toast.session.unshare.failed.description": "Terjadi kesalahan saat menghentikan berbagi sesi",
-
   "toast.session.listFailed.title": "Gagal memuat sesi untuk {{project}}",
   "toast.project.reloadFailed.title": "Gagal memuat ulang {{project}}",
-
   "toast.update.title": "Pembaruan tersedia",
   "toast.update.description": "Versi baru OpenCode ({{version}}) sekarang tersedia untuk diinstal.",
   "toast.update.action.installRestart": "Instal dan mulai ulang",
   "toast.update.action.notYet": "Nanti saja",
-
   "error.page.title": "Terjadi kesalahan",
   "error.page.description": "Terjadi kesalahan saat memuat aplikasi.",
   "error.page.description.localServerStartup": "Terjadi kesalahan saat memulai server lokal.",
@@ -687,10 +625,8 @@ export const dict = {
   "error.page.report.prefix": "Harap laporkan kesalahan ini ke tim OpenCode",
   "error.page.report.discord": "di Discord",
   "error.page.version": "Versi: {{version}}",
-
   "error.dev.rootNotFound":
     "Elemen root tidak ditemukan. Apakah Anda lupa menambahkannya ke index.html? Atau mungkin atribut id salah eja?",
-
   "error.serverSync.connectFailed": "Tidak dapat terhubung ke server. Apakah ada server yang berjalan di `{{url}}`?",
   "error.serverSDK.noServerAvailable": "Tidak ada server tersedia",
   "error.serverSDK.serverNotAvailable": "Server tidak tersedia",
@@ -699,7 +635,6 @@ export const dict = {
   "error.childStore.persistedProjectIconCreateFailed": "Gagal membuat ikon proyek persisten",
   "error.childStore.storeCreateFailed": "Gagal membuat penyimpanan",
   "directory.error.invalidUrl": "Direktori tidak valid di URL.",
-
   "error.chain.unknown": "Kesalahan tidak diketahui",
   "error.server.invalidConfiguration": "Konfigurasi tidak valid",
   "error.chain.causedBy": "Disebabkan oleh:",
@@ -721,17 +656,14 @@ export const dict = {
   "error.chain.configFrontmatterError": "Gagal mengurai frontmatter di {{path}}:\n{{message}}",
   "error.chain.configInvalid": "Berkas konfigurasi di {{path}} tidak valid",
   "error.chain.configInvalidWithMessage": "Berkas konfigurasi di {{path}} tidak valid: {{message}}",
-
   "notification.permission.title": "Izin diperlukan",
   "notification.permission.description": "{{sessionTitle}} di {{projectName}} memerlukan izin",
   "notification.question.title": "Pertanyaan",
   "notification.question.description": "{{sessionTitle}} di {{projectName}} memiliki pertanyaan",
   "notification.action.goToSession": "Pergi ke sesi",
-
   "notification.session.responseReady.title": "Respons siap",
   "notification.session.error.title": "Kesalahan sesi",
   "notification.session.error.fallbackDescription": "Terjadi kesalahan",
-
   "home.recentProjects": "Proyek terbaru",
   "home.empty.title": "Tidak ada proyek terbaru",
   "home.empty.description": "Mulai dengan membuka proyek lokal",
@@ -752,7 +684,6 @@ export const dict = {
   "home.sessions.group.older": "Lebih lama",
   "home.providerTip":
     "Hubungkan ke 75+ penyedia untuk menggunakan model lain, termasuk Claude, GPT, Gemini, dan lainnya",
-
   "session.tab.session": "Sesi",
   "session.tab.review": "Tinjauan",
   "session.tab.context": "Konteks",
@@ -777,18 +708,15 @@ export const dict = {
   "session.review.noChanges": "Tidak ada perubahan",
   "session.review.noUncommittedChanges": "Belum ada perubahan yang belum dikomit",
   "session.review.noBranchChanges": "Belum ada perubahan cabang",
-
   "session.files.selectToOpen": "Pilih berkas untuk dibuka",
   "session.files.all": "Semua berkas",
   "session.files.empty": "Tidak ada berkas",
   "session.files.binaryContent": "Berkas biner (konten tidak dapat ditampilkan)",
-
   "session.messages.renderEarlier": "Tampilkan pesan sebelumnya",
   "session.messages.loadingEarlier": "Memuat pesan sebelumnya...",
   "session.messages.loadEarlier": "Muat pesan sebelumnya",
   "session.messages.loading": "Memuat pesan...",
   "session.messages.jumpToLatest": "Lompat ke pesan terbaru",
-
   "session.context.addToContext": "Tambahkan {{selection}} ke konteks",
   "session.todo.title": "Tugas",
   "session.todo.collapse": "Ciutkan",
@@ -810,7 +738,6 @@ export const dict = {
   "session.revertDock.collapse": "Ciutkan pesan yang diurungkan",
   "session.revertDock.expand": "Bentangkan pesan yang diurungkan",
   "session.revertDock.restore": "Pulihkan pesan",
-
   "session.new.title": "Buat apa saja",
   "session.new.project.new": "Proyek baru",
   "session.new.project.search": "Cari proyek",
@@ -824,7 +751,6 @@ export const dict = {
   "session.new.workspace.existing": "Ruang kerja…",
   "session.new.git.none": "Tanpa Git",
   "session.new.lastModified": "Terakhir diubah",
-
   "session.header.search.placeholder": "Cari {{project}}",
   "session.header.searchFiles": "Cari berkas",
   "session.header.openIn": "Buka di",
@@ -851,7 +777,6 @@ export const dict = {
   "session.header.open.app.androidStudio": "Android Studio",
   "session.header.open.app.sublimeText": "Sublime Text",
   "session.header.open.app.powershell": "PowerShell",
-
   "status.popover.trigger": "Status",
   "status.popover.ariaLabel": "Konfigurasi server",
   "status.popover.tab.servers": "Server",
@@ -859,7 +784,6 @@ export const dict = {
   "status.popover.tab.lsp": "LSP",
   "status.popover.tab.plugins": "Plugin",
   "status.popover.action.manageServers": "Kelola server",
-
   "session.share.popover.title": "Publikasikan di web",
   "session.share.popover.description.shared": "Sesi ini publik di web. Siapa pun dengan tautan dapat mengaksesnya.",
   "session.share.popover.description.unshared":
@@ -872,10 +796,8 @@ export const dict = {
   "session.share.action.view": "Lihat",
   "session.share.copy.copied": "Tersalin",
   "session.share.copy.copyLink": "Salin tautan",
-
   "lsp.tooltip.none": "Tidak ada server LSP",
   "lsp.label.connected": "{{count}} LSP",
-
   "prompt.loading": "Memuat prompt...",
   "terminal.loading": "Memuat terminal...",
   "terminal.title": "Terminal",
@@ -889,7 +811,6 @@ export const dict = {
   "terminal.connectTicket.statusError": "Tiket koneksi PTY gagal dengan status {{status}}",
   "titlebar.update": "Perbarui",
   "titlebar.updateVersion": "Perbarui {{version}}",
-
   "common.closeTab": "Tutup tab",
   "common.dismiss": "Tutup",
   "common.moreCountSuffix": " (+{{count}} lainnya)",
@@ -919,12 +840,10 @@ export const dict = {
   "common.key.pageDown": "Page Down",
   "common.key.insert": "Insert",
   "common.unknown": "tidak diketahui",
-
   "common.time.justNow": "Baru saja",
   "common.time.minutesAgo.short": "{{count}}m lalu",
   "common.time.hoursAgo.short": "{{count}}j lalu",
   "common.time.daysAgo.short": "{{count}}h lalu",
-
   "sidebar.menu.toggle": "Alihkan menu",
   "sidebar.nav.projectsAndSessions": "Proyek dan sesi",
   "sidebar.settings": "Pengaturan",
@@ -940,7 +859,6 @@ export const dict = {
   "sidebar.project.clearNotifications": "Hapus notifikasi",
   "sidebar.empty.title": "Tidak ada proyek terbuka",
   "sidebar.empty.description": "Buka proyek untuk memulai",
-
   "debugBar.ariaLabel": "Diagnostik kinerja pengembangan",
   "debugBar.na": "n/a",
   "debugBar.nav.label": "NAV",
@@ -971,9 +889,7 @@ export const dict = {
   "debugBar.direction.tip": "Paksa arah tata letak seluruh aplikasi tanpa mengubah bahasa yang dipilih",
   "debugBar.direction.ltr": "LTR",
   "debugBar.direction.rtl": "RTL",
-
   "app.name.desktop": "OpenCode Desktop",
-
   "settings.section.desktop": "Desktop",
   "settings.section.server": "Server",
   "settings.tab.general": "Umum",
@@ -981,7 +897,6 @@ export const dict = {
   "settings.desktop.section.wsl": "WSL",
   "settings.desktop.wsl.title": "Integrasi WSL",
   "settings.desktop.wsl.description": "Jalankan server OpenCode di dalam WSL di Windows.",
-
   "settings.general.section.appearance": "Tampilan",
   "settings.general.section.advanced": "Lanjutan",
   "settings.general.section.notifications": "Notifikasi sistem",
@@ -989,7 +904,6 @@ export const dict = {
   "settings.general.section.sounds": "Efek suara",
   "settings.general.section.feed": "Umpan",
   "settings.general.section.display": "Tampilan",
-
   "settings.general.row.language.title": "Bahasa",
   "settings.general.row.language.description": "Ubah bahasa tampilan untuk OpenCode",
   "settings.general.row.shell.title": "Shell terminal",
@@ -1047,15 +961,12 @@ export const dict = {
   "settings.general.row.pinchZoom.title": "Cubit untuk zum",
   "settings.general.row.pinchZoom.description":
     "Izinkan gerakan cubit pada trackpad dan Ctrl-gulir untuk melakukan zum",
-
   "settings.general.row.wayland.title": "Gunakan Wayland asli",
   "settings.general.row.wayland.description": "Nonaktifkan sistem cadangan X11 di Wayland. Memerlukan mulai ulang.",
   "settings.general.row.wayland.tooltip":
     "Di Linux dengan monitor berlaju penyegaran berbeda, Wayland asli bisa lebih stabil.",
-
   "settings.general.row.releaseNotes.title": "Catatan rilis",
   "settings.general.row.releaseNotes.description": "Tampilkan pop-up Apa yang Baru setelah pembaruan",
-
   "settings.updates.row.startup.title": "Periksa pembaruan saat dimulai",
   "settings.updates.row.startup.description": "Secara otomatis memeriksa pembaruan saat OpenCode diluncurkan",
   "settings.updates.row.check.title": "Periksa pembaruan",
@@ -1112,7 +1023,6 @@ export const dict = {
   "sound.option.yup04": "Yup 04",
   "sound.option.yup05": "Yup 05",
   "sound.option.yup06": "Yup 06",
-
   "settings.general.notifications.agent.title": "Agen",
   "settings.general.notifications.agent.description":
     "Tampilkan notifikasi sistem saat agen selesai atau memerlukan perhatian",
@@ -1120,14 +1030,12 @@ export const dict = {
   "settings.general.notifications.permissions.description": "Tampilkan notifikasi sistem saat izin diperlukan",
   "settings.general.notifications.errors.title": "Kesalahan",
   "settings.general.notifications.errors.description": "Tampilkan notifikasi sistem saat terjadi kesalahan",
-
   "settings.general.sounds.agent.title": "Agen",
   "settings.general.sounds.agent.description": "Mainkan suara saat agen selesai atau memerlukan perhatian",
   "settings.general.sounds.permissions.title": "Izin",
   "settings.general.sounds.permissions.description": "Mainkan suara saat izin diperlukan",
   "settings.general.sounds.errors.title": "Kesalahan",
   "settings.general.sounds.errors.description": "Mainkan suara saat terjadi kesalahan",
-
   "settings.shortcuts.title": "Pintasan keyboard",
   "settings.shortcuts.reset.button": "Atur ulang ke bawaan",
   "settings.shortcuts.reset.toast.title": "Pintasan diatur ulang",
@@ -1138,14 +1046,12 @@ export const dict = {
   "settings.shortcuts.pressKeys": "Tekan tombol",
   "settings.shortcuts.search.placeholder": "Cari pintasan",
   "settings.shortcuts.search.empty": "Tidak ada pintasan ditemukan",
-
   "settings.shortcuts.group.general": "Umum",
   "settings.shortcuts.group.session": "Sesi",
   "settings.shortcuts.group.navigation": "Navigasi",
   "settings.shortcuts.group.modelAndAgent": "Model dan agen",
   "settings.shortcuts.group.terminal": "Terminal",
   "settings.shortcuts.group.prompt": "Prompt",
-
   "settings.providers.title": "Penyedia",
   "settings.providers.description": "Pengaturan penyedia akan dapat dikonfigurasi di sini.",
   "settings.providers.section.connected": "Penyedia terhubung",
@@ -1165,16 +1071,13 @@ export const dict = {
   "settings.commands.description": "Pengaturan perintah akan dapat dikonfigurasi di sini.",
   "settings.mcp.title": "MCP",
   "settings.mcp.description": "Pengaturan MCP akan dapat dikonfigurasi di sini.",
-
   "settings.permissions.title": "Izin",
   "settings.permissions.description": "Kontrol alat apa yang dapat digunakan server secara bawaan.",
   "settings.permissions.section.tools": "Alat",
   "settings.permissions.toast.updateFailed.title": "Gagal memperbarui izin",
-
   "settings.permissions.action.allow": "Izinkan",
   "settings.permissions.action.ask": "Tanya",
   "settings.permissions.action.deny": "Tolak",
-
   "settings.permissions.tool.read.title": "Baca",
   "settings.permissions.tool.read.description": "Membaca berkas (mencocokkan jalur berkas)",
   "settings.permissions.tool.edit.title": "Sunting",
@@ -1203,12 +1106,10 @@ export const dict = {
   "settings.permissions.tool.external_directory.description": "Akses berkas di luar direktori proyek",
   "settings.permissions.tool.doom_loop.title": "Doom Loop",
   "settings.permissions.tool.doom_loop.description": "Deteksi panggilan alat berulang dengan masukan yang identik",
-
   "session.delete.failed.title": "Gagal menghapus sesi",
   "session.delete.title": "Hapus sesi",
   "session.delete.confirm": 'Hapus sesi "{{name}}"?',
   "session.delete.button": "Hapus sesi",
-
   "workspace.new": "Ruang kerja baru",
   "workspace.type.local": "lokal",
   "workspace.type.sandbox": "sandbox",

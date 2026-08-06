@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "Enviar comentários",
   "desktop.menu.reportBug": "Relatar um bug",
   "desktop.menu.ariaLabel": "Menu do OpenCode",
-
   "desktop.updater.dialog.checkFailed.message": "Falha ao verificar atualizações.",
   "desktop.updater.dialog.checkFailed.title": "Erro de atualização",
   "desktop.updater.dialog.upToDate.message": "Você está em dia.",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "Atualização pronta",
   "desktop.updater.dialog.restart": "Reiniciar",
   "desktop.updater.dialog.later": "Mais tarde",
-
   "desktop.recovery.action.relaunch": "Reabrir",
   "desktop.recovery.action.exportLogs": "Exportar logs",
   "desktop.recovery.action.keepWaiting": "Continuar aguardando",
@@ -65,13 +63,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "Janela: {{window}}\nURL: {{url}}\nErro: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "Janela: {{window}}\nMotivo: {{reason}}\nCódigo: {{code}}",
   "desktop.recovery.unknown": "<desconhecido>",
-
   "desktop.dialog.chooseFolder": "Escolher uma pasta",
   "desktop.dialog.chooseFile": "Escolher um arquivo",
   "desktop.dialog.saveFile": "Salvar arquivo",
   "desktop.dialog.files": "Arquivos",
   "desktop.server.local": "Servidor local",
-
   "desktop.wsl.error.windowsOnly": "O WSL está disponível somente no Windows",
   "desktop.wsl.error.unavailable": "O WSL está indisponível",
   "desktop.wsl.error.listInstalled": "Falha ao listar as distribuições WSL instaladas",
@@ -95,10 +91,8 @@ export const dict = {
     "O tempo limite da verificação de integridade do sidecar de {{distro}} foi excedido após {{timeout}}ms",
   "desktop.wsl.error.commandTimeout": "O tempo limite de {{command}} {{args}} foi excedido após {{timeout}}ms",
   "desktop.wsl.error.failedPort": "Falha ao obter a porta",
-
   "desktop.picker.error.notSelected": "O arquivo não foi selecionado pelo seletor",
   "desktop.picker.error.sizeLimit": "Os anexos selecionados excedem o limite de {{limit}} MB",
-
   "command.category.suggested": "Sugerido",
   "command.category.view": "Visualizar",
   "command.category.project": "Projeto",
@@ -199,7 +193,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "Recomendado",
   "dialog.provider.opencode.note": "Modelos selecionados incluindo Claude, GPT, Gemini e mais",
   "dialog.provider.opencode.tagline": "Modelos otimizados e confiáveis",
-  "dialog.provider.opencodeGo.tagline": "Assinatura de baixo custo para todos",
   "dialog.provider.anthropic.note": "Acesso direto aos modelos Claude, incluindo Pro e Max",
   "dialog.provider.copilot.note": "Modelos de IA para auxílio à programação pelo GitHub Copilot",
   "dialog.provider.openai.note": "Modelos GPT rápidos e avançados para tarefas gerais de IA",
@@ -230,13 +223,6 @@ export const dict = {
   "provider.connect.apiKey.label": "Chave de API do {{provider}}",
   "provider.connect.apiKey.placeholder": "Chave de API",
   "provider.connect.apiKey.required": "A chave de API é obrigatória",
-  "provider.connect.opencodeZen.line1":
-    "OpenCode Zen oferece acesso a um conjunto selecionado de modelos confiáveis otimizados para agentes de código.",
-  "provider.connect.opencodeZen.line2":
-    "Com uma única chave de API você terá acesso a modelos como Claude, GPT, Gemini, GLM e mais.",
-  "provider.connect.opencodeZen.visit.prefix": "Visite ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " para obter sua chave de API.",
   "provider.connect.oauth.code.visit.prefix": "Visite ",
   "provider.connect.oauth.code.visit.link": "este link",
   "provider.connect.oauth.code.visit.suffix":
@@ -786,10 +772,8 @@ export const dict = {
   "terminal.connectTicket.csrfError":
     "O tíquete de conexão PTY foi rejeitado pelas verificações de origem ou CSRF. Verifique a configuração de CORS do servidor.",
   "terminal.connectTicket.statusError": "O tíquete de conexão PTY falhou com o status {{status}}",
-
   "titlebar.update": "Atualizar",
   "titlebar.updateVersion": "Atualizar {{version}}",
-
   "common.closeTab": "Fechar aba",
   "common.dismiss": "Descartar",
   "common.requestFailed": "Requisição falhou",
@@ -1079,7 +1063,6 @@ export const dict = {
   "common.time.daysAgo.short": "{{count}}d atrás",
   "settings.providers.connected.environmentDescription": "Conectado a partir de suas variáveis de ambiente",
   "settings.providers.custom.description": "Adicionar um provedor compatível com OpenAI por meio da URL base.",
-
   "app.server.unreachable": "Não foi possível conectar a {{server}}",
   "app.server.retrying": "Tentando novamente automaticamente...",
   "app.server.otherServers": "Outros servidores",

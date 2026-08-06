@@ -44,7 +44,6 @@ export const dict = {
   "desktop.menu.shareFeedback": "フィードバックを送信",
   "desktop.menu.reportBug": "バグを報告",
   "desktop.menu.ariaLabel": "OpenCodeメニュー",
-
   "desktop.updater.dialog.checkFailed.message": "アップデートを確認できませんでした。",
   "desktop.updater.dialog.checkFailed.title": "アップデートエラー",
   "desktop.updater.dialog.upToDate.message": "最新の状態です。",
@@ -53,7 +52,6 @@ export const dict = {
   "desktop.updater.dialog.ready.title": "アップデートの準備ができました",
   "desktop.updater.dialog.restart": "再起動",
   "desktop.updater.dialog.later": "後で",
-
   "desktop.recovery.action.relaunch": "再起動",
   "desktop.recovery.action.exportLogs": "ログをエクスポート",
   "desktop.recovery.action.keepWaiting": "待機を続ける",
@@ -65,13 +63,11 @@ export const dict = {
   "desktop.recovery.loadFailed.detail": "ウインドウ: {{window}}\nURL: {{url}}\nエラー: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "ウインドウ: {{window}}\n理由: {{reason}}\nコード: {{code}}",
   "desktop.recovery.unknown": "<不明>",
-
   "desktop.dialog.chooseFolder": "フォルダを選択",
   "desktop.dialog.chooseFile": "ファイルを選択",
   "desktop.dialog.saveFile": "ファイルを保存",
   "desktop.dialog.files": "ファイル",
   "desktop.server.local": "ローカルサーバー",
-
   "desktop.wsl.error.windowsOnly": "WSLはWindowsでのみ利用できます",
   "desktop.wsl.error.unavailable": "WSLを利用できません",
   "desktop.wsl.error.listInstalled": "インストール済みのWSLディストリビューションの一覧を取得できませんでした",
@@ -93,10 +89,8 @@ export const dict = {
   "desktop.wsl.error.healthTimeout": "{{distro}}のSidecarのヘルスチェックが{{timeout}}ms後にタイムアウトしました",
   "desktop.wsl.error.commandTimeout": "{{command}} {{args}}が{{timeout}}ms後にタイムアウトしました",
   "desktop.wsl.error.failedPort": "ポートを取得できませんでした",
-
   "desktop.picker.error.notSelected": "ピッカーでファイルが選択されませんでした",
   "desktop.picker.error.sizeLimit": "選択した添付ファイルが上限の{{limit}} MBを超えています",
-
   "command.category.suggested": "おすすめ",
   "command.category.view": "表示",
   "command.category.project": "プロジェクト",
@@ -197,7 +191,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "推奨",
   "dialog.provider.opencode.note": "Claude, GPT, Geminiなどを含む厳選されたモデル",
   "dialog.provider.opencode.tagline": "信頼性の高い最適化モデル",
-  "dialog.provider.opencodeGo.tagline": "すべての人に低価格のサブスクリプション",
   "dialog.provider.anthropic.note": "ProやMaxを含むClaudeモデルに直接アクセス",
   "dialog.provider.copilot.note": "GitHub Copilotを通じてコーディングを支援するAIモデル",
   "dialog.provider.openai.note": "高速で高性能な汎用AIタスク向けのGPTモデル",
@@ -228,12 +221,6 @@ export const dict = {
   "provider.connect.apiKey.label": "{{provider}} APIキー",
   "provider.connect.apiKey.placeholder": "APIキー",
   "provider.connect.apiKey.required": "APIキーが必要です",
-  "provider.connect.opencodeZen.line1":
-    "OpenCode Zenは、コーディングエージェント向けに最適化された信頼性の高いモデルへのアクセスを提供します。",
-  "provider.connect.opencodeZen.line2": "1つのAPIキーで、Claude、GPT、Gemini、GLMなどのモデルにアクセスできます。",
-  "provider.connect.opencodeZen.visit.prefix": " ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " にアクセスしてAPIキーを取得してください。",
   "provider.connect.oauth.code.visit.prefix": " ",
   "provider.connect.oauth.code.visit.link": "このリンク",
   "provider.connect.oauth.code.visit.suffix":
@@ -505,7 +492,6 @@ export const dict = {
   "wsl.onboarding.desktopVersion": "デスクトップ {{version}}",
   "wsl.onboarding.versionMismatch": "インストールされているバージョンがデスクトップアプリのバージョンと一致しません。",
   "wsl.onboarding.adding": "追加中...",
-
   "help.tabs.toast.ariaLabel": "タブのご紹介。タブを使って作業と進行中のセッションを整理できます",
   "help.tabs.toast.dismiss": "タブに関する案内を閉じる",
   "help.tabs.title": "タブのご紹介",
@@ -1061,7 +1047,6 @@ export const dict = {
   "common.time.daysAgo.short": "{{count}} 日前",
   "settings.providers.connected.environmentDescription": "環境変数から接続されました",
   "settings.providers.custom.description": "ベース URL を指定して OpenAI 互換のプロバイダーを追加します。",
-
   "app.server.unreachable": "{{server}} に到達できませんでした",
   "app.server.retrying": "自動的に再試行中...",
   "app.server.otherServers": "その他のサーバー",
@@ -1150,7 +1135,6 @@ export const dict = {
   "terminal.connectTicket.csrfError":
     "PTY接続チケットは、オリジンまたはCSRFチェックによって拒否されました。サーバーのCORS設定を確認してください。",
   "terminal.connectTicket.statusError": "PTY接続チケットがステータス {{status}} で失敗しました",
-
   "titlebar.update": "アップデート",
   "titlebar.updateVersion": "アップデート {{version}}",
 }

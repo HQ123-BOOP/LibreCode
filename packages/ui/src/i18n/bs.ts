@@ -73,17 +73,6 @@ export const dict = {
   "ui.sessionTurn.retry.attempt": "pokušaj #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - pokušaj #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "gemini je trenutno preopterećen",
-  "ui.sessionTurn.error.freeUsageExceeded": "Prekoračeno besplatno korištenje",
-  "ui.sessionTurn.error.addCredits": "Dodaj kredite",
-
-  "dialog.usageExceeded.freeTier.title": "Dostignut besplatan limit",
-  "dialog.usageExceeded.freeTier.description":
-    "Pretplati se na OpenCode Go za pouzdan pristup najboljim modelima otvorenog koda, počevši od $5/mjesec.",
-  "dialog.usageExceeded.freeTier.actionLabel": "Pretplati se",
-  "dialog.usageExceeded.accountRateLimit.title": "Dostignut Go limit",
-  "dialog.usageExceeded.accountRateLimit.description":
-    "Dostignut je limit korištenja. Da sada nastaviš koristiti ovaj model, omogući korištenje raspoloživog salda",
-  "dialog.usageExceeded.accountRateLimit.actionLabel": "Otvori postavke",
 
   "ui.sessionTurn.status.delegating": "Delegiranje posla",
   "ui.sessionTurn.status.planning": "Planiranje sljedećih koraka",
@@ -223,3 +212,4 @@ export const dict = {
   "ui.message.duration.seconds": "{{count}}s",
   "ui.message.duration.minutesSeconds": "{{minutes}}m {{seconds}}s",
 } satisfies Partial<Record<Keys, string>>
+

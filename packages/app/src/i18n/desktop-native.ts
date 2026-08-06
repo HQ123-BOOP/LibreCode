@@ -77,7 +77,6 @@ export const DESKTOP_NATIVE_ENGLISH = {
   "desktop.menu.shareFeedback": "Share Feedback",
   "desktop.menu.reportBug": "Report a Bug",
   "desktop.menu.ariaLabel": "OpenCode menu",
-
   "desktop.updater.dialog.checkFailed.message": "Update check failed.",
   "desktop.updater.dialog.checkFailed.title": "Update Error",
   "desktop.updater.dialog.upToDate.message": "You're up to date.",
@@ -86,7 +85,6 @@ export const DESKTOP_NATIVE_ENGLISH = {
   "desktop.updater.dialog.ready.title": "Update Ready",
   "desktop.updater.dialog.restart": "Restart",
   "desktop.updater.dialog.later": "Later",
-
   "desktop.recovery.action.relaunch": "Relaunch",
   "desktop.recovery.action.exportLogs": "Export Logs",
   "desktop.recovery.action.keepWaiting": "Keep Waiting",
@@ -98,13 +96,11 @@ export const DESKTOP_NATIVE_ENGLISH = {
   "desktop.recovery.loadFailed.detail": "Window: {{window}}\nURL: {{url}}\nError: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "Window: {{window}}\nReason: {{reason}}\nCode: {{code}}",
   "desktop.recovery.unknown": "<unknown>",
-
   "desktop.dialog.chooseFolder": "Choose a folder",
   "desktop.dialog.chooseFile": "Choose a file",
   "desktop.dialog.saveFile": "Save file",
   "desktop.dialog.files": "Files",
   "desktop.server.local": "Local Server",
-
   "desktop.wsl.error.windowsOnly": "WSL is only available on Windows",
   "desktop.wsl.error.unavailable": "WSL is unavailable",
   "desktop.wsl.error.listInstalled": "Failed to list installed WSL distros",
@@ -126,7 +122,6 @@ export const DESKTOP_NATIVE_ENGLISH = {
   "desktop.wsl.error.healthTimeout": "Sidecar for {{distro}} health check timed out after {{timeout}}ms",
   "desktop.wsl.error.commandTimeout": "{{command}} {{args}} timed out after {{timeout}}ms",
   "desktop.wsl.error.failedPort": "Failed to get port",
-
   "desktop.picker.error.notSelected": "File was not selected by the picker",
   "desktop.picker.error.sizeLimit": "Selected attachments exceed the {{limit}} MB limit",
 } as const
