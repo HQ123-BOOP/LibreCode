@@ -32,7 +32,7 @@ export const DESKTOP_NATIVE_LOCALES = [
 export type DesktopNativeLocale = (typeof DESKTOP_NATIVE_LOCALES)[number]
 
 export const DESKTOP_NATIVE_ENGLISH = {
-  "desktop.menu.app": "OpenCode",
+  "desktop.menu.app": "LibreCode",
   "desktop.menu.file": "File",
   "desktop.menu.edit": "Edit",
   "desktop.menu.view": "View",
@@ -72,11 +72,11 @@ export const DESKTOP_NATIVE_ENGLISH = {
   "desktop.menu.nextProject": "Next Project",
   "desktop.menu.minimize": "Minimize",
   "desktop.menu.maximize": "Maximize",
-  "desktop.menu.documentation": "OpenCode Documentation",
+  "desktop.menu.documentation": "LibreCode Documentation",
   "desktop.menu.supportForum": "Support Forum",
   "desktop.menu.shareFeedback": "Share Feedback",
   "desktop.menu.reportBug": "Report a Bug",
-  "desktop.menu.ariaLabel": "OpenCode menu",
+  "desktop.menu.ariaLabel": "LibreCode menu",
   "desktop.updater.dialog.checkFailed.message": "Update check failed.",
   "desktop.updater.dialog.checkFailed.title": "Update Error",
   "desktop.updater.dialog.upToDate.message": "You're up to date.",
@@ -89,9 +89,9 @@ export const DESKTOP_NATIVE_ENGLISH = {
   "desktop.recovery.action.exportLogs": "Export Logs",
   "desktop.recovery.action.keepWaiting": "Keep Waiting",
   "desktop.recovery.action.quit": "Quit",
-  "desktop.recovery.loadFailed": "OpenCode failed to load",
-  "desktop.recovery.terminated": "OpenCode window terminated unexpectedly",
-  "desktop.recovery.unresponsive": "OpenCode is not responding",
+  "desktop.recovery.loadFailed": "LibreCode failed to load",
+  "desktop.recovery.terminated": "LibreCode window terminated unexpectedly",
+  "desktop.recovery.unresponsive": "LibreCode is not responding",
   "desktop.recovery.unresponsive.detail": "You can relaunch the app, open the logs, or keep waiting.",
   "desktop.recovery.loadFailed.detail": "Window: {{window}}\nURL: {{url}}\nError: {{code}} {{description}}",
   "desktop.recovery.terminated.detail": "Window: {{window}}\nReason: {{reason}}\nCode: {{code}}",
@@ -108,13 +108,13 @@ export const DESKTOP_NATIVE_ENGLISH = {
   "desktop.wsl.error.executeDistro": "Cannot execute commands in distro",
   "desktop.wsl.error.installWsl": "WSL installation failed",
   "desktop.wsl.error.installDistro": "Failed to install distro: {{distro}}",
-  "desktop.wsl.error.installOpencode": "OpenCode installation failed",
+  "desktop.wsl.error.installOpencode": "LibreCode installation failed",
   "desktop.wsl.error.alreadyAdded": "{{distro}} is already added",
-  "desktop.wsl.error.opencodeMissing": "opencode is not installed in this distro",
-  "desktop.wsl.error.opencodeCannotRun": "opencode is installed but could not run",
-  "desktop.wsl.error.opencodeNotInstalled": "OpenCode is not installed in {{distro}}",
+  "desktop.wsl.error.opencodeMissing": "LibreCode is not installed in this distro",
+  "desktop.wsl.error.opencodeCannotRun": "LibreCode is installed but could not run",
+  "desktop.wsl.error.opencodeNotInstalled": "LibreCode is not installed in {{distro}}",
   "desktop.wsl.error.updateVersion":
-    "OpenCode update finished but {{distro}} still reports {{installed}}; expected {{expected}}",
+    "LibreCode update finished but {{distro}} still reports {{installed}}; expected {{expected}}",
   "desktop.wsl.error.noVersion": "no version",
   "desktop.wsl.error.serverExited": "WSL server exited after startup (code={{code}} signal={{signal}})",
   "desktop.wsl.error.serverExitedBeforeHealthy":
@@ -168,3 +168,4 @@ export function formatDesktopNativeMessage(message: string, params?: Record<stri
     return value === undefined ? match : String(value)
   })
 }
+
