@@ -59,7 +59,7 @@ export function FormatError(input: unknown): string | undefined {
     return [
       `Model not found: ${stringField(providerModelNotFound, "providerID")}/${stringField(providerModelNotFound, "modelID")}`,
       ...(suggestions.length ? ["Did you mean: " + suggestions.join(", ")] : []),
-      `Try: \`opencode models\` to list available models`,
+      `Try: \`librecode models\` to list available models`,
       `Or check your config (opencode.json) provider/model names`,
     ].join("\n")
   }
@@ -123,3 +123,4 @@ export function FormatError(input: unknown): string | undefined {
 export function FormatUnknownError(input: unknown): string {
   return errorFormat(input)
 }
+

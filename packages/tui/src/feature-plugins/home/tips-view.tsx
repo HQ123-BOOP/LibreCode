@@ -234,15 +234,15 @@ const TIPS: Tip[] = [
   "Add {highlight}.ts{/highlight} files to {highlight}.opencode/plugins/{/highlight} for event hooks",
   "Use plugins to send OS notifications when sessions complete",
   "Create a plugin to prevent OpenCode from reading sensitive files",
-  "Use {highlight}opencode run{/highlight} for non-interactive scripting",
+  "Use {highlight}librecode run{/highlight} for non-interactive scripting",
   "Use {highlight}opencode --continue{/highlight} to resume the last session",
-  "Use {highlight}opencode run -f file.ts{/highlight} to attach files via CLI",
+  "Use {highlight}librecode run -f file.ts{/highlight} to attach files via CLI",
   "Use {highlight}--format json{/highlight} for machine-readable output in scripts",
   "Run {highlight}opencode serve{/highlight} for headless API access to OpenCode",
-  "Use {highlight}opencode run --attach{/highlight} to connect to a running server",
-  "Run {highlight}opencode upgrade{/highlight} to update to the latest version",
+  "Use {highlight}librecode run --attach{/highlight} to connect to a running server",
+  "Run {highlight}librecode upgrade{/highlight} to update to the latest version",
   "Run {highlight}opencode auth list{/highlight} to see all configured providers",
-  "Run {highlight}opencode agent create{/highlight} for guided agent creation",
+  "Run {highlight}librecode agent create{/highlight} for guided agent creation",
   "Use {highlight}/opencode{/highlight} in GitHub issues/PRs to trigger AI actions",
   "Run {highlight}opencode github install{/highlight} to set up the GitHub workflow",
   "Comment {highlight}/opencode fix this{/highlight} on issues to auto-create PRs",
@@ -264,7 +264,7 @@ const TIPS: Tip[] = [
   "Run {highlight}/unshare{/highlight} to remove a session from public access",
   "Permission {highlight}doom_loop{/highlight} prevents infinite tool call loops",
   "Permission {highlight}external_directory{/highlight} protects files outside project",
-  "Run {highlight}opencode debug config{/highlight} to troubleshoot configuration",
+  "Run {highlight}librecode debug config{/highlight} to troubleshoot configuration",
   "Use {highlight}--print-logs{/highlight} flag to see detailed logs in stderr",
   (shortcuts) => `Use ${commandText("/timeline", shortcuts.sessionTimeline())} to jump to specific messages`,
   (shortcuts) => press(shortcuts.messagesToggleConceal(), "to toggle code block visibility in messages"),
@@ -285,3 +285,4 @@ const TIPS: Tip[] = [
 const INPUT_UNDO_TIP: Tip = (shortcuts) => press(shortcuts.inputUndo(), "to undo changes in your prompt")
 const TERMINAL_SUSPEND_TIP: Tip = (shortcuts) =>
   press(shortcuts.terminalSuspend(), "to suspend the terminal and return to your shell")
+

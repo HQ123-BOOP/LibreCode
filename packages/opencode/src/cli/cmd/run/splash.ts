@@ -234,7 +234,7 @@ function build(input: SplashWriterInput, kind: "entry" | "exit", ctx: Scrollback
       lines,
       body_left + label.length,
       top + 1,
-      `opencode --mini -s ${meta.session_id}`,
+      `librecode --mini -s ${meta.session_id}`,
       right,
       undefined,
       TextAttributes.BOLD,
@@ -278,3 +278,4 @@ export function entrySplash(input: SplashWriterInput): ScrollbackWriter {
 export function exitSplash(input: SplashWriterInput): ScrollbackWriter {
   return (ctx) => build(input, "exit", ctx)
 }
+
