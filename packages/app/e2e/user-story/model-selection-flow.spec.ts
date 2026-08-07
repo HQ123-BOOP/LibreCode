@@ -79,7 +79,7 @@ test("creates a session in a new project, connects a provider, and selects its m
 
   const modelControl = page.locator('[data-action="prompt-model"]')
   await modelControl.click()
-  await expect(page.locator('[data-section="free-models"]')).toContainText("Free models provided by OpenCode")
+  await expect(page.locator('[data-section="free-models"]')).toContainText("Free models provided by LibreCode")
 
   await page.locator('[data-provider-id="anthropic"]').click()
   await page.locator('[data-input="provider-api-key"]').fill("mock-api-key")
