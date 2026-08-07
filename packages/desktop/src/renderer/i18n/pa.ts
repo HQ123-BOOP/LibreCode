@@ -22,5 +22,8 @@ export const dict = {
     "CLI {{path}} تے انسٹال کیتا گیا\n\n'LibreCode' کمانڈ ورتن لئی اپنے ٹرمینل نوں دوبارہ شروع کرو۔",
   "desktop.cli.failed.title": "تنصیب ناکام ہو گئی",
   "desktop.cli.failed.message": "CLI انسٹال نئیں ہو سکی: {{error}}",
+
+  "desktop.error.dev.rootNotFound":
+    "عنصر نئیں لبیا۔ کی تسی ایہنوں اپنے index.html چ شامل کرنا بھل گئے او؟ یا شاید id وصف غلط ہجے ہو گیا اے؟",
 }
 

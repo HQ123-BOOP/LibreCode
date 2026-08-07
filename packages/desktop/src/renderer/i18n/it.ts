@@ -22,5 +22,8 @@ export const dict = {
     "CLI installata in {{path}}\n\nRiavvia il terminale per utilizzare il comando 'LibreCode'.",
   "desktop.cli.failed.title": "Installazione non riuscita",
   "desktop.cli.failed.message": "Impossibile installare la CLI: {{error}}",
+
+  "desktop.error.dev.rootNotFound":
+    "Elemento radice non trovato. Hai dimenticato di aggiungerlo al tuo index.html? O forse l'attributo id è stato scritto in modo errato?",
 }
 

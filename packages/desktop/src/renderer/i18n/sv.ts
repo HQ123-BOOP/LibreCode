@@ -22,5 +22,8 @@ export const dict = {
     "CLI installerat i {{path}}\n\nStarta om terminalen för att använda kommandot 'LibreCode'.",
   "desktop.cli.failed.title": "Installationen misslyckades",
   "desktop.cli.failed.message": "Det gick inte att installera CLI: {{error}}",
+
+  "desktop.error.dev.rootNotFound":
+    "Rotelementet hittades inte. Har du glömt att lägga till det i din index.html? Eller kanske id-attributet är felstavat?",
 }
 
