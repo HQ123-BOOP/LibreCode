@@ -65,8 +65,6 @@ export const dict = {
   "ui.sessionTurn.retry.attempt": "опит #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - опит #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini е претоварен в момента",
-  "ui.sessionTurn.error.freeUsageExceeded": "Безплатното използване е превишено",
-  "ui.sessionTurn.error.addCredits": "Добавете кредити",
   "ui.sessionTurn.status.delegating": "Делегиране на работа",
   "ui.sessionTurn.status.planning": "Планиране на следващите стъпки",
   "ui.sessionTurn.status.gatheringContext": "Изследване",
@@ -187,3 +185,4 @@ export const dict = {
   "ui.question.singleHint": "Изберете един отговор",
   "ui.question.custom.placeholder": "Въведете вашия отговор...",
 }
+

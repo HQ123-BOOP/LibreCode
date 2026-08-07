@@ -194,7 +194,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "Тавсия дода мешавад",
   "dialog.provider.opencode.note": "Моделҳои интихобшуда, аз ҷумла Claude, GPT, Gemini ва ғайра",
   "dialog.provider.opencode.tagline": "Моделҳои боэътимоди оптимизатсияшуда",
-  "dialog.provider.opencodeGo.tagline": "Обунаи арзон барои ҳама",
   "dialog.provider.anthropic.note": "Дастрасии мустақим ба моделҳои Claude, аз ҷумла Pro ва Max",
   "dialog.provider.copilot.note": "Моделҳои AI барои кӯмаки рамзгузорӣ тавассути GitHub Copilot",
   "dialog.provider.openai.note": "GPT моделҳо барои вазифаҳои зуд ва тавонои умумии AI",
@@ -225,13 +224,6 @@ export const dict = {
   "provider.connect.apiKey.label": "{{provider}} API калид",
   "provider.connect.apiKey.placeholder": "API калид",
   "provider.connect.apiKey.required": "API калид лозим аст",
-  "provider.connect.opencodeZen.line1":
-    "LibreCode Zen ба шумо дастрасӣ ба маҷмӯи мураттабшудаи моделҳои боэътимоди оптимизатсияшуда барои агентҳои рамзгузориро медиҳад.",
-  "provider.connect.opencodeZen.line2":
-    "Бо як калиди API шумо метавонед ба моделҳое мисли Claude, GPT, Gemini, GLM ва ғайра дастрасӣ пайдо кунед.",
-  "provider.connect.opencodeZen.visit.prefix": "Ташриф",
-  "provider.connect.opencodeZen.visit.link": "LibreCode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": "барои гирифтани калиди API худ.",
   "provider.connect.oauth.code.visit.prefix": "Ташриф",
   "provider.connect.oauth.code.visit.link": "ин пайванд",
   "provider.connect.oauth.code.visit.suffix":
@@ -1161,6 +1153,7 @@ export const dict = {
   "workspace.reset.archived.many": "{{count}} сессия архив карда мешаванд.",
   "workspace.reset.note": "Ин фазои кориро барои мувофиқ кардани филиали пешфарз барқарор мекунад.",
 }
+
 
 
 

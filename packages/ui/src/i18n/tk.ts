@@ -65,8 +65,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "synanyş # {{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - # {{attempt}} synanyşyň",
   "ui.sessionTurn.retry.geminiHot": "Gemini häzir aşa ýüklenen",
-  "ui.sessionTurn.error.freeUsageExceeded": "Mugt ulanyşdan geçdi",
-  "ui.sessionTurn.error.addCredits": "Karz goşuň",
   "ui.sessionTurn.status.delegating": "Iş tabşyrmak",
   "ui.sessionTurn.status.planning": "Indiki ädimleri meýilleşdirmek",
   "ui.sessionTurn.status.gatheringContext": "Gözleg",
@@ -187,3 +185,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Bir jogap saýlaň",
   "ui.question.custom.placeholder": "Jogabyňyzy ýazyň ...",
 }
+

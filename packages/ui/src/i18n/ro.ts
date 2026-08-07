@@ -66,8 +66,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "încercarea #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - încercarea #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "gemini este prea solicitat acum",
-  "ui.sessionTurn.error.freeUsageExceeded": "Ai depășit utilizarea gratuită",
-  "ui.sessionTurn.error.addCredits": "Adaugă credit",
   "ui.sessionTurn.status.delegating": "Se deleagă sarcina",
   "ui.sessionTurn.status.planning": "Se planifică următorii pași",
   "ui.sessionTurn.status.gatheringContext": "Se explorează",
@@ -191,3 +189,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Selectează un răspuns",
   "ui.question.custom.placeholder": "Scrie răspunsul...",
 }
+

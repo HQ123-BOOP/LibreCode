@@ -65,8 +65,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "උත්සාහ කරන්න #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - උත්සාහ කරන්න #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "මිථුන ලග්නය දැන් උණුසුම් වැඩියි",
-  "ui.sessionTurn.error.freeUsageExceeded": "නිදහස් භාවිතය ඉක්මවා ඇත",
-  "ui.sessionTurn.error.addCredits": "ණය එකතු කරන්න",
   "ui.sessionTurn.status.delegating": "වැඩ පැවරීම",
   "ui.sessionTurn.status.planning": "ඉදිරි පියවර සැලසුම් කිරීම",
   "ui.sessionTurn.status.gatheringContext": "ගවේෂණය",
@@ -187,3 +185,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "එක් පිළිතුරක් තෝරන්න",
   "ui.question.custom.placeholder": "ඔබේ පිළිතුර ටයිප් කරන්න...",
 }
+

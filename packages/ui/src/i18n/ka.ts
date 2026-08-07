@@ -65,8 +65,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "ცდა #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - მცდელობა #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini ახლა ზედმეტად დატვირთულია",
-  "ui.sessionTurn.error.freeUsageExceeded": "უფასო გამოყენება გადაჭარბებულია",
-  "ui.sessionTurn.error.addCredits": "დაამატე კრედიტები",
   "ui.sessionTurn.status.delegating": "სამუშაოს დელეგირება",
   "ui.sessionTurn.status.planning": "შემდეგი ნაბიჯების დაგეგმვა",
   "ui.sessionTurn.status.gatheringContext": "შესწავლა",
@@ -187,3 +185,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "აირჩიეთ ერთი პასუხი",
   "ui.question.custom.placeholder": "აკრიფეთ თქვენი პასუხი...",
 }
+

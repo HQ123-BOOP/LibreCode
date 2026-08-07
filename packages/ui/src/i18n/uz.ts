@@ -67,8 +67,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "#{{attempt}} harakat qiling",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - urinish #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini hozir haddan tashqari yuklangan",
-  "ui.sessionTurn.error.freeUsageExceeded": "Bepul foydalanish chegarasidan oshib ketdi",
-  "ui.sessionTurn.error.addCredits": "Kredit qo'shing",
   "ui.sessionTurn.status.delegating": "Ishni topshirish",
   "ui.sessionTurn.status.planning": "Keyingi qadamlarni rejalashtirish",
   "ui.sessionTurn.status.gatheringContext": "Tadqiq qilish",
@@ -190,3 +188,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Bitta javobni tanlang",
   "ui.question.custom.placeholder": "Javobingizni yozing...",
 }
+

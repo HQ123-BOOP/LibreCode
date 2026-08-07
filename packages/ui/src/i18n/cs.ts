@@ -67,8 +67,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "pokus #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} – pokus č. {{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "gemini je teď příliš vytížené",
-  "ui.sessionTurn.error.freeUsageExceeded": "Bezplatné využití překročeno",
-  "ui.sessionTurn.error.addCredits": "Přidejte kredity",
   "ui.sessionTurn.status.delegating": "Delegování práce",
   "ui.sessionTurn.status.planning": "Plánování dalších kroků",
   "ui.sessionTurn.status.gatheringContext": "Zkoumání",
@@ -195,3 +193,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Vyberte jednu odpověď",
   "ui.question.custom.placeholder": "Napište svou odpověď...",
 }
+

@@ -197,7 +197,6 @@ export const dict = {
   "dialog.provider.tag.recommended": "Rekomenduojama",
   "dialog.provider.opencode.note": "Kuruojami modeliai, įskaitant Claude, GPT, Gemini ir kt.",
   "dialog.provider.opencode.tagline": "Patikimi optimizuoti modeliai",
-  "dialog.provider.opencodeGo.tagline": "Mažos kainos abonementas visiems",
   "dialog.provider.anthropic.note": "Tiesioginė prieiga prie Claude modelių, įskaitant Pro ir Max",
   "dialog.provider.copilot.note": "AI modeliai, skirti kodavimo pagalbai per GitHub Copilot",
   "dialog.provider.openai.note": "GPT modeliai, skirti greitoms, bendroms AI užduotims atlikti",
@@ -228,13 +227,6 @@ export const dict = {
   "provider.connect.apiKey.label": "{{provider}} API raktas",
   "provider.connect.apiKey.placeholder": "API raktas",
   "provider.connect.apiKey.required": "Reikalingas API raktas",
-  "provider.connect.opencodeZen.line1":
-    "LibreCode Zen suteikia prieigą prie kuruojamo patikimų optimizuotų kodavimo agentų modelių rinkinio.",
-  "provider.connect.opencodeZen.line2":
-    "Su vienu API raktu galėsite pasiekti tokius modelius kaip Claude, GPT, Gemini, GLM ir kt.",
-  "provider.connect.opencodeZen.visit.prefix": "Aplankykite",
-  "provider.connect.opencodeZen.visit.link": "LibreCode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": "norėdami pasiimti savo API raktą.",
   "provider.connect.oauth.code.visit.prefix": "Aplankykite",
   "provider.connect.oauth.code.visit.link": "šią nuorodą",
   "provider.connect.oauth.code.visit.suffix":
@@ -1170,6 +1162,7 @@ export const dict = {
   "workspace.reset.archived.many": "{{count}} sesijos bus archyvuojamos.",
   "workspace.reset.note": "Tai iš naujo nustatys darbo sritį, kad ji atitiktų numatytąją šaką.",
 }
+
 
 
 

@@ -67,8 +67,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "kísérlet #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} – #{{attempt}} kísérlet",
   "ui.sessionTurn.retry.geminiHot": "a Gemini jelenleg túlterhelt",
-  "ui.sessionTurn.error.freeUsageExceeded": "Az ingyenes használat túllépve",
-  "ui.sessionTurn.error.addCredits": "Adjon hozzá krediteket",
   "ui.sessionTurn.status.delegating": "Munka delegálása",
   "ui.sessionTurn.status.planning": "A következő lépések tervezése",
   "ui.sessionTurn.status.gatheringContext": "Feltárása",
@@ -189,3 +187,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Válasszon ki egy választ",
   "ui.question.custom.placeholder": "Írja be a választ...",
 }
+

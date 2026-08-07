@@ -65,8 +65,6 @@ export const dict = {
   "ui.sessionTurn.retry.attempt": "ພະຍາຍາມ #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - ຄວາມພະຍາຍາມທີ່ຈະ #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "gemini ຮ້ອນເກີນໄປໃນຕອນນີ້",
-  "ui.sessionTurn.error.freeUsageExceeded": "ເກີນການໃຊ້ຟຣີ",
-  "ui.sessionTurn.error.addCredits": "ເພີ່ມເຄຣດິດ",
   "ui.sessionTurn.status.delegating": "ການມອບໝາຍວຽກງານ",
   "ui.sessionTurn.status.planning": "ການວາງແຜນຂັ້ນຕອນຕໍ່ໄປ",
   "ui.sessionTurn.status.gatheringContext": "ການສຳຫຼວດ",
@@ -187,3 +185,4 @@ export const dict = {
   "ui.question.singleHint": "ເລືອກຫນຶ່ງຄໍາຕອບ",
   "ui.question.custom.placeholder": "ພິມຄຳຕອບຂອງເຈົ້າ...",
 }
+

@@ -66,8 +66,6 @@ export const dict = {
   "ui.sessionTurn.retry.attempt": "ព្យាយាម #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - ព្យាយាម #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini គឺក្តៅពេកហើយនៅពេលនេះ",
-  "ui.sessionTurn.error.freeUsageExceeded": "លើសពីការប្រើប្រាស់ឥតគិតថ្លៃ",
-  "ui.sessionTurn.error.addCredits": "បន្ថែមក្រេឌីត",
   "ui.sessionTurn.status.delegating": "ការផ្ទេរការងារ",
   "ui.sessionTurn.status.planning": "ការធ្វើផែនការជំហានបន្ទាប់",
   "ui.sessionTurn.status.gatheringContext": "ការរុករក",
@@ -188,3 +186,4 @@ export const dict = {
   "ui.question.singleHint": "ជ្រើសរើសចម្លើយមួយ។",
   "ui.question.custom.placeholder": "វាយបញ្ចូលចម្លើយរបស់អ្នក...",
 }
+

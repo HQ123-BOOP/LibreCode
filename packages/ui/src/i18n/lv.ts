@@ -66,8 +66,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "mēģinājums #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} – mēģinājums #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "gemini šobrīd ir pārāk noslogots",
-  "ui.sessionTurn.error.freeUsageExceeded": "Bezmaksas limits pārsniegts",
-  "ui.sessionTurn.error.addCredits": "Pievienot kredītus",
   "ui.sessionTurn.status.delegating": "Deleģē darbu",
   "ui.sessionTurn.status.planning": "Plāno nākamos soļus",
   "ui.sessionTurn.status.gatheringContext": "Izpēta",
@@ -191,3 +189,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Izvēlies vienu atbildi",
   "ui.question.custom.placeholder": "Ieraksti savu atbildi...",
 }
+

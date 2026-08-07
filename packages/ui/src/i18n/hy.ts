@@ -65,8 +65,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "փորձ #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - փորձ #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini-ն այժմ չափազանց ծանրաբեռնված է",
-  "ui.sessionTurn.error.freeUsageExceeded": "Անվճար օգտագործումը գերազանցել է",
-  "ui.sessionTurn.error.addCredits": "Ավելացնել միավորներ",
   "ui.sessionTurn.status.delegating": "Պատվիրակում է աշխատանքը",
   "ui.sessionTurn.status.planning": "Հաջորդ քայլերի պլանավորում",
   "ui.sessionTurn.status.gatheringContext": "Ուսումնասիրում",
@@ -187,3 +185,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Ընտրեք մեկ պատասխան",
   "ui.question.custom.placeholder": "Մուտքագրեք ձեր պատասխանը...",
 }
+

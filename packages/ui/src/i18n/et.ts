@@ -65,8 +65,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "katse #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} – katse #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini on praegu ülekoormatud",
-  "ui.sessionTurn.error.freeUsageExceeded": "Tasuta kasutus on ületatud",
-  "ui.sessionTurn.error.addCredits": "Lisa krediite",
   "ui.sessionTurn.status.delegating": "Tööde delegeerimine",
   "ui.sessionTurn.status.planning": "Järgmiste sammude planeerimine",
   "ui.sessionTurn.status.gatheringContext": "Uurides",
@@ -187,3 +185,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Valige üks vastus",
   "ui.question.custom.placeholder": "Sisesta oma vastus...",
 }
+

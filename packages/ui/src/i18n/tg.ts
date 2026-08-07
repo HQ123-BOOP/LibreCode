@@ -65,8 +65,6 @@ export const dict = {
   "ui.sessionTurn.retry.attempt": "кӯшиш #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - кӯшиш #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini ҳоло хеле гарм аст",
-  "ui.sessionTurn.error.freeUsageExceeded": "Истифодаи ройгон аз ҳад зиёд",
-  "ui.sessionTurn.error.addCredits": "Илова кардани кредитҳо",
   "ui.sessionTurn.status.delegating": "Супоридани кор",
   "ui.sessionTurn.status.planning": "Банақшагирии қадамҳои оянда",
   "ui.sessionTurn.status.gatheringContext": "Таҳқиқ кардан",
@@ -187,3 +185,4 @@ export const dict = {
   "ui.question.singleHint": "Як ҷавобро интихоб кунед",
   "ui.question.custom.placeholder": "Ҷавоби худро нависед...",
 }
+

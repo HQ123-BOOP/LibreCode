@@ -66,8 +66,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "#{{attempt}} އަށް މަސައްކަތް ކުރާށެވެ",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - #{{attempt}} އަށް މަސައްކަތް ކުރާށެވެ",
   "ui.sessionTurn.retry.geminiHot": "ޖެމިނީ މިވަގުތު މާ ހޫނުވެއްޖެއެވެ",
-  "ui.sessionTurn.error.freeUsageExceeded": "ހިލޭ ބޭނުންކުރުން ފަހަނައަޅައި ދިޔައެވެ",
-  "ui.sessionTurn.error.addCredits": "ކްރެޑިޓްތައް އިތުރުކުރުން",
   "ui.sessionTurn.status.delegating": "މަސައްކަތް ހަވާލުކުރުން",
   "ui.sessionTurn.status.planning": "ދެން އަޅަންޖެހޭ ފިޔަވަޅުތައް ރޭވުން",
   "ui.sessionTurn.status.gatheringContext": "އެކްސްޕްލޯރ ކުރަމުންނެވެ",
@@ -188,3 +186,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "އެއް ޖަވާބެއް ހޮވާށެވެ",
   "ui.question.custom.placeholder": "ޖަވާބު ޓައިޕް ކުރާށެވެ...",
 }
+

@@ -65,8 +65,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "ሙከራ #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - ሙከራ #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "gemini አሁን በጣም ሞቃት ነው",
-  "ui.sessionTurn.error.freeUsageExceeded": "ነፃ አጠቃቀም ታልፏል",
-  "ui.sessionTurn.error.addCredits": "ክሬዲት አክል",
   "ui.sessionTurn.status.delegating": "ሥራን በውክልና መስጠት",
   "ui.sessionTurn.status.planning": "ቀጣዮቹን ደረጃዎች ማቀድ",
   "ui.sessionTurn.status.gatheringContext": "ማሰስ",
@@ -187,3 +185,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "አንድ መልስ ምረጥ",
   "ui.question.custom.placeholder": "መልስዎን ይተይቡ...",
 }
+

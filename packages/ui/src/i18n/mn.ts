@@ -65,8 +65,6 @@ export const dict = {
   "ui.sessionTurn.retry.attempt": "оролдлого #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - оролдлого #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini яг одоо хэтэрхий халуун байна",
-  "ui.sessionTurn.error.freeUsageExceeded": "Үнэгүй хэрэглээ хэтэрсэн",
-  "ui.sessionTurn.error.addCredits": "Кредит нэмэх",
   "ui.sessionTurn.status.delegating": "Ажлыг шилжүүлэх",
   "ui.sessionTurn.status.planning": "Дараагийн алхамуудыг төлөвлөх",
   "ui.sessionTurn.status.gatheringContext": "Судалж байна",
@@ -187,3 +185,4 @@ export const dict = {
   "ui.question.singleHint": "Нэг хариултыг сонгоно уу",
   "ui.question.custom.placeholder": "Хариугаа бичнэ үү...",
 }
+

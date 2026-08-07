@@ -66,8 +66,6 @@ export const dict = {
   "ui.sessionTurn.retry.attempt": "#{{attempt}} ကြိုးစားပါ။",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - ကြိုးစားပါ #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini သည် ယခုအချိန်တွင် အလွန်ပူပြင်းသည်။",
-  "ui.sessionTurn.error.freeUsageExceeded": "အခမဲ့အသုံးပြုမှု ကျော်လွန်သွားပါပြီ။",
-  "ui.sessionTurn.error.addCredits": "ခရက်ဒစ်များထည့်ပါ။",
   "ui.sessionTurn.status.delegating": "အလုပ်လွှဲအပ်ခြင်း။",
   "ui.sessionTurn.status.planning": "နောက်အဆင့်များကို စီစဉ်ခြင်း။",
   "ui.sessionTurn.status.gatheringContext": "စူးစမ်းလေ့လာခြင်း။",
@@ -188,3 +186,4 @@ export const dict = {
   "ui.question.singleHint": "အဖြေတစ်ခု ရွေးပါ။",
   "ui.question.custom.placeholder": "သင့်အဖြေကို ရိုက်ထည့်ပါ...",
 }
+

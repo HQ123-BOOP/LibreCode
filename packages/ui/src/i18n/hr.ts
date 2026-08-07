@@ -67,8 +67,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "pokušaj #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - pokušaj #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Gemini je trenutačno preopterećen",
-  "ui.sessionTurn.error.freeUsageExceeded": "Besplatna upotreba premašena",
-  "ui.sessionTurn.error.addCredits": "Dodaj kredite",
   "ui.sessionTurn.status.delegating": "Delegiranje posla",
   "ui.sessionTurn.status.planning": "Planiranje sljedećih koraka",
   "ui.sessionTurn.status.gatheringContext": "Istražujući",
@@ -192,3 +190,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Odaberite jedan odgovor",
   "ui.question.custom.placeholder": "Upišite svoj odgovor...",
 }
+

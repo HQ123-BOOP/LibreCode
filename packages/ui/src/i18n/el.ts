@@ -65,8 +65,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "προσπάθεια #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - προσπάθεια #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "Το Gemini είναι υπερφορτωμένο αυτήν τη στιγμή",
-  "ui.sessionTurn.error.freeUsageExceeded": "Υπέρβαση της δωρεάν χρήσης",
-  "ui.sessionTurn.error.addCredits": "Προσθήκη πιστώσεων",
   "ui.sessionTurn.status.delegating": "Ανάθεση εργασίας",
   "ui.sessionTurn.status.planning": "Σχεδιασμός επόμενων βημάτων",
   "ui.sessionTurn.status.gatheringContext": "Εξερεύνηση",
@@ -187,3 +185,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "Επιλέξτε μία απάντηση",
   "ui.question.custom.placeholder": "Πληκτρολογήστε την απάντησή σας...",
 }
+

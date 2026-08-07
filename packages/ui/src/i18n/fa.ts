@@ -65,8 +65,6 @@ export const dict: Record<string, string> = {
   "ui.sessionTurn.retry.attempt": "تلاش #{{attempt}}",
   "ui.sessionTurn.retry.attemptLine": "{{line}} - تلاش #{{attempt}}",
   "ui.sessionTurn.retry.geminiHot": "جمینی در حال حاضر خیلی داغ است",
-  "ui.sessionTurn.error.freeUsageExceeded": "استفاده رایگان بیش از حد است",
-  "ui.sessionTurn.error.addCredits": "اعتبار اضافه کنید",
   "ui.sessionTurn.status.delegating": "تفویض کار",
   "ui.sessionTurn.status.planning": "برنامه ریزی مراحل بعدی",
   "ui.sessionTurn.status.gatheringContext": "کاوش",
@@ -187,3 +185,4 @@ export const dict: Record<string, string> = {
   "ui.question.singleHint": "یک پاسخ را انتخاب کنید",
   "ui.question.custom.placeholder": "پاسخ خود را تایپ کنید...",
 }
+
