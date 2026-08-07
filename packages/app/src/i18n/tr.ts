@@ -184,6 +184,10 @@ export const dict = {
   "command.session.share.description": "Bu oturumu paylaş ve URL'yi panoya kopyala",
   "command.session.unshare": "Paylaşımı kaldır",
   "command.session.unshare.description": "Bu oturumun paylaşımını durdur",
+
+  "command.session.export": "Oturumu dışa aktar",
+  "command.session.export.description": "Oturumun tam dökümünü JSON olarak dışa aktar",
+
   "palette.search.placeholder": "Dosya, komut ve oturum ara",
   "palette.search.placeholder.home": "Komut ve oturum ara",
   "palette.empty": "Sonuç bulunamadı",
@@ -525,6 +529,9 @@ export const dict = {
   "dialog.project.edit.worktree.startup": "Çalışma alanı başlatma betiği",
   "dialog.project.edit.worktree.startup.description": "Yeni bir çalışma alanı (worktree) oluşturduktan sonra çalışır.",
   "dialog.project.edit.worktree.startup.placeholder": "örneğin bun install",
+
+  "dialog.usageExceeded.dontShowAgain": "Bir daha gösterme",
+
   "context.breakdown.title": "Bağlam Dökümü",
   "context.breakdown.note": 'Girdi tokenlerinin yaklaşık dökümü. "Diğer" araç tanımları ve ek yükleri içerir.',
   "context.breakdown.system": "Sistem",
@@ -534,6 +541,9 @@ export const dict = {
   "context.breakdown.other": "Diğer",
   "context.systemPrompt.title": "Sistem İstemi",
   "context.rawMessages.title": "Ham mesajlar",
+
+  "context.export.session": "Oturumu dışa aktar",
+
   "context.stats.session": "Oturum",
   "context.stats.messages": "Mesajlar",
   "context.stats.provider": "Sağlayıcı",
@@ -600,6 +610,12 @@ export const dict = {
   "toast.session.unshare.success.description": "Oturum paylaşımı başarıyla kaldırıldı!",
   "toast.session.unshare.failed.title": "Oturum paylaşımı kaldırılamadı",
   "toast.session.unshare.failed.description": "Oturum paylaşımı kaldırılırken bir hata oluştu",
+
+  "toast.session.export.success.title": "Oturum dışa aktarıldı",
+  "toast.session.export.success.description": "Oturum {{filename}} dosyasına kaydedildi",
+  "toast.session.export.failed.title": "Oturum dışa aktarılamadı",
+  "toast.session.export.failed.description": "Oturum dışa aktarılırken bir hata oluştu",
+
   "toast.session.listFailed.title": "{{project}} için oturumlar yüklenemedi",
   "toast.update.title": "Güncelleme mevcut",
   "toast.update.description": "LibreCode'un yeni bir sürümü ({{version}}) yüklemeye hazır.",
@@ -783,6 +799,7 @@ export const dict = {
   "common.moreOptions": "Daha fazla seçenek",
   "common.learnMore": "Daha fazla bilgi",
   "common.rename": "Yeniden adlandır",
+  "common.export": "Dışa aktar",
   "common.reset": "Sıfırla",
   "common.archive": "Arşivle",
   "common.delete": "Sil",

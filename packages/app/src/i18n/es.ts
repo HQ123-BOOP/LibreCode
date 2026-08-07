@@ -180,6 +180,10 @@ export const dict = {
   "command.session.share.description": "Compartir esta sesión y copiar la URL al portapapeles",
   "command.session.unshare": "Dejar de compartir sesión",
   "command.session.unshare.description": "Dejar de compartir esta sesión",
+
+  "command.session.export": "Exportar sesión",
+  "command.session.export.description": "Exportar la transcripción completa de la sesión como JSON",
+
   "palette.search.placeholder": "Buscar archivos, comandos y sesiones",
   "palette.search.placeholder.home": "Buscar comandos y sesiones",
   "palette.empty": "No se encontraron resultados",
@@ -523,6 +527,9 @@ export const dict = {
   "dialog.project.edit.worktree.startup.description":
     "Se ejecuta después de crear un nuevo espacio de trabajo (árbol de trabajo).",
   "dialog.project.edit.worktree.startup.placeholder": "p. ej. bun install",
+
+  "dialog.usageExceeded.dontShowAgain": "No volver a mostrar",
+
   "context.breakdown.title": "Desglose del contexto",
   "context.breakdown.note":
     'Desglose aproximado de tokens de entrada. "Otro" incluye definiciones de herramientas y sobrecarga.',
@@ -533,6 +540,9 @@ export const dict = {
   "context.breakdown.other": "Otro",
   "context.systemPrompt.title": "Prompt del sistema",
   "context.rawMessages.title": "Mensajes en bruto",
+
+  "context.export.session": "Exportar sesión",
+
   "context.stats.session": "Sesión",
   "context.stats.messages": "Mensajes",
   "context.stats.provider": "Proveedor",
@@ -599,6 +609,12 @@ export const dict = {
   "toast.session.unshare.success.description": "La sesión dejó de compartirse correctamente.",
   "toast.session.unshare.failed.title": "Fallo al dejar de compartir sesión",
   "toast.session.unshare.failed.description": "Ocurrió un error al dejar de compartir la sesión",
+
+  "toast.session.export.success.title": "Sesión exportada",
+  "toast.session.export.success.description": "Sesión guardada en {{filename}}",
+  "toast.session.export.failed.title": "No se pudo exportar la sesión",
+  "toast.session.export.failed.description": "Se produjo un error al exportar la sesión",
+
   "toast.session.listFailed.title": "Fallo al cargar sesiones para {{project}}",
   "toast.update.title": "Actualización disponible",
   "toast.update.description": "Una nueva versión de LibreCode ({{version}}) está disponible para instalar.",
@@ -783,6 +799,7 @@ export const dict = {
   "common.moreOptions": "Más opciones",
   "common.learnMore": "Más información",
   "common.rename": "Renombrar",
+  "common.export": "Exportar",
   "common.reset": "Restablecer",
   "common.archive": "Archivar",
   "common.delete": "Eliminar",

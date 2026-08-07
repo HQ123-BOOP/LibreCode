@@ -178,6 +178,10 @@ export const dict = {
   "command.session.share.description": "Del denne sesjonen og kopier URL-en til utklippstavlen",
   "command.session.unshare": "Slutt å dele sesjon",
   "command.session.unshare.description": "Slutt å dele denne sesjonen",
+
+  "command.session.export": "Eksporter sesjon",
+  "command.session.export.description": "Eksporter hele sesjonsutskriften som JSON",
+
   "palette.search.placeholder": "Søk i filer, kommandoer og sesjoner",
   "palette.search.placeholder.home": "Søk i kommandoer og sesjoner",
   "palette.empty": "Ingen resultater funnet",
@@ -427,6 +431,9 @@ export const dict = {
   "dialog.project.edit.worktree.startup": "Oppstartsskript for arbeidsområde",
   "dialog.project.edit.worktree.startup.description": "Kjører etter at et nytt arbeidsområde (worktree) er opprettet.",
   "dialog.project.edit.worktree.startup.placeholder": "f.eks. bun install",
+
+  "dialog.usageExceeded.dontShowAgain": "Ikke vis igjen",
+
   "context.breakdown.title": "Kontekstfordeling",
   "context.breakdown.note":
     'Omtrentlig fordeling av inndatatokener. "Annet" inkluderer verktøydefinisjoner og overhead.',
@@ -437,6 +444,9 @@ export const dict = {
   "context.breakdown.other": "Annet",
   "context.systemPrompt.title": "Systemprompt",
   "context.rawMessages.title": "Rå meldinger",
+
+  "context.export.session": "Eksporter sesjon",
+
   "context.stats.session": "Sesjon",
   "context.stats.messages": "Meldinger",
   "context.stats.provider": "Leverandør",
@@ -502,6 +512,12 @@ export const dict = {
   "toast.session.unshare.success.description": "Sesjonen deles ikke lenger!",
   "toast.session.unshare.failed.title": "Kunne ikke stoppe deling av sesjon",
   "toast.session.unshare.failed.description": "Det oppstod en feil da delingen av sesjonen skulle stoppes",
+
+  "toast.session.export.success.title": "Sesjon eksportert",
+  "toast.session.export.success.description": "Sesjonen ble lagret i {{filename}}",
+  "toast.session.export.failed.title": "Kunne ikke eksportere sesjon",
+  "toast.session.export.failed.description": "Det oppstod en feil under eksport av sesjonen",
+
   "toast.session.listFailed.title": "Kunne ikke laste sesjoner for {{project}}",
   "toast.update.title": "Oppdatering tilgjengelig",
   "toast.update.description": "En ny versjon av LibreCode ({{version}}) er nå tilgjengelig for installasjon.",
@@ -644,6 +660,7 @@ export const dict = {
   "common.moreOptions": "Flere alternativer",
   "common.learnMore": "Lær mer",
   "common.rename": "Gi nytt navn",
+  "common.export": "Eksporter",
   "common.reset": "Tilbakestill",
   "common.archive": "Arkiver",
   "common.delete": "Slett",

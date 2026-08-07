@@ -178,6 +178,10 @@ export const dict = {
   "command.session.share.description": "แชร์เซสชันนี้และคัดลอก URL ไปยังคลิปบอร์ด",
   "command.session.unshare": "ยกเลิกการแชร์เซสชัน",
   "command.session.unshare.description": "หยุดการแชร์เซสชันนี้",
+
+  "command.session.export": "ส่งออกเซสชัน",
+  "command.session.export.description": "ส่งออกบันทึกทั้งหมดของเซสชันเป็น JSON",
+
   "palette.search.placeholder": "ค้นหาไฟล์ คำสั่ง และเซสชัน",
   "palette.search.placeholder.home": "ค้นหาคำสั่งและเซสชัน",
   "palette.empty": "ไม่พบผลลัพธ์",
@@ -517,6 +521,9 @@ export const dict = {
   "dialog.project.edit.worktree.startup": "สคริปต์เริ่มต้นพื้นที่ทำงาน",
   "dialog.project.edit.worktree.startup.description": "ทำงานหลังจากสร้างพื้นที่ทำงานใหม่ (worktree)",
   "dialog.project.edit.worktree.startup.placeholder": "เช่น bun install",
+
+  "dialog.usageExceeded.dontShowAgain": "ไม่ต้องแสดงอีก",
+
   "context.breakdown.title": "การแบ่งบริบท",
   "context.breakdown.note": 'การแบ่งโดยประมาณของโทเค็นนำเข้า "อื่น ๆ" รวมถึงคำนิยามเครื่องมือและโอเวอร์เฮด',
   "context.breakdown.system": "ระบบ",
@@ -526,6 +533,9 @@ export const dict = {
   "context.breakdown.other": "อื่น ๆ",
   "context.systemPrompt.title": "พรอมต์ระบบ",
   "context.rawMessages.title": "ข้อความดิบ",
+
+  "context.export.session": "ส่งออกเซสชัน",
+
   "context.stats.session": "เซสชัน",
   "context.stats.messages": "ข้อความ",
   "context.stats.provider": "ผู้ให้บริการ",
@@ -592,6 +602,12 @@ export const dict = {
   "toast.session.unshare.success.description": "ยกเลิกการแชร์เซสชันสำเร็จ!",
   "toast.session.unshare.failed.title": "ไม่สามารถยกเลิกการแชร์เซสชัน",
   "toast.session.unshare.failed.description": "เกิดข้อผิดพลาดระหว่างการยกเลิกการแชร์เซสชัน",
+
+  "toast.session.export.success.title": "ส่งออกเซสชันแล้ว",
+  "toast.session.export.success.description": "บันทึกเซสชันไปยัง {{filename}} แล้ว",
+  "toast.session.export.failed.title": "ไม่สามารถส่งออกเซสชัน",
+  "toast.session.export.failed.description": "เกิดข้อผิดพลาดขณะส่งออกเซสชัน",
+
   "toast.session.listFailed.title": "ไม่สามารถโหลดเซสชันสำหรับ {{project}}",
   "toast.update.title": "มีการอัปเดต",
   "toast.update.description": "เวอร์ชันใหม่ของ LibreCode ({{version}}) พร้อมใช้งานสำหรับติดตั้ง",
@@ -765,6 +781,7 @@ export const dict = {
   "common.moreOptions": "ตัวเลือกเพิ่มเติม",
   "common.learnMore": "เรียนรู้เพิ่มเติม",
   "common.rename": "เปลี่ยนชื่อ",
+  "common.export": "ส่งออก",
   "common.reset": "รีเซ็ต",
   "common.archive": "จัดเก็บ",
   "common.delete": "ลบ",
