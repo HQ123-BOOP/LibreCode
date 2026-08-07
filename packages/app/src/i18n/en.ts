@@ -363,16 +363,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Open {{distro}} once to finish setup.",
   "wsl.onboarding.finishingDistro": "Finishing setup for {{distro}}.",
   "wsl.onboarding.pickDistro": "Pick a distro or install one below.",
-  "wsl.onboarding.checkingOpencode": "Checking LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Checking LibreCode in {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Updating LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Updating LibreCode in {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Update LibreCode in {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Update LibreCode",
+  "wsl.onboarding.checkingopencode": "Checking LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Checking LibreCode in {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Updating LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Updating LibreCode in {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Update LibreCode in {{distro}}.",
+  "wsl.onboarding.updateopencode": "Update LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode is ready in {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode is ready.",
-  "wsl.onboarding.installOpencodeIn": "Install LibreCode in {{distro}}.",
-  "wsl.onboarding.installOpencode": "Install LibreCode",
+  "wsl.onboarding.installopencodeIn": "Install LibreCode in {{distro}}.",
+  "wsl.onboarding.installopencode": "Install LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Choose a distro first.",
   "wsl.onboarding.loadFailed": "Failed to load WSL state.",
   "wsl.onboarding.loading": "Loading...",
@@ -441,7 +441,6 @@ export const dict = {
   "dialog.releaseNotes.action.next": "Next",
   "dialog.releaseNotes.action.hideFuture": "Don't show these in the future",
   "dialog.releaseNotes.media.alt": "Release preview",
-  "dialog.usageExceeded.dontShowAgain": "Don't show again",
 
   "context.breakdown.title": "Context Breakdown",
   "context.breakdown.note": 'Approximate breakdown of input tokens. "Other" includes tool definitions and overhead.',
@@ -1054,5 +1053,8 @@ export const dict = {
   "workspace.reset.archived.many": "{{count}} sessions will be archived.",
   "workspace.reset.note": "This will reset the workspace to match the default branch.",
 }
+
+
+
 
 

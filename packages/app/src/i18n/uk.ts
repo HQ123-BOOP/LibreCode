@@ -76,7 +76,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Не вдалося виконати команди в дистрибутиві",
   "desktop.wsl.error.installWsl": "Не вдалося встановити WSL",
   "desktop.wsl.error.installDistro": "Не вдалося встановити дистрибутив: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Не вдалося встановити LibreCode",
+  "desktop.wsl.error.installopencode": "Не вдалося встановити LibreCode",
   "desktop.wsl.error.alreadyAdded": "{{distro}} уже додано",
   "desktop.wsl.error.opencodeMissing": "LibreCode не встановлено в цьому дистрибутиві",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode встановлено, але його не вдалося запустити",
@@ -457,16 +457,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Відкрийте {{distro}} один раз, щоб завершити налаштування.",
   "wsl.onboarding.finishingDistro": "Завершення налаштування {{distro}}.",
   "wsl.onboarding.pickDistro": "Виберіть дистрибутив або встановіть один із наведених нижче.",
-  "wsl.onboarding.checkingOpencode": "Перевірка LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Перевірка LibreCode у {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Оновлення LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Оновлення LibreCode у {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Оновіть LibreCode у {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Оновити LibreCode",
+  "wsl.onboarding.checkingopencode": "Перевірка LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Перевірка LibreCode у {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Оновлення LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Оновлення LibreCode у {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Оновіть LibreCode у {{distro}}.",
+  "wsl.onboarding.updateopencode": "Оновити LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode готовий до роботи у {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode готовий до роботи.",
-  "wsl.onboarding.installOpencodeIn": "Встановіть LibreCode у {{distro}}.",
-  "wsl.onboarding.installOpencode": "Встановити LibreCode",
+  "wsl.onboarding.installopencodeIn": "Встановіть LibreCode у {{distro}}.",
+  "wsl.onboarding.installopencode": "Встановити LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Спочатку виберіть дистрибутив.",
   "wsl.onboarding.loadFailed": "Не вдалося завантажити стан WSL.",
   "wsl.onboarding.loading": "Завантаження...",
@@ -537,7 +537,6 @@ export const dict = {
   "dialog.releaseNotes.action.hideFuture": "Не показувати це в майбутньому",
   "dialog.releaseNotes.media.alt": "Попередній перегляд релізу",
 
-  "dialog.usageExceeded.dontShowAgain": "Більше не показувати",
 
   "context.breakdown.title": "Розподіл контексту",
   "context.breakdown.note":
@@ -1169,5 +1168,8 @@ export const dict = {
   "workspace.reset.archived.many": "{{count}} сесій буде заархівовано.",
   "workspace.reset.note": "Це скине робочу область, щоб вона відповідала гілці за замовчуванням.",
 }
+
+
+
 
 

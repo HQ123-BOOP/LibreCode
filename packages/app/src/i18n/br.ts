@@ -75,7 +75,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Não é possível executar comandos na distribuição",
   "desktop.wsl.error.installWsl": "Falha na instalação do WSL",
   "desktop.wsl.error.installDistro": "Falha ao instalar a distribuição: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Falha na instalação do LibreCode",
+  "desktop.wsl.error.installopencode": "Falha na instalação do LibreCode",
   "desktop.wsl.error.alreadyAdded": "{{distro}} já foi adicionada",
   "desktop.wsl.error.opencodeMissing": "O LibreCode não está instalado nesta distribuição",
   "desktop.wsl.error.opencodeCannotRun": "O LibreCode está instalado, mas não pôde ser executado",
@@ -449,16 +449,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Abra {{distro}} uma vez para concluir a configuração.",
   "wsl.onboarding.finishingDistro": "Concluindo a configuração de {{distro}}.",
   "wsl.onboarding.pickDistro": "Escolha uma distribuição ou instale uma abaixo.",
-  "wsl.onboarding.checkingOpencode": "Verificando o LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Verificando o LibreCode em {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Atualizando o LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Atualizando o LibreCode em {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Atualize o LibreCode em {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Atualizar o LibreCode",
+  "wsl.onboarding.checkingopencode": "Verificando o LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Verificando o LibreCode em {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Atualizando o LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Atualizando o LibreCode em {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Atualize o LibreCode em {{distro}}.",
+  "wsl.onboarding.updateopencode": "Atualizar o LibreCode",
   "wsl.onboarding.opencodeReadyIn": "O LibreCode está pronto em {{distro}}.",
   "wsl.onboarding.opencodeReady": "O LibreCode está pronto.",
-  "wsl.onboarding.installOpencodeIn": "Instale o LibreCode em {{distro}}.",
-  "wsl.onboarding.installOpencode": "Instalar o LibreCode",
+  "wsl.onboarding.installopencodeIn": "Instale o LibreCode em {{distro}}.",
+  "wsl.onboarding.installopencode": "Instalar o LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Escolha primeiro uma distribuição.",
   "wsl.onboarding.loadFailed": "Falha ao carregar o estado do WSL.",
   "wsl.onboarding.loading": "Carregando...",
@@ -523,7 +523,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup": "Script de inicialização do espaço de trabalho",
   "dialog.project.edit.worktree.startup.description": "Executa após criar um novo espaço de trabalho (worktree).",
   "dialog.project.edit.worktree.startup.placeholder": "Ex.: bun install",
-  "dialog.usageExceeded.dontShowAgain": "Não mostrar novamente",
 
   "context.breakdown.title": "Detalhamento do contexto",
   "context.breakdown.note":
@@ -1162,5 +1161,8 @@ export const dict = {
   "error.childStore.storeCreateFailed": "Falha ao criar armazenamento",
   "terminal.connectionLost.abnormalClose": "WebSocket fechado anormalmente: {{code}}",
 }
+
+
+
 
 

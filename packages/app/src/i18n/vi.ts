@@ -75,7 +75,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Không thể thực thi lệnh trong bản phân phối",
   "desktop.wsl.error.installWsl": "Không cài đặt được WSL",
   "desktop.wsl.error.installDistro": "Không cài đặt được bản phân phối: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Không cài đặt được LibreCode",
+  "desktop.wsl.error.installopencode": "Không cài đặt được LibreCode",
   "desktop.wsl.error.alreadyAdded": "{{distro}} đã được thêm",
   "desktop.wsl.error.opencodeMissing": "LibreCode chưa được cài đặt trong bản phân phối này",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode đã được cài đặt nhưng không thể chạy",
@@ -454,16 +454,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Mở {{distro}} một lần để hoàn tất thiết lập.",
   "wsl.onboarding.finishingDistro": "Đang hoàn tất thiết lập cho {{distro}}.",
   "wsl.onboarding.pickDistro": "Chọn một bản phân phối hoặc cài đặt một bản dưới đây.",
-  "wsl.onboarding.checkingOpencode": "Đang kiểm tra LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Đang kiểm tra LibreCode trong {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Đang cập nhật LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Đang cập nhật LibreCode trong {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Cập nhật LibreCode trong {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Cập nhật LibreCode",
+  "wsl.onboarding.checkingopencode": "Đang kiểm tra LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Đang kiểm tra LibreCode trong {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Đang cập nhật LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Đang cập nhật LibreCode trong {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Cập nhật LibreCode trong {{distro}}.",
+  "wsl.onboarding.updateopencode": "Cập nhật LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode đã sẵn sàng trong {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode đã sẵn sàng.",
-  "wsl.onboarding.installOpencodeIn": "Cài đặt LibreCode trong {{distro}}.",
-  "wsl.onboarding.installOpencode": "Cài đặt LibreCode",
+  "wsl.onboarding.installopencodeIn": "Cài đặt LibreCode trong {{distro}}.",
+  "wsl.onboarding.installopencode": "Cài đặt LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Chọn một bản phân phối đầu tiên.",
   "wsl.onboarding.loadFailed": "Không tải được trạng thái WSL.",
   "wsl.onboarding.loading": "Đang tải...",
@@ -532,7 +532,6 @@ export const dict = {
   "dialog.releaseNotes.action.next": "Tiếp theo",
   "dialog.releaseNotes.action.hideFuture": "Không hiển thị lại",
   "dialog.releaseNotes.media.alt": "Xem trước bản phát hành",
-  "dialog.usageExceeded.dontShowAgain": "Không hiển thị lại",
 
   "context.breakdown.title": "Phân tích ngữ cảnh",
   "context.breakdown.note":
@@ -1153,5 +1152,8 @@ export const dict = {
   "workspace.reset.archived.many": "{{count}} phiên sẽ được lưu trữ.",
   "workspace.reset.note": "Điều này sẽ thiết lập lại không gian làm việc để phù hợp với nhánh mặc định.",
 }
+
+
+
 
 

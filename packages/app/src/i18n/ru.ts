@@ -75,7 +75,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Не удаётся выполнять команды в дистрибутиве",
   "desktop.wsl.error.installWsl": "Не удалось установить WSL",
   "desktop.wsl.error.installDistro": "Не удалось установить дистрибутив: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Не удалось установить LibreCode",
+  "desktop.wsl.error.installopencode": "Не удалось установить LibreCode",
   "desktop.wsl.error.alreadyAdded": "Дистрибутив {{distro}} уже добавлен",
   "desktop.wsl.error.opencodeMissing": "LibreCode не установлен в этом дистрибутиве",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode установлен, но его не удалось запустить",
@@ -450,16 +450,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Откройте {{distro}} один раз, чтобы завершить настройку.",
   "wsl.onboarding.finishingDistro": "Завершение настройки {{distro}}.",
   "wsl.onboarding.pickDistro": "Выберите дистрибутив или установите его ниже.",
-  "wsl.onboarding.checkingOpencode": "Проверка LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Проверка LibreCode в {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Обновление LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Обновление LibreCode в {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Обновите LibreCode в {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Обновить LibreCode",
+  "wsl.onboarding.checkingopencode": "Проверка LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Проверка LibreCode в {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Обновление LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Обновление LibreCode в {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Обновите LibreCode в {{distro}}.",
+  "wsl.onboarding.updateopencode": "Обновить LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode в {{distro}} готов к работе.",
   "wsl.onboarding.opencodeReady": "LibreCode готов к работе.",
-  "wsl.onboarding.installOpencodeIn": "Установите LibreCode в {{distro}}.",
-  "wsl.onboarding.installOpencode": "Установить LibreCode",
+  "wsl.onboarding.installopencodeIn": "Установите LibreCode в {{distro}}.",
+  "wsl.onboarding.installopencode": "Установить LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Сначала выберите дистрибутив.",
   "wsl.onboarding.loadFailed": "Не удалось загрузить состояние WSL.",
   "wsl.onboarding.loading": "Загрузка...",
@@ -525,7 +525,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup.description":
     "Запускается после создания нового рабочего пространства (worktree).",
   "dialog.project.edit.worktree.startup.placeholder": "например, bun install",
-  "dialog.usageExceeded.dontShowAgain": "Больше не показывать",
 
   "context.breakdown.title": "Разбивка контекста",
   "context.breakdown.note":
@@ -1171,5 +1170,8 @@ export const dict = {
   "error.childStore.storeCreateFailed": "Не удалось создать хранилище",
   "terminal.connectionLost.abnormalClose": "WebSocket закрыт аварийно: {{code}}",
 }
+
+
+
 
 

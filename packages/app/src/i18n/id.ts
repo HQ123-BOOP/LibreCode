@@ -75,7 +75,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Tidak dapat menjalankan perintah di distro",
   "desktop.wsl.error.installWsl": "Instalasi WSL gagal",
   "desktop.wsl.error.installDistro": "Gagal menginstal distro: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Instalasi LibreCode gagal",
+  "desktop.wsl.error.installopencode": "Instalasi LibreCode gagal",
   "desktop.wsl.error.alreadyAdded": "{{distro}} sudah ditambahkan",
   "desktop.wsl.error.opencodeMissing": "LibreCode belum terinstal di distro ini",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode telah terinstal, tetapi tidak dapat dijalankan",
@@ -455,16 +455,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Buka {{distro}} sekali untuk menyelesaikan pengaturan.",
   "wsl.onboarding.finishingDistro": "Menyelesaikan pengaturan untuk {{distro}}.",
   "wsl.onboarding.pickDistro": "Pilih distro atau instal salah satu di bawah.",
-  "wsl.onboarding.checkingOpencode": "Memeriksa LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Memeriksa LibreCode di {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Memperbarui LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Memperbarui LibreCode di {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Perbarui LibreCode di {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Perbarui LibreCode",
+  "wsl.onboarding.checkingopencode": "Memeriksa LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Memeriksa LibreCode di {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Memperbarui LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Memperbarui LibreCode di {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Perbarui LibreCode di {{distro}}.",
+  "wsl.onboarding.updateopencode": "Perbarui LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode siap di {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode siap.",
-  "wsl.onboarding.installOpencodeIn": "Instal LibreCode di {{distro}}.",
-  "wsl.onboarding.installOpencode": "Instal LibreCode",
+  "wsl.onboarding.installopencodeIn": "Instal LibreCode di {{distro}}.",
+  "wsl.onboarding.installopencode": "Instal LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Pilih distro terlebih dahulu.",
   "wsl.onboarding.loadFailed": "Gagal memuat keadaan WSL.",
   "wsl.onboarding.loading": "Memuat...",
@@ -534,7 +534,6 @@ export const dict = {
   "dialog.releaseNotes.action.hideFuture": "Jangan tampilkan ini di masa depan",
   "dialog.releaseNotes.media.alt": "Pratinjau rilis",
 
-  "dialog.usageExceeded.dontShowAgain": "Jangan tampilkan lagi",
 
   "context.breakdown.title": "Rincian Konteks",
   "context.breakdown.note": 'Perkiraan rincian token masukan. "Lainnya" mencakup definisi alat dan beban tambahan.',
@@ -1153,5 +1152,8 @@ export const dict = {
   "workspace.reset.archived.many": "{{count}} sesi akan diarsipkan.",
   "workspace.reset.note": "Ini akan mengatur ulang ruang kerja agar cocok dengan cabang bawaan.",
 }
+
+
+
 
 

@@ -360,16 +360,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Öffnen Sie {{distro}} einmal, um die Einrichtung abzuschließen.",
   "wsl.onboarding.finishingDistro": "Einrichtung von {{distro}} wird abgeschlossen.",
   "wsl.onboarding.pickDistro": "Wählen Sie eine Distribution aus oder installieren Sie unten eine.",
-  "wsl.onboarding.checkingOpencode": "LibreCode wird geprüft…",
-  "wsl.onboarding.checkingOpencodeIn": "LibreCode in {{distro}} wird geprüft…",
-  "wsl.onboarding.updatingOpencode": "LibreCode wird aktualisiert…",
-  "wsl.onboarding.updatingOpencodeIn": "LibreCode in {{distro}} wird aktualisiert…",
-  "wsl.onboarding.updateOpencodeIn": "Aktualisieren Sie LibreCode in {{distro}}.",
-  "wsl.onboarding.updateOpencode": "LibreCode aktualisieren",
+  "wsl.onboarding.checkingopencode": "LibreCode wird geprüft…",
+  "wsl.onboarding.checkingopencodeIn": "LibreCode in {{distro}} wird geprüft…",
+  "wsl.onboarding.updatingopencode": "LibreCode wird aktualisiert…",
+  "wsl.onboarding.updatingopencodeIn": "LibreCode in {{distro}} wird aktualisiert…",
+  "wsl.onboarding.updateopencodeIn": "Aktualisieren Sie LibreCode in {{distro}}.",
+  "wsl.onboarding.updateopencode": "LibreCode aktualisieren",
   "wsl.onboarding.opencodeReadyIn": "LibreCode ist in {{distro}} bereit.",
   "wsl.onboarding.opencodeReady": "LibreCode ist bereit.",
-  "wsl.onboarding.installOpencodeIn": "Installieren Sie LibreCode in {{distro}}.",
-  "wsl.onboarding.installOpencode": "LibreCode installieren",
+  "wsl.onboarding.installopencodeIn": "Installieren Sie LibreCode in {{distro}}.",
+  "wsl.onboarding.installopencode": "LibreCode installieren",
   "wsl.onboarding.chooseDistroFirst": "Wählen Sie zuerst eine Distribution aus.",
   "wsl.onboarding.loadFailed": "WSL-Status konnte nicht geladen werden.",
   "wsl.onboarding.loading": "Wird geladen…",
@@ -420,7 +420,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup.description":
     "Wird nach dem Erstellen eines neuen Arbeitsbereichs (Worktree) ausgeführt.",
   "dialog.project.edit.worktree.startup.placeholder": "z. B. bun install",
-  "dialog.usageExceeded.dontShowAgain": "Nicht mehr anzeigen",
 
   "context.breakdown.title": "Kontext-Aufschlüsselung",
   "context.breakdown.note":
@@ -1138,7 +1137,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "In der Distribution können keine Befehle ausgeführt werden",
   "desktop.wsl.error.installWsl": "WSL-Installation fehlgeschlagen",
   "desktop.wsl.error.installDistro": "Distribution konnte nicht installiert werden: {{distro}}",
-  "desktop.wsl.error.installOpencode": "LibreCode-Installation fehlgeschlagen",
+  "desktop.wsl.error.installopencode": "LibreCode-Installation fehlgeschlagen",
   "desktop.wsl.error.alreadyAdded": "{{distro}} wurde bereits hinzugefügt",
   "desktop.wsl.error.opencodeMissing": "LibreCode ist in dieser Distribution nicht installiert",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode ist installiert, konnte aber nicht ausgeführt werden",
@@ -1172,5 +1171,8 @@ export const dict = {
   "help.tabs.worktrees":
     "Das neue Design unterstützt Git-Worktrees noch nicht. Diese Funktion folgt in Kürze. Wenn Sie das bisherige Layout vorerst weiterverwenden möchten, können Sie in den Einstellungen zwischen den Layouts wechseln. Beachten Sie jedoch, dass das neue Layout in einigen Wochen dauerhaft verwendet wird.",
 } satisfies Partial<Record<Keys, string>>
+
+
+
 
 

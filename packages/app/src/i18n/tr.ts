@@ -80,7 +80,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Dağıtımda komutlar çalıştırılamıyor",
   "desktop.wsl.error.installWsl": "WSL kurulamadı",
   "desktop.wsl.error.installDistro": "Dağıtım kurulamadı: {{distro}}",
-  "desktop.wsl.error.installOpencode": "LibreCode kurulamadı",
+  "desktop.wsl.error.installopencode": "LibreCode kurulamadı",
   "desktop.wsl.error.alreadyAdded": "{{distro}} zaten eklendi",
   "desktop.wsl.error.opencodeMissing": "LibreCode bu dağıtımda kurulu değil",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode kurulu ancak çalıştırılamadı",
@@ -455,16 +455,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Kurulumu tamamlamak için {{distro}} dağıtımını bir kez açın.",
   "wsl.onboarding.finishingDistro": "{{distro}} kurulumu tamamlanıyor.",
   "wsl.onboarding.pickDistro": "Bir dağıtım seçin veya aşağıdan bir dağıtım kurun.",
-  "wsl.onboarding.checkingOpencode": "LibreCode kontrol ediliyor...",
-  "wsl.onboarding.checkingOpencodeIn": "{{distro}} içinde LibreCode kontrol ediliyor...",
-  "wsl.onboarding.updatingOpencode": "LibreCode güncelleniyor...",
-  "wsl.onboarding.updatingOpencodeIn": "{{distro}} içinde LibreCode güncelleniyor...",
-  "wsl.onboarding.updateOpencodeIn": "{{distro}} içindeki LibreCode'u güncelleyin.",
-  "wsl.onboarding.updateOpencode": "LibreCode'u güncelle",
+  "wsl.onboarding.checkingopencode": "LibreCode kontrol ediliyor...",
+  "wsl.onboarding.checkingopencodeIn": "{{distro}} içinde LibreCode kontrol ediliyor...",
+  "wsl.onboarding.updatingopencode": "LibreCode güncelleniyor...",
+  "wsl.onboarding.updatingopencodeIn": "{{distro}} içinde LibreCode güncelleniyor...",
+  "wsl.onboarding.updateopencodeIn": "{{distro}} içindeki LibreCode'u güncelleyin.",
+  "wsl.onboarding.updateopencode": "LibreCode'u güncelle",
   "wsl.onboarding.opencodeReadyIn": "{{distro}} içinde LibreCode hazır.",
   "wsl.onboarding.opencodeReady": "LibreCode hazır.",
-  "wsl.onboarding.installOpencodeIn": "LibreCode'u {{distro}} içine kurun.",
-  "wsl.onboarding.installOpencode": "LibreCode'u kur",
+  "wsl.onboarding.installopencodeIn": "LibreCode'u {{distro}} içine kurun.",
+  "wsl.onboarding.installopencode": "LibreCode'u kur",
   "wsl.onboarding.chooseDistroFirst": "Önce bir dağıtım seçin.",
   "wsl.onboarding.loadFailed": "WSL durumu yüklenemedi.",
   "wsl.onboarding.loading": "Yükleniyor...",
@@ -530,7 +530,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup.description": "Yeni bir çalışma alanı (worktree) oluşturduktan sonra çalışır.",
   "dialog.project.edit.worktree.startup.placeholder": "örneğin bun install",
 
-  "dialog.usageExceeded.dontShowAgain": "Bir daha gösterme",
 
   "context.breakdown.title": "Bağlam Dökümü",
   "context.breakdown.note": 'Girdi tokenlerinin yaklaşık dökümü. "Diğer" araç tanımları ve ek yükleri içerir.',
@@ -1164,5 +1163,8 @@ export const dict = {
   "error.childStore.storeCreateFailed": "Depo oluşturulamadı",
   "terminal.connectionLost.abnormalClose": "WebSocket anormal şekilde kapandı: {{code}}",
 } satisfies Partial<Record<Keys, string>>
+
+
+
 
 

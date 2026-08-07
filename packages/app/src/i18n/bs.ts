@@ -76,7 +76,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Nije moguće izvršiti komande u distribuciji",
   "desktop.wsl.error.installWsl": "Instalacija WSL-a nije uspjela",
   "desktop.wsl.error.installDistro": "Instalacija distribucije nije uspjela: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Instalacija LibreCode-a nije uspjela",
+  "desktop.wsl.error.installopencode": "Instalacija LibreCode-a nije uspjela",
   "desktop.wsl.error.alreadyAdded": "Distribucija {{distro}} je već dodana",
   "desktop.wsl.error.opencodeMissing": "LibreCode nije instaliran u ovoj distribuciji",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode je instaliran, ali se ne može pokrenuti",
@@ -451,16 +451,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Otvori {{distro}} jednom da završiš postavljanje.",
   "wsl.onboarding.finishingDistro": "Završavanje postavljanja za {{distro}}.",
   "wsl.onboarding.pickDistro": "Odaberi distribuciju ili instaliraj jednu ispod.",
-  "wsl.onboarding.checkingOpencode": "Provjera LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Provjera LibreCode u distribuciji {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Ažuriranje LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Ažuriranje LibreCode u distribuciji {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Ažuriraj LibreCode u distribuciji {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Ažuriraj LibreCode",
+  "wsl.onboarding.checkingopencode": "Provjera LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Provjera LibreCode u distribuciji {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Ažuriranje LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Ažuriranje LibreCode u distribuciji {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Ažuriraj LibreCode u distribuciji {{distro}}.",
+  "wsl.onboarding.updateopencode": "Ažuriraj LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode je spreman u distribuciji {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode je spreman.",
-  "wsl.onboarding.installOpencodeIn": "Instaliraj LibreCode u distribuciji {{distro}}.",
-  "wsl.onboarding.installOpencode": "Instaliraj LibreCode",
+  "wsl.onboarding.installopencodeIn": "Instaliraj LibreCode u distribuciji {{distro}}.",
+  "wsl.onboarding.installopencode": "Instaliraj LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Prvo odaberi distribuciju.",
   "wsl.onboarding.loadFailed": "Nije uspjelo učitavanje WSL stanja.",
   "wsl.onboarding.loading": "Učitavanje...",
@@ -526,7 +526,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup.description": "Pokreće se nakon kreiranja novog radnog prostora (worktree).",
   "dialog.project.edit.worktree.startup.placeholder": "npr. bun install",
 
-  "dialog.usageExceeded.dontShowAgain": "Nemoj više prikazivati",
 
   "context.breakdown.title": "Razlaganje konteksta",
   "context.breakdown.note":
@@ -1162,5 +1161,8 @@ export const dict = {
   "error.childStore.storeCreateFailed": "Nije uspjelo kreiranje skladišta",
   "terminal.connectionLost.abnormalClose": "WebSocket zatvoren nenormalno: {{code}}",
 }
+
+
+
 
 

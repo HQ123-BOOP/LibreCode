@@ -362,16 +362,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Apri {{distro}} una volta per completare la configurazione.",
   "wsl.onboarding.finishingDistro": "Completamento della configurazione di {{distro}}.",
   "wsl.onboarding.pickDistro": "Scegli una distribuzione o installane una qui sotto.",
-  "wsl.onboarding.checkingOpencode": "Controllo LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Controllo LibreCode in {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Aggiornamento LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Aggiornamento LibreCode in {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Aggiorna LibreCode in {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Aggiorna LibreCode",
+  "wsl.onboarding.checkingopencode": "Controllo LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Controllo LibreCode in {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Aggiornamento LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Aggiornamento LibreCode in {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Aggiorna LibreCode in {{distro}}.",
+  "wsl.onboarding.updateopencode": "Aggiorna LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode è pronto in {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode è pronto.",
-  "wsl.onboarding.installOpencodeIn": "Installa LibreCode in {{distro}}.",
-  "wsl.onboarding.installOpencode": "Installa LibreCode",
+  "wsl.onboarding.installopencodeIn": "Installa LibreCode in {{distro}}.",
+  "wsl.onboarding.installopencode": "Installa LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Scegli prima una distribuzione.",
   "wsl.onboarding.loadFailed": "Impossibile caricare lo stato WSL.",
   "wsl.onboarding.loading": "Caricamento...",
@@ -442,7 +442,6 @@ export const dict = {
   "dialog.releaseNotes.action.next": "Avanti",
   "dialog.releaseNotes.action.hideFuture": "Non mostrarli in futuro",
   "dialog.releaseNotes.media.alt": "Anteprima delle novità",
-  "dialog.usageExceeded.dontShowAgain": "Non mostrare più",
 
   "context.breakdown.title": "Ripartizione del contesto",
   "context.breakdown.note":
@@ -1148,7 +1147,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Impossibile eseguire comandi nella distribuzione",
   "desktop.wsl.error.installWsl": "Installazione di WSL non riuscita",
   "desktop.wsl.error.installDistro": "Impossibile installare la distribuzione: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Installazione di LibreCode non riuscita",
+  "desktop.wsl.error.installopencode": "Installazione di LibreCode non riuscita",
   "desktop.wsl.error.alreadyAdded": "{{distro}} è già stata aggiunta",
   "desktop.wsl.error.opencodeMissing": "LibreCode non è installato in questa distribuzione",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode è installato, ma non è stato possibile eseguirlo",
@@ -1166,5 +1165,8 @@ export const dict = {
   "desktop.picker.error.notSelected": "Il file non è stato selezionato nella finestra di selezione",
   "desktop.picker.error.sizeLimit": "Gli allegati selezionati superano il limite di {{limit}} MB",
 }
+
+
+
 
 

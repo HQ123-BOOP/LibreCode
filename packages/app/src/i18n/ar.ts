@@ -75,7 +75,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "تعذر تنفيذ الأوامر في التوزيعة",
   "desktop.wsl.error.installWsl": "فشل تثبيت WSL",
   "desktop.wsl.error.installDistro": "فشل تثبيت التوزيعة: {{distro}}",
-  "desktop.wsl.error.installOpencode": "فشل تثبيت LibreCode",
+  "desktop.wsl.error.installopencode": "فشل تثبيت LibreCode",
   "desktop.wsl.error.alreadyAdded": "تمت إضافة {{distro}} بالفعل",
   "desktop.wsl.error.opencodeMissing": "LibreCode غير مثبت في هذه التوزيعة",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode مثبت، لكن تعذر تشغيله",
@@ -447,16 +447,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "افتح {{distro}} مرة واحدة لإكمال الإعداد.",
   "wsl.onboarding.finishingDistro": "جارٍ إكمال إعداد {{distro}}.",
   "wsl.onboarding.pickDistro": "اختر توزيعة أو ثبّت واحدة أدناه.",
-  "wsl.onboarding.checkingOpencode": "جارٍ التحقق من LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "جارٍ التحقق من LibreCode في {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "جارٍ تحديث LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "جارٍ تحديث LibreCode في {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "حدّث LibreCode في {{distro}}.",
-  "wsl.onboarding.updateOpencode": "تحديث LibreCode",
+  "wsl.onboarding.checkingopencode": "جارٍ التحقق من LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "جارٍ التحقق من LibreCode في {{distro}}...",
+  "wsl.onboarding.updatingopencode": "جارٍ تحديث LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "جارٍ تحديث LibreCode في {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "حدّث LibreCode في {{distro}}.",
+  "wsl.onboarding.updateopencode": "تحديث LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode جاهز في {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode جاهز.",
-  "wsl.onboarding.installOpencodeIn": "ثبّت LibreCode في {{distro}}.",
-  "wsl.onboarding.installOpencode": "تثبيت LibreCode",
+  "wsl.onboarding.installopencodeIn": "ثبّت LibreCode في {{distro}}.",
+  "wsl.onboarding.installopencode": "تثبيت LibreCode",
   "wsl.onboarding.chooseDistroFirst": "اختر توزيعة أولاً.",
   "wsl.onboarding.loadFailed": "فشل تحميل حالة WSL.",
   "wsl.onboarding.loading": "جارٍ التحميل...",
@@ -520,7 +520,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup": "برنامج نصي لبدء تشغيل مساحة العمل",
   "dialog.project.edit.worktree.startup.description": "يتم تشغيله بعد إنشاء مساحة عمل جديدة (شجرة عمل).",
   "dialog.project.edit.worktree.startup.placeholder": "مثال: bun install",
-  "dialog.usageExceeded.dontShowAgain": "عدم الإظهار مرة أخرى",
 
   "context.breakdown.title": "تفصيل السياق",
   "context.breakdown.note": 'تفصيل تقريبي لرموز الإدخال المميزة. يشمل "أخرى" تعريفات الأدوات والأعباء الإضافية.',
@@ -1152,5 +1151,8 @@ export const dict = {
   "error.childStore.storeCreateFailed": "فشل إنشاء المخزن",
   "terminal.connectionLost.abnormalClose": "تم إغلاق WebSocket بشكل غير طبيعي: {{code}}",
 }
+
+
+
 
 

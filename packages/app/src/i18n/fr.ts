@@ -76,7 +76,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Impossible d'exécuter des commandes dans la distribution",
   "desktop.wsl.error.installWsl": "Échec de l'installation de WSL",
   "desktop.wsl.error.installDistro": "Échec de l'installation de la distribution : {{distro}}",
-  "desktop.wsl.error.installOpencode": "Échec de l'installation d'LibreCode",
+  "desktop.wsl.error.installopencode": "Échec de l'installation d'LibreCode",
   "desktop.wsl.error.alreadyAdded": "{{distro}} a déjà été ajoutée",
   "desktop.wsl.error.opencodeMissing": "LibreCode n'est pas installé dans cette distribution",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode est installé, mais n'a pas pu s'exécuter",
@@ -453,16 +453,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Ouvrez {{distro}} une fois pour terminer la configuration.",
   "wsl.onboarding.finishingDistro": "Finalisation de la configuration de {{distro}}.",
   "wsl.onboarding.pickDistro": "Choisissez une distribution ou installez-en une ci-dessous.",
-  "wsl.onboarding.checkingOpencode": "Vérification d'LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Vérification d'LibreCode dans {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Mise à jour d'LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Mise à jour d'LibreCode dans {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Mettez à jour LibreCode dans {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Mettre à jour LibreCode",
+  "wsl.onboarding.checkingopencode": "Vérification d'LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Vérification d'LibreCode dans {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Mise à jour d'LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Mise à jour d'LibreCode dans {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Mettez à jour LibreCode dans {{distro}}.",
+  "wsl.onboarding.updateopencode": "Mettre à jour LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode est prêt dans {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode est prêt.",
-  "wsl.onboarding.installOpencodeIn": "Installez LibreCode dans {{distro}}.",
-  "wsl.onboarding.installOpencode": "Installer LibreCode",
+  "wsl.onboarding.installopencodeIn": "Installez LibreCode dans {{distro}}.",
+  "wsl.onboarding.installopencode": "Installer LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Choisissez d'abord une distribution.",
   "wsl.onboarding.loadFailed": "Impossible de charger l'état de WSL.",
   "wsl.onboarding.loading": "Chargement...",
@@ -529,7 +529,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup.description":
     "S'exécute après la création d'un nouvel espace de travail (arbre de travail).",
   "dialog.project.edit.worktree.startup.placeholder": "p. ex. bun install",
-  "dialog.usageExceeded.dontShowAgain": "Ne plus afficher",
 
   "context.breakdown.title": "Répartition du contexte",
   "context.breakdown.note":
@@ -650,7 +649,7 @@ export const dict = {
   "error.chain.modelNotFound": "Modèle introuvable : {{provider}}/{{model}}",
   "error.chain.checkConfig": "Vérifiez les noms de fournisseur et de modèle dans votre configuration (opencode.json)",
   "error.chain.mcpFailed":
-    "Le serveur MCP \"{{name}}\" a échoué. Notez qu'OpenCode ne prend pas encore en charge l'authentification MCP.",
+    "Le serveur MCP \"{{name}}\" a échoué. Notez qu'LibreCode ne prend pas encore en charge l'authentification MCP.",
   "error.chain.providerAuthFailed": "Échec de l'authentification du fournisseur ({{provider}}) : {{message}}",
   "error.chain.providerInitFailed":
     'Échec de l\'initialisation du fournisseur "{{provider}}". Vérifiez les identifiants et la configuration.',
@@ -1181,5 +1180,8 @@ export const dict = {
   "titlebar.update": "Mettre à jour",
   "titlebar.updateVersion": "Mettre à jour {{version}}",
 }
+
+
+
 
 

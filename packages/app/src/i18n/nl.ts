@@ -75,7 +75,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Kan geen opdrachten uitvoeren in de distributie",
   "desktop.wsl.error.installWsl": "Installatie van WSL is mislukt",
   "desktop.wsl.error.installDistro": "Kan distributie niet installeren: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Installatie van LibreCode is mislukt",
+  "desktop.wsl.error.installopencode": "Installatie van LibreCode is mislukt",
   "desktop.wsl.error.alreadyAdded": "{{distro}} is al toegevoegd",
   "desktop.wsl.error.opencodeMissing": "LibreCode is niet geïnstalleerd in deze distributie",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode is geïnstalleerd, maar kan niet worden uitgevoerd",
@@ -454,16 +454,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Open {{distro}} één keer om de installatie te voltooien.",
   "wsl.onboarding.finishingDistro": "Installatie van {{distro}} voltooien.",
   "wsl.onboarding.pickDistro": "Kies een distributie of installeer er hieronder een.",
-  "wsl.onboarding.checkingOpencode": "LibreCode controleren...",
-  "wsl.onboarding.checkingOpencodeIn": "LibreCode controleren in {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "LibreCode bijwerken...",
-  "wsl.onboarding.updatingOpencodeIn": "LibreCode bijwerken in {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Werk LibreCode bij in {{distro}}.",
-  "wsl.onboarding.updateOpencode": "LibreCode bijwerken",
+  "wsl.onboarding.checkingopencode": "LibreCode controleren...",
+  "wsl.onboarding.checkingopencodeIn": "LibreCode controleren in {{distro}}...",
+  "wsl.onboarding.updatingopencode": "LibreCode bijwerken...",
+  "wsl.onboarding.updatingopencodeIn": "LibreCode bijwerken in {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Werk LibreCode bij in {{distro}}.",
+  "wsl.onboarding.updateopencode": "LibreCode bijwerken",
   "wsl.onboarding.opencodeReadyIn": "LibreCode is gereed in {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode is klaar.",
-  "wsl.onboarding.installOpencodeIn": "Installeer LibreCode in {{distro}}.",
-  "wsl.onboarding.installOpencode": "Installeer LibreCode",
+  "wsl.onboarding.installopencodeIn": "Installeer LibreCode in {{distro}}.",
+  "wsl.onboarding.installopencode": "Installeer LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Kies eerst een distributie.",
   "wsl.onboarding.loadFailed": "Kan de WSL-status niet laden.",
   "wsl.onboarding.loading": "Laden...",
@@ -534,7 +534,6 @@ export const dict = {
   "dialog.releaseNotes.action.next": "Volgende",
   "dialog.releaseNotes.action.hideFuture": "Laat deze in de toekomst niet zien",
   "dialog.releaseNotes.media.alt": "Releasevoorbeeld",
-  "dialog.usageExceeded.dontShowAgain": "Niet meer weergeven",
 
   "context.breakdown.title": "Contextanalyse",
   "context.breakdown.note":
@@ -1161,5 +1160,8 @@ export const dict = {
   "workspace.reset.note":
     "Hierdoor wordt de werkruimte opnieuw ingesteld zodat deze overeenkomt met de standaardbranch.",
 }
+
+
+
 
 

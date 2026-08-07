@@ -78,7 +78,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Kan ikke kjøre kommandoer i distribusjonen",
   "desktop.wsl.error.installWsl": "Installasjonen av WSL mislyktes",
   "desktop.wsl.error.installDistro": "Kunne ikke installere distribusjonen: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Installasjonen av LibreCode mislyktes",
+  "desktop.wsl.error.installopencode": "Installasjonen av LibreCode mislyktes",
   "desktop.wsl.error.alreadyAdded": "{{distro}} er allerede lagt til",
   "desktop.wsl.error.opencodeMissing": "LibreCode er ikke installert i denne distribusjonen",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode er installert, men kunne ikke kjøres",
@@ -432,7 +432,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup.description": "Kjører etter at et nytt arbeidsområde (worktree) er opprettet.",
   "dialog.project.edit.worktree.startup.placeholder": "f.eks. bun install",
 
-  "dialog.usageExceeded.dontShowAgain": "Ikke vis igjen",
 
   "context.breakdown.title": "Kontekstfordeling",
   "context.breakdown.note":
@@ -1023,16 +1022,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Åpne {{distro}} én gang for å fullføre oppsettet.",
   "wsl.onboarding.finishingDistro": "Fullfører oppsettet for {{distro}}.",
   "wsl.onboarding.pickDistro": "Velg en distribusjon eller installer en nedenfor.",
-  "wsl.onboarding.checkingOpencode": "Sjekker LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Sjekker LibreCode i {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Oppdaterer LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Oppdaterer LibreCode i {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Oppdater LibreCode i {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Oppdater LibreCode",
+  "wsl.onboarding.checkingopencode": "Sjekker LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Sjekker LibreCode i {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Oppdaterer LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Oppdaterer LibreCode i {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Oppdater LibreCode i {{distro}}.",
+  "wsl.onboarding.updateopencode": "Oppdater LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode er klar i {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode er klar.",
-  "wsl.onboarding.installOpencodeIn": "Installer LibreCode i {{distro}}.",
-  "wsl.onboarding.installOpencode": "Installer LibreCode",
+  "wsl.onboarding.installopencodeIn": "Installer LibreCode i {{distro}}.",
+  "wsl.onboarding.installopencode": "Installer LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Velg en distribusjon først.",
   "wsl.onboarding.loadFailed": "Kunne ikke laste inn WSL-status.",
   "wsl.onboarding.loading": "Laster...",
@@ -1162,5 +1161,8 @@ export const dict = {
   "settings.updates.action.downloading": "Laster ned...",
   "settings.updates.action.installing": "Installerer...",
 } satisfies Partial<Record<Keys, string>>
+
+
+
 
 

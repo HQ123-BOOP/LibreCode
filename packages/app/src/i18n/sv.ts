@@ -75,7 +75,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Det går inte att köra kommandon i distributionen",
   "desktop.wsl.error.installWsl": "Installationen av WSL misslyckades",
   "desktop.wsl.error.installDistro": "Det gick inte att installera distributionen: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Installationen av LibreCode misslyckades",
+  "desktop.wsl.error.installopencode": "Installationen av LibreCode misslyckades",
   "desktop.wsl.error.alreadyAdded": "{{distro}} har redan lagts till",
   "desktop.wsl.error.opencodeMissing": "LibreCode är inte installerat i den här distributionen",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode är installerat men kunde inte köras",
@@ -454,16 +454,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Öppna {{distro}} en gång för att avsluta installationen.",
   "wsl.onboarding.finishingDistro": "Slutför installationen för {{distro}}.",
   "wsl.onboarding.pickDistro": "Välj en distro eller installera en nedan.",
-  "wsl.onboarding.checkingOpencode": "Kontrollerar LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Kontrollerar LibreCode i {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Uppdaterar LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Uppdaterar LibreCode i {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Uppdatera LibreCode i {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Uppdatera LibreCode",
+  "wsl.onboarding.checkingopencode": "Kontrollerar LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Kontrollerar LibreCode i {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Uppdaterar LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Uppdaterar LibreCode i {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Uppdatera LibreCode i {{distro}}.",
+  "wsl.onboarding.updateopencode": "Uppdatera LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode är redo i {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode är redo.",
-  "wsl.onboarding.installOpencodeIn": "Installera LibreCode i {{distro}}.",
-  "wsl.onboarding.installOpencode": "Installera LibreCode",
+  "wsl.onboarding.installopencodeIn": "Installera LibreCode i {{distro}}.",
+  "wsl.onboarding.installopencode": "Installera LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Välj en distro först.",
   "wsl.onboarding.loadFailed": "Det gick inte att ladda WSL-tillståndet.",
   "wsl.onboarding.loading": "Laddar...",
@@ -533,7 +533,6 @@ export const dict = {
   "dialog.releaseNotes.action.next": "Nästa",
   "dialog.releaseNotes.action.hideFuture": "Visa inte dessa i framtiden",
   "dialog.releaseNotes.media.alt": "Förhandsvisning av version",
-  "dialog.usageExceeded.dontShowAgain": "Visa inte igen",
 
   "context.breakdown.title": "Kontextfördelning",
   "context.breakdown.note":
@@ -931,7 +930,7 @@ export const dict = {
   "settings.general.row.colorScheme.title": "Färgschema",
   "settings.general.row.colorScheme.description": "Välj om LibreCode följer system-, ljus- eller mörktemat",
   "settings.general.row.theme.title": "Tema",
-  "settings.general.row.theme.description": "Anpassa OpenCodes tema.",
+  "settings.general.row.theme.description": "Anpassa LibreCodes tema.",
   "settings.general.row.font.title": "Kodtypsnitt",
   "settings.general.row.font.description": "Anpassa teckensnittet som används i kodblock",
   "settings.general.row.terminalFont.title": "Terminaltypsnitt",
@@ -1150,5 +1149,8 @@ export const dict = {
   "workspace.reset.archived.many": "{{count}} sessioner kommer att arkiveras.",
   "workspace.reset.note": "Detta kommer att återställa arbetsytan så att den matchar standardgrenen.",
 }
+
+
+
 
 

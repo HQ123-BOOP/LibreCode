@@ -9,12 +9,12 @@ export const dict = {
   "desktop.updater.checkFailed.title": "Päivitystarkistus epäonnistui",
   "desktop.updater.checkFailed.message": "Päivitysten tarkistaminen epäonnistui",
   "desktop.updater.none.title": "Päivitystä ei ole saatavilla",
-  "desktop.updater.none.message": "Käytät jo OpenCoden uusinta versiota",
+  "desktop.updater.none.message": "Käytät jo LibreCoden uusinta versiota",
   "desktop.updater.downloadFailed.title": "Päivitys epäonnistui",
   "desktop.updater.downloadFailed.message": "Päivityksen lataaminen epäonnistui",
   "desktop.updater.downloaded.title": "Päivitys ladattu",
   "desktop.updater.downloaded.prompt":
-    "OpenCoden versio {{version}} on ladattu. Haluatko asentaa sen ja käynnistää OpenCoden uudelleen?",
+    "LibreCoden versio {{version}} on ladattu. Haluatko asentaa sen ja käynnistää LibreCoden uudelleen?",
   "desktop.updater.installFailed.title": "Päivitys epäonnistui",
   "desktop.updater.installFailed.message": "Päivityksen asentaminen epäonnistui",
   "desktop.cli.installed.title": "CLI on asennettu",
@@ -26,4 +26,5 @@ export const dict = {
   "desktop.error.dev.rootNotFound":
     "Juurielementtiä ei löydy. Unohditko lisätä sen index.html-tiedostoosi? Tai ehkä id-attribuutti on kirjoitettu väärin?",
 }
+
 

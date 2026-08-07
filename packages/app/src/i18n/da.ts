@@ -355,16 +355,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "Åbn {{distro}} én gang for at fuldføre opsætningen.",
   "wsl.onboarding.finishingDistro": "Fuldfører opsætningen af {{distro}}.",
   "wsl.onboarding.pickDistro": "Vælg en distribution, eller installer en nedenfor.",
-  "wsl.onboarding.checkingOpencode": "Tjekker LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "Tjekker LibreCode i {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "Opdaterer LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "Opdaterer LibreCode i {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "Opdater LibreCode i {{distro}}.",
-  "wsl.onboarding.updateOpencode": "Opdater LibreCode",
+  "wsl.onboarding.checkingopencode": "Tjekker LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "Tjekker LibreCode i {{distro}}...",
+  "wsl.onboarding.updatingopencode": "Opdaterer LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "Opdaterer LibreCode i {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "Opdater LibreCode i {{distro}}.",
+  "wsl.onboarding.updateopencode": "Opdater LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode er klar i {{distro}}.",
   "wsl.onboarding.opencodeReady": "LibreCode er klar.",
-  "wsl.onboarding.installOpencodeIn": "Installer LibreCode i {{distro}}.",
-  "wsl.onboarding.installOpencode": "Installer LibreCode",
+  "wsl.onboarding.installopencodeIn": "Installer LibreCode i {{distro}}.",
+  "wsl.onboarding.installopencode": "Installer LibreCode",
   "wsl.onboarding.chooseDistroFirst": "Vælg først en distribution.",
   "wsl.onboarding.loadFailed": "Kunne ikke indlæse WSL-status.",
   "wsl.onboarding.loading": "Indlæser...",
@@ -414,7 +414,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup": "Opstartsscript for arbejdsområde",
   "dialog.project.edit.worktree.startup.description": "Køres efter oprettelse af et nyt arbejdsområde (worktree).",
   "dialog.project.edit.worktree.startup.placeholder": "f.eks. bun install",
-  "dialog.usageExceeded.dontShowAgain": "Vis ikke igen",
 
   "context.breakdown.title": "Kontekstfordeling",
   "context.breakdown.note":
@@ -730,7 +729,7 @@ export const dict = {
   "settings.general.row.colorScheme.description":
     "Vælg, om LibreCode skal følge systemtemaet eller bruge et lyst eller mørkt tema",
   "settings.general.row.theme.title": "Tema",
-  "settings.general.row.theme.description": "Tilpas OpenCodes tema.",
+  "settings.general.row.theme.description": "Tilpas LibreCodes tema.",
   "settings.general.row.font.title": "Kode-skrifttype",
   "settings.general.row.font.description": "Tilpas skrifttypen, der bruges i kodeblokke",
   "settings.general.row.terminalFont.title": "Terminalskrifttype",
@@ -1121,7 +1120,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "Kan ikke udføre kommandoer i distributionen",
   "desktop.wsl.error.installWsl": "Installationen af WSL mislykkedes",
   "desktop.wsl.error.installDistro": "Kunne ikke installere distributionen: {{distro}}",
-  "desktop.wsl.error.installOpencode": "Installationen af LibreCode mislykkedes",
+  "desktop.wsl.error.installopencode": "Installationen af LibreCode mislykkedes",
   "desktop.wsl.error.alreadyAdded": "{{distro}} er allerede tilføjet",
   "desktop.wsl.error.opencodeMissing": "LibreCode er ikke installeret i denne distribution",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode er installeret, men kunne ikke køre",
@@ -1155,5 +1154,8 @@ export const dict = {
   "help.tabs.worktrees":
     "Det nye design understøtter endnu ikke Git Worktrees, men understøttelsen kommer snart. Hvis du foretrækker at fortsætte med det tidligere layout, kan du skifte mellem layoutene under Indstillinger. Bemærk, at det nye layout bliver permanent om nogle få uger.",
 }
+
+
+
 
 

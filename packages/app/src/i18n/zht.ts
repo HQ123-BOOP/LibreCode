@@ -79,7 +79,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "無法在發行版中執行命令",
   "desktop.wsl.error.installWsl": "WSL 安裝失敗",
   "desktop.wsl.error.installDistro": "無法安裝發行版：{{distro}}",
-  "desktop.wsl.error.installOpencode": "LibreCode 安裝失敗",
+  "desktop.wsl.error.installopencode": "LibreCode 安裝失敗",
   "desktop.wsl.error.alreadyAdded": "已新增 {{distro}}",
   "desktop.wsl.error.opencodeMissing": "此發行版中未安裝 LibreCode",
   "desktop.wsl.error.opencodeCannotRun": "已安裝 LibreCode，但無法執行",
@@ -450,16 +450,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "開啟 {{distro}} 一次以完成設定。",
   "wsl.onboarding.finishingDistro": "正在完成 {{distro}} 的設定。",
   "wsl.onboarding.pickDistro": "選擇發行版，或在下方安裝。",
-  "wsl.onboarding.checkingOpencode": "正在檢查 LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "正在檢查 {{distro}} 中的 LibreCode...",
-  "wsl.onboarding.updatingOpencode": "正在更新 LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "正在更新 {{distro}} 中的 LibreCode...",
-  "wsl.onboarding.updateOpencodeIn": "更新 {{distro}} 中的 LibreCode。",
-  "wsl.onboarding.updateOpencode": "更新 LibreCode",
+  "wsl.onboarding.checkingopencode": "正在檢查 LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "正在檢查 {{distro}} 中的 LibreCode...",
+  "wsl.onboarding.updatingopencode": "正在更新 LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "正在更新 {{distro}} 中的 LibreCode...",
+  "wsl.onboarding.updateopencodeIn": "更新 {{distro}} 中的 LibreCode。",
+  "wsl.onboarding.updateopencode": "更新 LibreCode",
   "wsl.onboarding.opencodeReadyIn": "{{distro}} 中的 LibreCode 已就緒。",
   "wsl.onboarding.opencodeReady": "LibreCode 已就緒。",
-  "wsl.onboarding.installOpencodeIn": "在 {{distro}} 中安裝 LibreCode。",
-  "wsl.onboarding.installOpencode": "安裝 LibreCode",
+  "wsl.onboarding.installopencodeIn": "在 {{distro}} 中安裝 LibreCode。",
+  "wsl.onboarding.installopencode": "安裝 LibreCode",
   "wsl.onboarding.chooseDistroFirst": "請先選擇發行版。",
   "wsl.onboarding.loadFailed": "無法載入 WSL 狀態。",
   "wsl.onboarding.loading": "載入中...",
@@ -521,7 +521,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup": "工作區啟動腳本",
   "dialog.project.edit.worktree.startup.description": "在建立新的工作區 (worktree) 後執行。",
   "dialog.project.edit.worktree.startup.placeholder": "例如 bun install",
-  "dialog.usageExceeded.dontShowAgain": "不再顯示",
 
   "context.breakdown.title": "上下文細分",
   "context.breakdown.note": "輸入 token 的概略細分。「其他」包含工具定義和額外負擔。",
@@ -1134,5 +1133,8 @@ export const dict = {
   "error.childStore.storeCreateFailed": "建立儲存區失敗",
   "terminal.connectionLost.abnormalClose": "WebSocket 異常關閉：{{code}}",
 } satisfies Partial<Record<Keys, string>>
+
+
+
 
 

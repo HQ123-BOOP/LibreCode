@@ -75,7 +75,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "ไม่สามารถเรียกใช้คำสั่งในดิสโทรได้",
   "desktop.wsl.error.installWsl": "การติดตั้ง WSL ล้มเหลว",
   "desktop.wsl.error.installDistro": "ไม่สามารถติดตั้งดิสโทรได้: {{distro}}",
-  "desktop.wsl.error.installOpencode": "การติดตั้ง LibreCode ล้มเหลว",
+  "desktop.wsl.error.installopencode": "การติดตั้ง LibreCode ล้มเหลว",
   "desktop.wsl.error.alreadyAdded": "เพิ่ม {{distro}} แล้ว",
   "desktop.wsl.error.opencodeMissing": "ไม่ได้ติดตั้ง LibreCode ในดิสโทรนี้",
   "desktop.wsl.error.opencodeCannotRun": "ติดตั้ง LibreCode แล้ว แต่ไม่สามารถเรียกใช้ได้",
@@ -448,16 +448,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "เปิด {{distro}} หนึ่งครั้งเพื่อให้การตั้งค่าเสร็จสมบูรณ์",
   "wsl.onboarding.finishingDistro": "กำลังตั้งค่า {{distro}} ให้เสร็จสมบูรณ์",
   "wsl.onboarding.pickDistro": "เลือกดิสโทรหรือติดตั้งจากรายการด้านล่าง",
-  "wsl.onboarding.checkingOpencode": "กำลังตรวจสอบ LibreCode...",
-  "wsl.onboarding.checkingOpencodeIn": "กำลังตรวจสอบ LibreCode ใน {{distro}}...",
-  "wsl.onboarding.updatingOpencode": "กำลังอัปเดต LibreCode...",
-  "wsl.onboarding.updatingOpencodeIn": "กำลังอัปเดต LibreCode ใน {{distro}}...",
-  "wsl.onboarding.updateOpencodeIn": "อัปเดต LibreCode ใน {{distro}}",
-  "wsl.onboarding.updateOpencode": "อัปเดต LibreCode",
+  "wsl.onboarding.checkingopencode": "กำลังตรวจสอบ LibreCode...",
+  "wsl.onboarding.checkingopencodeIn": "กำลังตรวจสอบ LibreCode ใน {{distro}}...",
+  "wsl.onboarding.updatingopencode": "กำลังอัปเดต LibreCode...",
+  "wsl.onboarding.updatingopencodeIn": "กำลังอัปเดต LibreCode ใน {{distro}}...",
+  "wsl.onboarding.updateopencodeIn": "อัปเดต LibreCode ใน {{distro}}",
+  "wsl.onboarding.updateopencode": "อัปเดต LibreCode",
   "wsl.onboarding.opencodeReadyIn": "LibreCode พร้อมใช้งานใน {{distro}} แล้ว",
   "wsl.onboarding.opencodeReady": "LibreCode พร้อมใช้งานแล้ว",
-  "wsl.onboarding.installOpencodeIn": "ติดตั้ง LibreCode ใน {{distro}}",
-  "wsl.onboarding.installOpencode": "ติดตั้ง LibreCode",
+  "wsl.onboarding.installopencodeIn": "ติดตั้ง LibreCode ใน {{distro}}",
+  "wsl.onboarding.installopencode": "ติดตั้ง LibreCode",
   "wsl.onboarding.chooseDistroFirst": "เลือกดิสโทรก่อน",
   "wsl.onboarding.loadFailed": "ไม่สามารถโหลดสถานะ WSL ได้",
   "wsl.onboarding.loading": "กำลังโหลด...",
@@ -522,7 +522,6 @@ export const dict = {
   "dialog.project.edit.worktree.startup.description": "ทำงานหลังจากสร้างพื้นที่ทำงานใหม่ (worktree)",
   "dialog.project.edit.worktree.startup.placeholder": "เช่น bun install",
 
-  "dialog.usageExceeded.dontShowAgain": "ไม่ต้องแสดงอีก",
 
   "context.breakdown.title": "การแบ่งบริบท",
   "context.breakdown.note": 'การแบ่งโดยประมาณของโทเค็นนำเข้า "อื่น ๆ" รวมถึงคำนิยามเครื่องมือและโอเวอร์เฮด',
@@ -1143,5 +1142,8 @@ export const dict = {
   "error.childStore.storeCreateFailed": "ไม่สามารถสร้างที่เก็บ",
   "terminal.connectionLost.abnormalClose": "WebSocket ปิดอย่างผิดปกติ: {{code}}",
 }
+
+
+
 
 

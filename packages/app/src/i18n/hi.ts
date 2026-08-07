@@ -76,7 +76,7 @@ export const dict = {
   "desktop.wsl.error.executeDistro": "डिस्ट्रो में कमांड निष्पादित नहीं किए जा सकते",
   "desktop.wsl.error.installWsl": "WSL इंस्टॉल नहीं हो सका",
   "desktop.wsl.error.installDistro": "डिस्ट्रो इंस्टॉल नहीं हो सका: {{distro}}",
-  "desktop.wsl.error.installOpencode": "LibreCode इंस्टॉल नहीं हो सका",
+  "desktop.wsl.error.installopencode": "LibreCode इंस्टॉल नहीं हो सका",
   "desktop.wsl.error.alreadyAdded": "{{distro}} पहले ही जोड़ा जा चुका है",
   "desktop.wsl.error.opencodeMissing": "इस डिस्ट्रो में LibreCode इंस्टॉल नहीं है",
   "desktop.wsl.error.opencodeCannotRun": "LibreCode इंस्टॉल है, लेकिन चल नहीं सका",
@@ -455,16 +455,16 @@ export const dict = {
   "wsl.onboarding.openDistroOnce": "सेटअप पूरा करने के लिए एक बार {{distro}} खोलें।",
   "wsl.onboarding.finishingDistro": "{{distro}} का सेटअप पूरा किया जा रहा है।",
   "wsl.onboarding.pickDistro": "एक डिस्ट्रो चुनें या नीचे एक स्थापित करें।",
-  "wsl.onboarding.checkingOpencode": "LibreCode की जाँच हो रही है...",
-  "wsl.onboarding.checkingOpencodeIn": "{{distro}} में LibreCode की जाँच हो रही है...",
-  "wsl.onboarding.updatingOpencode": "LibreCode अपडेट हो रहा है...",
-  "wsl.onboarding.updatingOpencodeIn": "{{distro}} में LibreCode अपडेट हो रहा है...",
-  "wsl.onboarding.updateOpencodeIn": "{{distro}} में LibreCode को अपडेट करें।",
-  "wsl.onboarding.updateOpencode": "LibreCode को अपडेट करें",
+  "wsl.onboarding.checkingopencode": "LibreCode की जाँच हो रही है...",
+  "wsl.onboarding.checkingopencodeIn": "{{distro}} में LibreCode की जाँच हो रही है...",
+  "wsl.onboarding.updatingopencode": "LibreCode अपडेट हो रहा है...",
+  "wsl.onboarding.updatingopencodeIn": "{{distro}} में LibreCode अपडेट हो रहा है...",
+  "wsl.onboarding.updateopencodeIn": "{{distro}} में LibreCode को अपडेट करें।",
+  "wsl.onboarding.updateopencode": "LibreCode को अपडेट करें",
   "wsl.onboarding.opencodeReadyIn": "LibreCode {{distro}} में तैयार है।",
   "wsl.onboarding.opencodeReady": "LibreCode तैयार है।",
-  "wsl.onboarding.installOpencodeIn": "{{distro}} में LibreCode स्थापित करें।",
-  "wsl.onboarding.installOpencode": "LibreCode स्थापित करें",
+  "wsl.onboarding.installopencodeIn": "{{distro}} में LibreCode स्थापित करें।",
+  "wsl.onboarding.installopencode": "LibreCode स्थापित करें",
   "wsl.onboarding.chooseDistroFirst": "पहले एक डिस्ट्रो चुनें।",
   "wsl.onboarding.loadFailed": "WSL स्थिति लोड करने में विफल।",
   "wsl.onboarding.loading": "लोड हो रहा है...",
@@ -533,7 +533,6 @@ export const dict = {
   "dialog.releaseNotes.action.next": "अगला",
   "dialog.releaseNotes.action.hideFuture": "भविष्य में इन्हें न दिखाएँ",
   "dialog.releaseNotes.media.alt": "रिलीज़ पूर्वावलोकन",
-  "dialog.usageExceeded.dontShowAgain": "फिर से न दिखाएँ",
 
   "context.breakdown.title": "कॉन्टेक्स्ट ब्रेकडाउन",
   "context.breakdown.note": 'इनपुट टोकन का अनुमानित विभाजन। "अन्य" में टूल की परिभाषाएँ और अतिरिक्त खर्च शामिल हैं।',
@@ -1148,5 +1147,8 @@ export const dict = {
   "workspace.reset.archived.many": "{{count}} सेशन संग्रहित किए जाएँगे।",
   "workspace.reset.note": "यह डिफ़ॉल्ट शाखा से मिलान करने के लिए वर्कस्पेस को रीसेट कर देगा।",
 }
+
+
+
 
 
