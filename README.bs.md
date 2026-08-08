@@ -103,18 +103,6 @@ Koristi se interno i može se pozvati pomoću `@general` u porukama.
 
 Saznaj više o [agentima](https://opencode.ai/docs/agents).
 
-### Dokumentacija
 
-Za više informacija o konfiguraciji OpenCode-a, [**pogledaj dokumentaciju**](https://opencode.ai/docs).
+**LibreCode je fork od OpenCode-a. Ovaj projekat nije razvijen od strane službenog OpenCode tima i ne postoji nikakav odnos povezanosti, sponzorstva, autorizacije ili odobrenja s njima. Sva imena proizvoda, zaštitni znaci, znaci usluga i registrirani zaštitni znaci spomenuti u ovom dokumentu vlasništvo su njihovih vlasnika. Projekat se pruža "KAKAV JESTE" (AS-IS) i, u najvećoj mjeri dozvoljenoj zakonom, ne daju se nikakve garancije bilo koje vrste.**
 
-### Doprinosi
-
-Ako želiš doprinositi OpenCode-u, pročitaj [upute za doprinošenje](./CONTRIBUTING.md) prije slanja pull requesta.
-
-### Gradnja na OpenCode-u
-
-Ako radiš na projektu koji je povezan s OpenCode-om i koristi "opencode" kao dio naziva, npr. "opencode-dashboard" ili "opencode-mobile", dodaj napomenu u svoj README da projekat nije napravio OpenCode tim i da nije povezan s nama.
-
----
-
-**Pridruži se našoj zajednici** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)

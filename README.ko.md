@@ -103,18 +103,6 @@ OpenCode 에는 내장 에이전트 2개가 있으며 `Tab` 키로 전환할 수
 
 [agents](https://opencode.ai/docs/agents) 에 대해 더 알아보세요.
 
-### 문서
 
-OpenCode 설정에 대한 자세한 내용은 [**문서**](https://opencode.ai/docs) 를 참고하세요.
+**LibreCode는 OpenCode의 포크입니다. 이 프로젝트는 OpenCode 공식 팀이 개발한 것이 아니며, 그들과 제휴, 후원, 승인 또는 보증 관계가 없습니다. 여기에 언급된 모든 제품 이름, 상표, 서비스 마크 및 등록 상표는 해당 소유자의 자산입니다. 이 프로젝트는 "있는 그대로"(AS-IS) 제공되며, 법이 허용하는 최대 범위 내에서 어떠한 종류의 보증도 하지 않습니다.**
 
-### 기여하기
-
-OpenCode 에 기여하고 싶다면, Pull Request 를 제출하기 전에 [contributing docs](./CONTRIBUTING.md) 를 읽어주세요.
-
-### OpenCode 기반으로 만들기
-
-OpenCode 와 관련된 프로젝트를 진행하면서 이름에 "opencode"(예: "opencode-dashboard" 또는 "opencode-mobile") 를 포함한다면, README 에 해당 프로젝트가 OpenCode 팀이 만든 것이 아니며 어떤 방식으로도 우리와 제휴되어 있지 않다는 점을 명시해 주세요.
-
----
-
-**커뮤니티에 참여하기** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)

@@ -103,18 +103,6 @@ Se usa internamente y se puede invocar con `@general` en los mensajes.
 
 Más información sobre [agentes](https://opencode.ai/docs/agents).
 
-### Documentación
 
-Para más información sobre cómo configurar OpenCode, [**ve a nuestra documentación**](https://opencode.ai/docs).
+**LibreCode es un fork de OpenCode. Este proyecto no está desarrollado por el equipo oficial de OpenCode y no existe ninguna relación de afiliación, patrocinio, autorización o respaldo con ellos. Todos los nombres de productos, marcas comerciales, marcas de servicio y marcas registradas mencionados aquí son propiedad de sus respectivos dueños. El proyecto se proporciona "TAL CUAL" (AS-IS) y, en la máxima medida permitida por la ley, no se otorgan garantías de ningún tipo.**
 
-### Contribuir
-
-Si te interesa contribuir a OpenCode, lee nuestras [docs de contribución](./CONTRIBUTING.md) antes de enviar un pull request.
-
-### Proyectos basados en OpenCode
-
-Si estás trabajando en un proyecto basado en OpenCode y usas "opencode" como parte del nombre, por ejemplo, "opencode-dashboard" u "opencode-mobile", agrega una nota en tu README para aclarar que no está hecho por el equipo de OpenCode y que no está afiliado con nosotros de ninguna manera.
-
----
-
-**Únete a nuestra comunidad** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)

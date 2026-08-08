@@ -103,18 +103,6 @@ XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
 
 تعرف على المزيد حول [agents](https://opencode.ai/docs/agents).
 
-### التوثيق
 
-لمزيد من المعلومات حول كيفية ضبط OpenCode، [**راجع التوثيق**](https://opencode.ai/docs).
+**LibreCode هو فرع من OpenCode. هذا المشروع ليس من تطوير فريق OpenCode الرسمي، ولا توجد أي علاقة انتساب أو رعاية أو تفويض أو تأييد معهم. جميع أسماء المنتجات والعلامات التجارية وعلامات الخدمة والعلامات التجارية المسجلة المذكورة هنا هي ملك لأصحابها. يُقدَّم المشروع "كما هو" (AS-IS)، وبأقصى حد يسمح به القانون، لا تُقدَّم أي ضمانات من أي نوع.**
 
-### المساهمة
-
-اذا كنت مهتما بالمساهمة في OpenCode، يرجى قراءة [contributing docs](./CONTRIBUTING.md) قبل ارسال pull request.
-
-### البناء فوق OpenCode
-
-اذا كنت تعمل على مشروع مرتبط بـ OpenCode ويستخدم "opencode" كجزء من اسمه (مثل "opencode-dashboard" او "opencode-mobile")، يرجى اضافة ملاحظة في README توضح انه ليس مبنيا بواسطة فريق OpenCode ولا يرتبط بنا بأي شكل.
-
----
-
-**انضم الى مجتمعنا** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)

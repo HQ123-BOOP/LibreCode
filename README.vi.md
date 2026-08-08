@@ -103,18 +103,6 @@ Agent này được sử dụng nội bộ và có thể gọi bằng cách dùn
 
 Tìm hiểu thêm về [agents](https://opencode.ai/docs/agents).
 
-### Tài liệu
 
-Để biết thêm thông tin về cách cấu hình OpenCode, [**hãy truy cập tài liệu của chúng tôi**](https://opencode.ai/docs).
+**LibreCode là một nhánh (fork) của OpenCode. Dự án này không được phát triển bởi nhóm chính thức của OpenCode và không có bất kỳ mối quan hệ liên kết, tài trợ, ủy quyền hoặc chứng thực nào với họ. Tất cả tên sản phẩm, nhãn hiệu thương mại, nhãn hiệu dịch vụ và nhãn hiệu đã đăng ký được đề cập ở đây thuộc về chủ sở hữu tương ứng của chúng. Dự án được cung cấp "NGUYÊN TRẠNG" (AS-IS) và, trong phạm vi tối đa mà pháp luật cho phép, không có bất kỳ bảo hành nào dưới mọi hình thức.**
 
-### Đóng góp
-
-Nếu bạn muốn đóng góp cho OpenCode, vui lòng đọc [tài liệu hướng dẫn đóng góp](./CONTRIBUTING.md) trước khi gửi pull request.
-
-### Xây dựng trên nền tảng OpenCode
-
-Nếu bạn đang làm việc trên một dự án liên quan đến OpenCode và sử dụng "opencode" như một phần của tên dự án, ví dụ "opencode-dashboard" hoặc "opencode-mobile", vui lòng thêm một ghi chú vào README của bạn để làm rõ rằng dự án đó không được xây dựng bởi đội ngũ OpenCode và không liên kết với chúng tôi dưới bất kỳ hình thức nào.
-
----
-
-**Tham gia cộng đồng của chúng tôi** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)

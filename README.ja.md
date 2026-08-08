@@ -103,18 +103,6 @@ OpenCode には組み込みの Agent が2つあり、`Tab` キーで切り替え
 
 [agents](https://opencode.ai/docs/agents) の詳細はこちら。
 
-### ドキュメント
 
-OpenCode の設定については [**ドキュメント**](https://opencode.ai/docs) を参照してください。
+**LibreCode は OpenCode のフォークです。本プロジェクトは OpenCode 公式チームによって開発されたものではなく、彼らとの提携、スポンサー、承認、推奨の関係は一切ありません。本書に記載されているすべての製品名、商標、サービスマーク、登録商標は、それぞれの所有者に帰属します。本プロジェクトは「現状有姿」(AS-IS)で提供され、法律で認められる最大限の範囲で、いかなる種類の保証も行われません。**
 
-### コントリビュート
-
-OpenCode に貢献したい場合は、Pull Request を送る前に [contributing docs](./CONTRIBUTING.md) を読んでください。
-
-### OpenCode の上に構築する
-
-OpenCode に関連するプロジェクトで、名前に "opencode"（例: "opencode-dashboard" や "opencode-mobile"）を含める場合は、そのプロジェクトが OpenCode チームによって作られたものではなく、いかなる形でも関係がないことを README に明記してください。
-
----
-
-**コミュニティに参加** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)

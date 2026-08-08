@@ -102,18 +102,6 @@ OpenCode 内置两种 Agent，可用 `Tab` 键快速切换：
 
 了解更多 [Agents](https://opencode.ai/docs/agents) 相关信息。
 
-### 文档
 
-更多配置说明请查看我们的 [**官方文档**](https://opencode.ai/docs)。
+**LibreCode 是 OpenCode 的分支。本项目并非由 OpenCode 官方团队开发,与其不存在任何关联、赞助、授权或认可关系。本文提及的所有产品名称、商标、服务标志及注册商标均归其各自所有者所有。本项目按“现状”(AS-IS)提供,在法律允许的最大范围内,不作任何形式的保证。**
 
-### 参与贡献
-
-如有兴趣贡献代码，请在提交 PR 前阅读 [贡献指南 (Contributing Docs)](./CONTRIBUTING.md)。
-
-### 基于 OpenCode 进行开发
-
-如果你在项目名中使用了 “opencode”（如 “opencode-dashboard” 或 “opencode-mobile”），请在 README 里注明该项目不是 OpenCode 团队官方开发，且不存在隶属关系。
-
----
-
-**加入我们的社区** [飞书](https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=52ao9352-5623-4fa0-b7dd-3407c392c1af&qr_code=true) | [X.com](https://x.com/opencode)

@@ -103,18 +103,6 @@ Bu dahili olarak kullanılır ve mesajlarda `@general` ile çağrılabilir.
 
 [Ajanlar](https://opencode.ai/docs/agents) hakkında daha fazla bilgi edinin.
 
-### Dokümantasyon
 
-OpenCode'u nasıl yapılandıracağınız hakkında daha fazla bilgi için [**dokümantasyonumuza göz atın**](https://opencode.ai/docs).
+**LibreCode, OpenCode'un bir çatalıdır. Bu proje resmi OpenCode ekibi tarafından geliştirilmemiştir ve onlarla herhangi bir ortaklık, sponsorluk, yetkilendirme veya onay ilişkisi yoktur. Burada bahsedilen tüm ürün adları, ticari markalar, hizmet markaları ve tescilli ticari markalar ilgili sahiplerinin mülkiyetindedir. Proje "OLDUĞU GİBİ" (AS-IS) esasına göre sağlanır ve yasaların izin verdiği azami ölçüde hiçbir türde garanti verilmez.**
 
-### Katkıda Bulunma
-
-OpenCode'a katkıda bulunmak istiyorsanız, lütfen bir pull request göndermeden önce [katkıda bulunma dokümanlarımızı](./CONTRIBUTING.md) okuyun.
-
-### OpenCode Üzerine Geliştirme
-
-OpenCode ile ilgili bir proje üzerinde çalışıyorsanız ve projenizin adının bir parçası olarak "opencode" kullanıyorsanız (örneğin, "opencode-dashboard" veya "opencode-mobile"), lütfen README dosyanıza projenin OpenCode ekibi tarafından geliştirilmediğini ve bizimle hiçbir şekilde bağlantılı olmadığını belirten bir not ekleyin.
-
----
-
-**Topluluğumuza katılın** [Discord](https://discord.gg/opencode) | [X.com](https://x.com/opencode)
