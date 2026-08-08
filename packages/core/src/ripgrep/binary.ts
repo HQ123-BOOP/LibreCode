@@ -56,7 +56,13 @@ export namespace RipgrepBinary {
         const dir = yield* fs.makeTempDirectoryScoped({ directory: Global.Path.bin, prefix: "ripgrep-" })
 
         if (config.extension === "zip") {
-          const result = yield* run("tar", ["-xf", archive.replaceAll("\\", "/"), "-C", dir.replaceAll("\\", "/")])
+          const shell = (yield* Effect.sync(() => which("pwsh.exe") ?? which("powershell.exe"))) ?? "powershell.exe"
+          const result = yield* run(shell, [
+            "-NoProfile",
+            "-NonInteractive",
+            "-Command",
+            `Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory('${archive.replaceAll("'", "''")}', '${dir.replaceAll("'", "''")}')`,
+          ])
           if (result.code !== 0)
             throw new Error(
               result.stderr.trim() || result.stdout.trim() || `ripgrep extraction failed with code ${result.code}`,
