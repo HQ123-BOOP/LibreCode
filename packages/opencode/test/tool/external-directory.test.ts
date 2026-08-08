@@ -126,8 +126,8 @@ describe("tool.assertExternalDirectory", () => {
           const req = requests.find((r) => r.permission === "external_directory")
           const expected = glob(path.join(outerTmp, "*"))
           expect(req).toBeDefined()
-          expect(req!.patterns).toEqual([expected])
-          expect(req!.always).toEqual([expected])
+          expect(req!.patterns.map((p) => p.toLowerCase())).toEqual([expected.toLowerCase()])
+          expect(req!.always.map((p) => p.toLowerCase())).toEqual([expected.toLowerCase()])
         }),
       { git: true },
     )

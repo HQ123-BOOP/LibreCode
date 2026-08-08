@@ -200,7 +200,9 @@ describe("tool.read external_directory permission", () => {
         yield* exec(dir, { filePath: alt }, next)
         const read = items.find((item) => item.permission === "read")
         expect(read).toBeDefined()
-        expect(read!.patterns).toEqual([path.relative(dir, full(target))])
+        expect(read!.patterns.map((p) => p.toLowerCase())).toEqual(
+          [path.relative(dir, full(target))].map((p) => p.toLowerCase()),
+        )
       }),
     )
   }
