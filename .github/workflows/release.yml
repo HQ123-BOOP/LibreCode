@@ -85,15 +85,13 @@ jobs:
       - name: Create release
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          NOTES="LibreCode v${VERSION}
+
+          Install with  curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash"
           if gh release view "v${VERSION}" --repo "${{ github.repository }}" >/dev/null 2>&1; then
             echo "Release v${VERSION} already exists, updating assets..."
           else
-            gh release create "v${VERSION}" --repo "${{ github.repository }}" \
-              --title "LibreCode v${VERSION}" \
-              --notes "LibreCode v${VERSION}
-
-Install: \`curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash\`" \
-              --generate-notes
+            gh release create "v${VERSION}" --repo "${{ github.repository }}" --title "LibreCode v${VERSION}" --notes "$NOTES" --generate-notes
           fi
           gh release upload "v${VERSION}" --repo "${{ github.repository }}" dist/* --clobber
         env:
