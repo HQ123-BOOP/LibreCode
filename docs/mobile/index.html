@@ -178,6 +178,7 @@ textarea { resize: none; min-height: 44px; max-height: 140px; }
   </select>
   <button class="btn" id="connect" data-i18n="settings.connect">Connect</button>
   <button class="btn secondary" id="scan-btn" data-i18n="mobile.scan">Scan QR code</button>
+  <button class="btn secondary" id="biometric-btn" data-i18n="mobile.biometric">Use biometric unlock</button>
   <label for="paste-input" data-i18n="mobile.paste">Or paste a config link</label>
   <input type="text" id="paste-input" placeholder="librecode://192.168.1.5:4899?token=..." data-i18n-ph="mobile.pastePh">
   <button class="btn secondary" id="paste-btn" data-i18n="mobile.apply">Apply</button>
@@ -257,6 +258,12 @@ const I18N = {
     "mobile.apply": "Apply",
     "mobile.scanFailed": "Could not access camera: {msg}",
     "mobile.invalid": "Invalid config link",
+    "mobile.biometric": "Use biometric unlock",
+    "mobile.biometricSaved": "Password saved. Next launch will unlock automatically.",
+    "mobile.biometricFailed": "Biometric verification failed",
+    "mobile.biometricUnavailable": "Biometric unlock unavailable on this device",
+    "mobile.biometricUnlock": "Unlock LibreCode",
+    "mobile.biometricUnlockHint": "Use biometrics to unlock LibreCode",
   },
   zh: {
     "app.title": "LibreCode 手机端",
@@ -297,6 +304,12 @@ const I18N = {
     "mobile.apply": "应用",
     "mobile.scanFailed": "无法访问相机: {msg}",
     "mobile.invalid": "配置链接无效",
+    "mobile.biometric": "使用生物识别解锁",
+    "mobile.biometricSaved": "密码已保存,下次打开 APP 将自动解锁连接。",
+    "mobile.biometricFailed": "生物识别验证失败",
+    "mobile.biometricUnavailable": "当前设备不支持生物识别",
+    "mobile.biometricUnlock": "解锁 LibreCode",
+    "mobile.biometricUnlockHint": "使用生物识别解锁 LibreCode",
   },
 };
 const savedLang = localStorage.getItem("lc-lang");
@@ -773,8 +786,66 @@ $("paste-input").addEventListener("keydown", (e) => {
   if (e.key === "Enter") $("paste-btn").click();
 });
 
+/* ---- biometric unlock (native app only) ---- */
+const biometric = () =>
+  window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.NativeBiometric
+    ? window.Capacitor.Plugins.NativeBiometric
+    : null;
+
+async function biometricAvailable() {
+  try {
+    const b = biometric();
+    if (!b) return false;
+    const r = await b.isAvailable();
+    return r.isAvailable === true;
+  } catch {
+    return false;
+  }
+}
+
+async function saveBiometricPassword() {
+  const b = biometric();
+  if (!b) return toast(t("mobile.biometricUnavailable"));
+  const pass = $("s-pass").value;
+  const url = $("s-url").value.trim().replace(/\/+$/, "");
+  if (!pass) return toast(t("err.url"));
+  try {
+    await b.verifyIdentity({ title: t("mobile.biometricUnlock"), subtitle: t("mobile.biometricUnlockHint") });
+    await b.setCredentials({ server: url, username: "user", password: pass });
+    localStorage.setItem("lc-bio-url", url);
+    toast(t("mobile.biometricSaved"));
+  } catch {
+    toast(t("mobile.biometricFailed"));
+  }
+}
+
+async function biometricAutoConnect() {
+  const b = biometric();
+  const savedUrl = localStorage.getItem("lc-bio-url");
+  if (!b || !savedUrl) return;
+  try {
+    const available = await b.isAvailable();
+    if (!available.isAvailable) return;
+    await b.verifyIdentity({ title: t("mobile.biometricUnlock"), subtitle: t("mobile.biometricUnlockHint") });
+    const creds = await b.getCredentials({ server: savedUrl });
+    if (!creds.password) return;
+    cfg = { url: savedUrl, pass: creds.password };
+    localStorage.setItem("librecode", JSON.stringify(cfg));
+    $("s-url").value = savedUrl;
+    $("s-pass").value = creds.password;
+    showView("sessions");
+    loadSessions();
+    checkHealth();
+  } catch {
+    // verification cancelled or failed; stay on settings
+  }
+}
+
+$("biometric-btn").onclick = saveBiometricPassword;
+
 /* init */
 applyI18n();
+biometricAutoConnect();
 $("cmd-hint").textContent =
   "OPENCODE_SERVER_PASSWORD=your-pass librecode serve \\\n  --hostname 0.0.0.0 --port 4899 \\\n  --cors " + location.origin;
 const saved = localStorage.getItem("librecode");
