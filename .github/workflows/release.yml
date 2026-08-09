@@ -1,0 +1,102 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  build:
+    name: build (${{ matrix.target }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            target: linux-x64
+          - os: ubuntu-24.04-arm
+            target: linux-arm64
+          - os: macos-26-intel
+            target: darwin-x64
+          - os: macos-26
+            target: darwin-arm64
+          - os: windows-latest
+            target: windows-x64
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: Setup Bun
+        uses: ./.github/actions/setup-bun
+
+      - name: Build binary
+        run: bun run build --single --skip-embed-web-ui
+        working-directory: packages/opencode
+
+      - name: Package
+        run: |
+          cd packages/opencode/dist/opencode-${{ matrix.target }}/bin
+          if [ "${{ runner.os }}" = "Windows" ]; then
+            powershell.exe -NoProfile -Command "Compress-Archive -Path librecode.exe -DestinationPath ../../librecode-${{ matrix.target }}.zip -Force"
+          else
+            tar -czf ../../librecode-${{ matrix.target }}.tar.gz librecode
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: librecode-${{ matrix.target }}
+          path: packages/opencode/dist/librecode-${{ matrix.target }}.*
+          if-no-files-found: error
+          retention-days: 1
+
+  release:
+    name: publish release
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: Download artifacts
+        uses: actions/download-artifact@fa0a91b85d4f404e444e00e005971372dc801d16 # v4.1.8
+        with:
+          path: dist
+          merge-multiple: true
+
+      - name: Determine version
+        id: version
+        run: |
+          VERSION="${{ github.ref_name }}"
+          VERSION="${VERSION#v}"
+          if [ "$VERSION" = "${{ github.ref_name }}" ] && [ -n "${{ github.event.inputs.version }}" ]; then
+            VERSION="${{ github.event.inputs.version }}"
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Create release
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          if gh release view "v${VERSION}" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            echo "Release v${VERSION} already exists, updating assets..."
+          else
+            gh release create "v${VERSION}" --repo "${{ github.repository }}" \
+              --title "LibreCode v${VERSION}" \
+              --notes "LibreCode v${VERSION}
+
+Install: \`curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash\`" \
+              --generate-notes
+          fi
+          gh release upload "v${VERSION}" --repo "${{ github.repository }}" dist/* --clobber
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
