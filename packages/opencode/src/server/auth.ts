@@ -3,6 +3,7 @@ export * as ServerAuth from "./auth"
 import { ConfigService } from "@/effect/config-service"
 import { Flag } from "@opencode-ai/core/flag/flag"
 import { Config as EffectConfig, Context, Option, Redacted } from "effect"
+import { PasswordStore } from "./password-store"
 
 export type Credentials = {
   password?: string
@@ -22,15 +23,19 @@ export class Config extends ConfigService.Service<Config>()("@opencode/ServerAut
 export type Info = Context.Service.Shape<typeof Config>
 
 export function required(config: Info) {
-  return Option.isSome(config.password) && config.password.value !== ""
+  if (Option.isSome(config.password) && config.password.value !== "") return true
+  return PasswordStore.exists()
 }
 
 export function authorized(credentials: DecodedCredentials, config: Info) {
-  return (
-    Option.isSome(config.password) &&
-    credentials.username === config.username &&
-    Redacted.value(credentials.password) === config.password.value
-  )
+  if (Option.isSome(config.password) && config.password.value !== "") {
+    return (
+      credentials.username === config.username && Redacted.value(credentials.password) === config.password.value
+    )
+  }
+  const stored = PasswordStore.load()
+  if (!stored) return false
+  return PasswordStore.verify(Redacted.value(credentials.password), stored)
 }
 
 export function header(credentials?: Credentials) {

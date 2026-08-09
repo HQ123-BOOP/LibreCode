@@ -11,6 +11,7 @@ import { UI } from "./cli/ui"
 import { InstallationVersion } from "@opencode-ai/core/installation/version"
 import { FormatError } from "./cli/error"
 import { ServeCommand } from "./cli/cmd/serve"
+import { ServerPasswordCommand } from "./cli/cmd/server-password"
 import { DebugCommand } from "./cli/cmd/debug"
 import { StatsCommand } from "./cli/cmd/stats"
 import { McpCommand } from "./cli/cmd/mcp"
@@ -89,8 +90,8 @@ const cli = yargs(args)
   .command(UpgradeCommand)
   .command(UninstallCommand)
   .command(ServeCommand)
-  .command(WebCommand)
-  .command(ModelsCommand)
+  .command(ServerPasswordCommand)
+  .command(WebCommand)  .command(ModelsCommand)
   .command(StatsCommand)
   .command(ExportCommand)
   .command(ImportCommand)
