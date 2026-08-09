@@ -42,6 +42,18 @@ jobs:
       - name: Setup Bun
         uses: ./.github/actions/setup-bun
 
+      - name: Set version from tag
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          node -e '
+            const fs = require("fs");
+            const version = "${{ github.ref_name }}".replace(/^v/, "");
+            const p = "packages/opencode/package.json";
+            const j = JSON.parse(fs.readFileSync(p, "utf8"));
+            j.version = version;
+            fs.writeFileSync(p, JSON.stringify(j, null, 2) + "\n");
+          '
+
       - name: Reinstall dependencies (Windows)
         if: runner.os == 'Windows'
         run: bun install --linker hoisted --ignore-scripts
