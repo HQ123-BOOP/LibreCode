@@ -45,6 +45,8 @@ import { DialogMcp } from "./component/dialog-mcp"
 import { DialogStatus } from "./component/dialog-status"
 import { DialogDebug } from "./component/dialog-debug"
 import { DialogThemeList } from "./component/dialog-theme-list"
+import { DialogLanguageList } from "./component/dialog-language-list"
+import { setLanguage, t } from "./util/i18n"
 import { DialogHelp } from "./ui/dialog-help"
 import { DialogAgent } from "./component/dialog-agent"
 import { DialogSessionList } from "./component/dialog-session-list"
@@ -382,6 +384,12 @@ function App(props: { onSnapshot?: () => Promise<string[]>; pluginHost: TuiPlugi
   const pluginRuntime = usePluginRuntime()
   const attention = createTuiAttention({ renderer, config: tuiConfig, kv })
   const clipboard = useClipboard()
+  createEffect(() => {
+    if (kv.ready) {
+      const saved = kv.get("locale")
+      if (saved === "en" || saved === "zh") setLanguage(saved)
+    }
+  })
 
   const api = createTuiApi(
     createTuiApiAdapters({
@@ -578,7 +586,7 @@ function App(props: { onSnapshot?: () => Promise<string[]>; pluginHost: TuiPlugi
       },
       {
         name: "session.new",
-        title: "New session",
+        title: t("sidebar.newSession"),
         suggested: route.data.type === "session",
         category: "Session",
         slashName: "new",
@@ -767,6 +775,15 @@ function App(props: { onSnapshot?: () => Promise<string[]>; pluginHost: TuiPlugi
         slashName: "themes",
         run: () => {
           dialog.replace(() => <DialogThemeList />)
+        },
+        category: "System",
+      },
+      {
+        name: "opencode.language",
+        title: t("language.switch"),
+        slashName: "language",
+        run: () => {
+          dialog.replace(() => <DialogLanguageList />)
         },
         category: "System",
       },

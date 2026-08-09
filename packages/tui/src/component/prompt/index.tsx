@@ -41,6 +41,7 @@ import type { AssistantMessage, FilePart, UserMessage } from "@opencode-ai/sdk/v
 import { Locale } from "../../util/locale"
 import { errorMessage } from "../../util/error"
 import { formatDuration } from "../../util/format"
+import { t } from "../../util/i18n"
 import { createColors, createFrames } from "../../ui/spinner"
 import { useDialog } from "../../ui/dialog"
 import { DialogProvider as DialogProviderConnect } from "../dialog-provider"
@@ -1313,10 +1314,10 @@ export function Prompt(props: PromptProps) {
     if (store.mode === "shell") {
       if (!shell().length) return undefined
       const example = shell()[store.placeholder % shell().length]
-      return `Run a command... "${example}"`
+      return `${t("prompt.run")} "${example}"`
     }
     if (!list().length) return undefined
-    return `Ask anything... "${list()[store.placeholder % list().length]}"`
+    return `${t("prompt.ask")} "${list()[store.placeholder % list().length]}"`
   })
 
   const spinnerDef = createMemo(() => {

@@ -4,6 +4,7 @@ import { useDialog, type DialogContext } from "./dialog"
 import { createStore } from "solid-js/store"
 import { For } from "solid-js"
 import { Locale } from "../util/locale"
+import { t } from "../util/i18n"
 import { useBindings } from "../keymap"
 
 export type DialogConfirmProps = {
@@ -80,7 +81,7 @@ export function DialogConfirm(props: DialogConfirmProps) {
               }}
             >
               <text fg={key === store.active ? theme.selectedListItemText : theme.textMuted}>
-                {Locale.titlecase(key === "cancel" ? (props.label ?? key) : key)}
+                {Locale.titlecase(key === "cancel" ? (props.label ?? t("dialog.cancel")) : t("dialog.confirm"))}
               </text>
             </box>
           )}

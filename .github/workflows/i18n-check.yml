@@ -1,0 +1,22 @@
+name: i18n-check
+
+on:
+  pull_request:
+  push:
+    paths:
+      - "packages/tui/src/util/i18n.ts"
+      - "packages/tui/script/i18n-check.ts"
+      - "packages/tui/src/**"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: ./.github/actions/setup-bun
+
+      - name: Check i18n integrity
+        run: bun run packages/tui/script/i18n-check.ts
