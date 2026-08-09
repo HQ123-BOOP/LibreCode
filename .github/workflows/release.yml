@@ -37,6 +37,11 @@ jobs:
       - name: Setup Bun
         uses: ./.github/actions/setup-bun
 
+      - name: Reinstall dependencies (Windows)
+        if: runner.os == 'Windows'
+        run: bun install
+        working-directory: packages/opencode
+
       - name: Build binary
         run: bun run build --single --skip-embed-web-ui
         working-directory: packages/opencode
