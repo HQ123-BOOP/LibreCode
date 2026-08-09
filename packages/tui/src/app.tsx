@@ -4,7 +4,7 @@ import { createDefaultOpenTuiKeymap } from "@opentui/keymap/opentui"
 import { Deferred, Effect } from "effect"
 import { Global } from "@opencode-ai/core/global"
 import { Flag } from "@opencode-ai/core/flag/flag"
-import { InstallationVersion } from "@opencode-ai/core/installation/version"
+import { InstallationLocal, InstallationVersion } from "@opencode-ai/core/installation/version"
 import { ClipboardProvider, useClipboard } from "./context/clipboard"
 import { ExitProvider, useExit } from "./context/exit"
 import { EpilogueProvider } from "./context/epilogue"
@@ -47,7 +47,9 @@ import { DialogDebug } from "./component/dialog-debug"
 import { DialogThemeList } from "./component/dialog-theme-list"
 import { DialogLanguageList } from "./component/dialog-language-list"
 import { DialogMobile } from "./component/dialog-mobile"
+import { DialogWhatsNew } from "./component/dialog-whats-new"
 import { setLanguage, t } from "./util/i18n"
+import { fetchChangelog, parseChangelog } from "./util/changelog"
 import { DialogHelp } from "./ui/dialog-help"
 import { DialogAgent } from "./component/dialog-agent"
 import { DialogSessionList } from "./component/dialog-session-list"
@@ -390,6 +392,23 @@ function App(props: { onSnapshot?: () => Promise<string[]>; pluginHost: TuiPlugi
       const saved = kv.get("locale")
       if (saved === "en" || saved === "zh") setLanguage(saved)
     }
+  })
+
+  createEffect(() => {
+    if (!kv.ready) return
+    if (InstallationLocal) return
+    if (kv.get("whatsnew.dismissed")) return
+    const lastSeen = kv.get("last_seen_version")
+    const version = InstallationVersion
+    const minor = version.split(".").slice(0, 2).join(".")
+    const lastMinor = typeof lastSeen === "string" ? lastSeen.split(".").slice(0, 2).join(".") : undefined
+    if (lastMinor === minor) return
+    const whatsnew = async () => {
+      const text = await fetchChangelog()
+      const entry = text ? parseChangelog(text, version) : undefined
+      dialog.replace(() => <DialogWhatsNew version={version} entry={entry} />)
+    }
+    void whatsnew()
   })
 
   const api = createTuiApi(
