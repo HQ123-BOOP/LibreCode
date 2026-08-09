@@ -1,0 +1,18 @@
+{
+  "name": "LibreCode Mobile",
+  "short_name": "LibreCode",
+  "description": "Remote control for LibreCode running on your computer",
+  "start_url": "/LibreCode/mobile/index.html",
+  "scope": "/LibreCode/mobile/",
+  "display": "standalone",
+  "background_color": "#0d0f12",
+  "theme_color": "#0d0f12",
+  "icons": [
+    {
+      "src": "/LibreCode/mobile/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

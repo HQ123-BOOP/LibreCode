@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d0f12">
+<title>LibreCode Mobile</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<style>
+:root {
+  --bg: #0d0f12; --bg2: #131619; --panel: #1a1e24;
+  --border: #262b33; --text: #e6e9ee; --muted: #8b93a1;
+  --accent: #4f9dff; --accent2: #9d7bff; --danger: #ff5f56;
+  --ok: #3ecf8e; --code: #101419;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px; line-height: 1.55;
+  display: flex; flex-direction: column;
+  overscroll-behavior: none;
+}
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+input, textarea { font: inherit; color: var(--text); }
+
+/* Top bar */
+header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px; padding-top: calc(10px + env(safe-area-inset-top));
+  border-bottom: 1px solid var(--border); background: var(--bg2);
+  flex-shrink: 0;
+}
+header .brand { font-weight: 700; font-size: 16px; letter-spacing: 0.2px; }
+header .brand b { color: var(--accent); }
+header .spacer { flex: 1; }
+header .conn {
+  display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted);
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); flex-shrink: 0; }
+.dot.ok { background: var(--ok); }
+.dot.err { background: var(--danger); }
+.dot.busy { background: #e8c25a; }
+
+/* Views */
+.view { display: none; flex-direction: column; flex: 1; min-height: 0; }
+.view.active { display: flex; }
+
+/* Settings */
+#view-settings { padding: 20px 16px; gap: 14px; overflow-y: auto; }
+#view-settings h2 { font-size: 18px; margin-bottom: 4px; }
+#view-settings p.hint { color: var(--muted); font-size: 13px; }
+label { font-size: 13px; color: var(--muted); display: block; margin: 12px 0 5px; }
+input[type=text], input[type=password], textarea {
+  width: 100%; background: var(--panel); border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px 12px; color: var(--text);
+}
+textarea { resize: none; min-height: 44px; max-height: 140px; }
+.btn {
+  background: var(--accent); color: #fff; border-radius: 10px;
+  padding: 12px 16px; font-weight: 600; text-align: center; margin-top: 18px;
+}
+.btn.secondary { background: var(--panel); border: 1px solid var(--border); color: var(--text); }
+.btn:active { opacity: 0.8; }
+.btn[disabled] { opacity: 0.5; }
+
+/* Session list */
+.list { flex: 1; overflow-y: auto; padding: 8px; }
+.session {
+  display: block; width: 100%; text-align: left;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 10px; padding: 12px 14px; margin-bottom: 8px;
+}
+.session .title { font-weight: 600; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.session .meta { color: var(--muted); font-size: 12px; margin-top: 3px; }
+.session.active { border-color: var(--accent); }
+
+.new-session {
+  flex-shrink: 0; margin: 0 12px 12px; padding: 12px;
+  background: var(--panel); border: 1px dashed var(--border);
+  border-radius: 10px; color: var(--muted); font-size: 13px;
+}
+.new-session input { background: var(--bg2); margin-top: 8px; }
+
+/* Chat */
+#messages { flex: 1; overflow-y: auto; padding: 12px 14px; display: flex; flex-direction: column; gap: 14px; }
+.msg { max-width: 92%; align-self: flex-start; }
+.msg.user { align-self: flex-end; }
+.msg .who { font-size: 11px; color: var(--muted); margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.4px; }
+.msg.user .who { text-align: right; color: var(--accent2); }
+.msg .body {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 12px; padding: 10px 12px; overflow-wrap: break-word;
+  min-width: 60px;
+}
+.msg.user .body { background: #1c2536; border-color: #2b3a55; }
+.msg .body :first-child { margin-top: 0; }
+.msg .body :last-child { margin-bottom: 0; }
+.msg .body p { margin: 6px 0; }
+.msg .body pre {
+  background: var(--code); border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px; overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px; line-height: 1.5; margin: 8px 0;
+}
+.msg .body code {
+  background: var(--code); border-radius: 4px; padding: 1px 5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+}
+.msg .body pre code { background: none; padding: 0; }
+.msg .body ul, .msg .body ol { padding-left: 20px; margin: 6px 0; }
+.msg .body a { color: var(--accent); }
+.msg .body table { border-collapse: collapse; margin: 8px 0; font-size: 13px; }
+.msg .body th, .msg .body td { border: 1px solid var(--border); padding: 4px 8px; }
+.msg .tool { margin-top: 8px; font-size: 12px; color: var(--muted); border-top: 1px dashed var(--border); padding-top: 6px; }
+.msg .tool .tname { color: #e8c25a; font-weight: 600; }
+.msg .tool.running { color: #e8c25a; }
+.msg .tool.error { color: var(--danger); }
+.msg .meta { font-size: 11px; color: var(--muted); margin-top: 4px; }
+.msg.error .body { border-color: var(--danger); }
+.typing { color: var(--muted); font-size: 12px; padding: 2px 4px; }
+.typing::after { content: "..."; animation: blink 1.2s infinite; }
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+/* Composer */
+#composer {
+  flex-shrink: 0; display: flex; gap: 8px; align-items: flex-end;
+  padding: 10px 12px; padding-bottom: calc(10px + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--border); background: var(--bg2);
+}
+#composer textarea { flex: 1; }
+#send {
+  width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+  background: var(--accent); color: #fff; font-size: 20px; display: flex;
+  align-items: center; justify-content: center;
+}
+#send[disabled] { background: var(--panel); color: var(--muted); }
+
+.empty { flex: 1; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 14px; text-align: center; padding: 20px; }
+.toast { position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%); background: var(--danger); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 13px; z-index: 10; max-width: 90%; display: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="brand"><b>Libre</b>Code</span>
+  <span class="spacer"></span>
+  <button class="conn" id="conn-btn">
+    <span class="dot" id="conn-dot"></span>
+    <span id="conn-text">offline</span>
+  </button>
+</header>
+
+<div id="view-settings" class="view active">
+  <h2>Connect to your computer</h2>
+  <p class="hint">Run on your computer (same network or Tailscale):</p>
+  <pre id="cmd-hint" style="background:var(--code);border:1px solid var(--border);border-radius:8px;padding:10px;font-size:12px;overflow-x:auto;margin-top:8px"></pre>
+  <label for="s-url">Server URL</label>
+  <input type="text" id="s-url" placeholder="http://192.168.1.100:4899">
+  <label for="s-pass">Password (OPENCODE_SERVER_PASSWORD)</label>
+  <input type="password" id="s-pass" placeholder="leave empty if server is unsecured">
+  <button class="btn" id="connect">Connect</button>
+</div>
+
+<div id="view-sessions" class="view">
+  <div class="list" id="session-list"></div>
+  <div class="new-session">
+    <div>New session</div>
+    <input type="text" id="new-title" placeholder="What do you want to do?">
+  </div>
+</div>
+
+<div id="view-chat" class="view">
+  <div id="messages"></div>
+  <div id="composer">
+    <textarea id="input" rows="1" placeholder="Message..."></textarea>
+    <button id="send">&#10148;</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+"use strict";
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+const $ = (id) => document.getElementById(id);
+let cfg = { url: "", pass: "" };
+let sessions = [];
+let active = null;
+let messages = [];
+let stream = null;
+let busy = false;
+
+const authToken = () => btoa("user:" + cfg.pass);
+const headers = () => ({ "Authorization": "Basic " + btoa("user:" + cfg.pass), "Content-Type": "application/json" });
+
+function toast(msg) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.style.display = "block";
+  clearTimeout(t._h);
+  t._h = setTimeout(() => (t.style.display = "none"), 3500);
+}
+
+async function api(path, opts = {}) {
+  const res = await fetch(cfg.url + path, { ...opts, headers: { ...headers(), ...(opts.headers || {}) } });
+  if (!res.ok) {
+    let detail = res.status + " " + res.statusText;
+    try { detail = (await res.json()).error?.message || detail; } catch {}
+    throw new Error(detail);
+  }
+  return res.json();
+}
+
+function esc(s) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+/* Minimal markdown: code blocks, inline code, bold, italic, links, lists, headers */
+function renderMd(text) {
+  const out = [];
+  let i = 0;
+  const blocks = text.split(/(```[\s\S]*?```)/g);
+  for (const b of blocks) {
+    if (b.startsWith("```")) {
+      const code = b.slice(3).replace(/^\w+\n/, "").replace(/```$/, "");
+      out.push(`<pre><code>${esc(code)}</code></pre>`);
+      continue;
+    }
+    const lines = b.split("\n");
+    let inList = null;
+    for (let line of lines) {
+      const codeMatch = line.match(/^ {4}/);
+      if (codeMatch) {
+        out.push(`<pre><code>${esc(line.slice(4))}</code></pre>`);
+        continue;
+      }
+      if (!line.trim()) { inList = null; continue; }
+      const listMatch = line.match(/^(\s*)([-*]|\d+\.)\s+(.*)$/);
+      if (listMatch) {
+        const tag = inList === null ? (listMatch[1] ? "ol" : "ul") : null;
+        if (tag) out.push(`<${tag}>`);
+        out.push(`<li>${inline(listMatch[3])}</li>`);
+        inList = tag;
+        continue;
+      } else if (inList) { out.push(`</${inList}>`); inList = null; }
+      if (line.startsWith("### ")) out.push(`<p><b>${inline(line.slice(4))}</b></p>`);
+      else if (line.startsWith("## ")) out.push(`<p><b>${inline(line.slice(3))}</b></p>`);
+      else if (line.startsWith("# ")) out.push(`<p><b>${inline(line.slice(2))}</b></p>`);
+      else out.push(`<p>${inline(line)}</p>`);
+    }
+    if (inList) out.push(`</${inList}>`);
+  }
+  return out.join("");
+}
+
+function inline(s) {
+  s = esc(s);
+  s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>");
+  s = s.replace(/(^|[^\w])(https?:\/\/[^\s<]+)/g, (m, p, url) => p + `<a href="${url}" target="_blank" rel="noopener">${url}</a>`);
+  return s;
+}
+
+/* ---- connection status ---- */
+async function checkHealth() {
+  if (!cfg.url) return;
+  const dot = $("conn-dot"), txt = $("conn-text");
+  dot.className = "dot busy"; txt.textContent = "checking";
+  try {
+    await fetch(cfg.url + "/api/health", { headers: headers() });
+    dot.className = "dot ok"; txt.textContent = cfg.url.replace(/^https?:\/\//, "");
+  } catch (e) {
+    dot.className = "dot err"; txt.textContent = "offline";
+  }
+}
+
+/* ---- sessions ---- */
+async function loadSessions() {
+  try {
+    const r = await api("/api/session?order=desc&limit=50");
+    sessions = r.data || [];
+    renderSessions();
+  } catch (e) { toast("Failed to load sessions: " + e.message); }
+}
+
+function renderSessions() {
+  const list = $("session-list");
+  if (!sessions.length) {
+    list.innerHTML = '<div class="empty">No sessions yet.<br>Create one below.</div>';
+    return;
+  }
+  list.innerHTML = "";
+  for (const s of sessions) {
+    const el = document.createElement("button");
+    el.className = "session" + (active === s.id ? " active" : "");
+    const title = s.title || "Session " + s.id.slice(0, 8);
+    const date = s.time?.created ? new Date(s.time.created).toLocaleString() : "";
+    el.innerHTML = `<div class="title">${esc(title)}</div><div class="meta">${esc(date)}${s.directory ? " · " + esc(s.directory) : ""}</div>`;
+    el.onclick = () => openSession(s.id);
+    list.appendChild(el);
+  }
+}
+
+/* ---- chat ---- */
+function msgEl(id) {
+  return document.getElementById("msg-" + id);
+}
+
+function renderMessage(m) {
+  if (msgEl(m.id)) return updateMessage(m);
+  const wrap = document.createElement("div");
+  wrap.id = "msg-" + m.id;
+  wrap.className = "msg " + (m.type === "user" ? "user" : "");
+  let body = "";
+  if (m.type === "user") {
+    body = `<div class="who">You</div><div class="body">${renderMd(m.text || "")}</div>`;
+  } else if (m.type === "assistant") {
+    const texts = m.content?.filter((c) => c.type === "text").map((c) => c.text).join("\n") || "";
+    const tools = m.content?.filter((c) => c.type === "tool") || [];
+    const who = (m.agent || "assistant") + (m.model ? " · " + m.model : "");
+    body = `<div class="who">${esc(who)}</div><div class="body">${renderMd(texts)}</div>`;
+    for (const t of tools) {
+      const st = t.state?.status || "";
+      body += `<div class="tool ${st === "error" ? "error" : ""}" id="tool-${esc(m.id)}-${esc(t.id)}"><span class="tname">${esc(t.name)}</span> ${st === "error" ? "failed" : st === "completed" ? "done" : st}</div>`;
+    }
+    if (m.finish) body += `<div class="meta">${esc(m.finish)}</div>`;
+    if (m.error) { wrap.className = "msg error"; body += `<div class="meta">${esc(m.error.message)}</div>`; }
+  } else if (m.type === "system" || m.type === "synthetic") {
+    body = `<div class="body">${renderMd(m.text || "")}</div>`;
+  } else {
+    body = `<div class="body">${esc(JSON.stringify(m))}</div>`;
+  }
+  wrap.innerHTML = body;
+  $("messages").appendChild(wrap);
+  scrollBottom();
+}
+
+function updateMessage(m) {
+  const el = msgEl(m.id);
+  if (!el) return renderMessage(m);
+  if (m.type === "assistant") {
+    const texts = m.content?.filter((c) => c.type === "text").map((c) => c.text).join("\n") || "";
+    const body = el.querySelector(".body");
+    if (body) body.innerHTML = renderMd(texts);
+    const tools = m.content?.filter((c) => c.type === "tool") || [];
+    for (const t of tools) {
+      const key = `tool-${m.id}-${t.id}`;
+      let tel = document.getElementById(key);
+      const st = t.state?.status || "";
+      const label = st === "error" ? "failed" : st === "completed" ? "done" : st;
+      if (tel) tel.innerHTML = `<span class="tname">${esc(t.name)}</span> ${label}`;
+      else {
+        tel = document.createElement("div");
+        tel.id = key;
+        tel.className = "tool" + (st === "error" ? " error" : "");
+        tel.innerHTML = `<span class="tname">${esc(t.name)}</span> ${label}`;
+        el.appendChild(tel);
+      }
+    }
+    if (m.finish && !el.querySelector(".meta")) {
+      const meta = document.createElement("div");
+      meta.className = "meta";
+      meta.textContent = m.finish;
+      el.appendChild(meta);
+    }
+  }
+  scrollBottom();
+}
+
+async function loadMessages(id) {
+  const mbox = $("messages");
+  mbox.innerHTML = "";
+  messages = [];
+  try {
+    const r = await api(`/api/session/${encodeURIComponent(id)}/message?order=asc&limit=100`);
+    messages = r.data || [];
+    for (const m of messages) renderMessage(m);
+    if (!messages.length) {
+      mbox.innerHTML = '<div class="empty">No messages yet.</div>';
+    }
+  } catch (e) {
+    mbox.innerHTML = `<div class="empty">Failed to load messages:<br>${esc(e.message)}</div>`;
+  }
+}
+
+/* ---- streaming (SSE) ---- */
+function openStream(id) {
+  closeStream();
+  const es = new EventSource(`${cfg.url}/api/session/${encodeURIComponent(id)}/event?auth_token=${encodeURIComponent(authToken())}`);
+  stream = es;
+  let pending = new Map(); // assistantMessageID -> {el, text}
+
+  const bubble = (msgID, delta) => {
+    let p = pending.get(msgID);
+    if (!p) {
+      p = { el: null, text: "" };
+      pending.set(msgID, p);
+    }
+    p.text += delta;
+    if (!p.el) {
+      const wrap = document.createElement("div");
+      wrap.id = "msg-stream-" + msgID;
+      wrap.className = "msg";
+      wrap.innerHTML = `<div class="who">assistant</div><div class="body typing"></div>`;
+      $("messages").appendChild(wrap);
+      p.el = wrap.querySelector(".body");
+    }
+    p.el.classList.remove("typing");
+    p.el.innerHTML = renderMd(p.text);
+    scrollBottom();
+  };
+
+  es.onmessage = (e) => {
+    let ev;
+    try { ev = JSON.parse(e.data); } catch { return; }
+    const t = ev.type || "";
+    if (t === "session.next.text.delta" || t === "session.next.reasoning.delta") {
+      bubble(ev.assistantMessageID, ev.delta || "");
+    } else if (t === "session.next.text.ended") {
+      const p = pending.get(ev.assistantMessageID);
+      if (p) { p.text = ev.text || ""; p.el.innerHTML = renderMd(p.text); }
+    } else if (t === "session.next.step.ended" || t === "session.next.step.failed") {
+      setBusy(false);
+    } else if (t === "session.next.tool.called") {
+      toast("tool: " + ev.tool);
+    }
+  };
+  es.onerror = () => {
+    /* keep-alive pings can fail; only fatal when never connected */
+  };
+}
+
+function closeStream() {
+  if (stream) { stream.close(); stream = null; }
+}
+
+/* ---- send ---- */
+async function sendMessage() {
+  const input = $("input");
+  const text = input.value.trim();
+  if (!text || busy || !active) return;
+  input.value = "";
+  autoGrow();
+  setBusy(true);
+
+  const optimistic = { id: "local-" + Date.now(), type: "user", text, time: { created: Date.now() } };
+  renderMessage(optimistic);
+  messages.push(optimistic);
+
+  try {
+    await api(`/api/session/${encodeURIComponent(active)}/prompt`, {
+      method: "POST",
+      body: JSON.stringify({ prompt: { text } }),
+    });
+  } catch (e) {
+    toast("Send failed: " + e.message);
+    setBusy(false);
+  }
+}
+
+function setBusy(b) {
+  busy = b;
+  $("send").disabled = b;
+  if (b) {
+    const wrap = document.createElement("div");
+    wrap.className = "typing"; wrap.id = "busy-ind";
+    wrap.textContent = "working";
+    $("messages").appendChild(wrap);
+    scrollBottom();
+  } else {
+    const el = document.getElementById("busy-ind");
+    if (el) el.remove();
+  }
+}
+
+function scrollBottom() {
+  const m = $("messages");
+  m.scrollTop = m.scrollHeight;
+}
+
+function autoGrow() {
+  const i = $("input");
+  i.style.height = "auto";
+  i.style.height = Math.min(i.scrollHeight, 140) + "px";
+}
+
+/* ---- navigation ---- */
+function showView(name) {
+  document.querySelectorAll(".view").forEach((v) => v.classList.remove("active"));
+  $("view-" + name).classList.add("active");
+}
+
+function openSession(id) {
+  active = id;
+  showView("chat");
+  $("composer").style.display = "flex";
+  loadMessages(id).then(() => openStream(id));
+  loadSessions();
+}
+
+/* ---- wiring ---- */
+$("connect").onclick = async () => {
+  const url = $("s-url").value.trim().replace(/\/+$/, "");
+  const pass = $("s-pass").value;
+  if (!url) return toast("Enter server URL");
+  cfg = { url, pass };
+  localStorage.setItem("librecode", JSON.stringify(cfg));
+  try {
+    await fetch(url + "/api/health", { headers: headers() });
+  } catch (e) {
+    toast("Cannot reach server: " + e.message);
+    return;
+  }
+  showView("sessions");
+  loadSessions();
+  checkHealth();
+};
+
+$("conn-btn").onclick = () => {
+  closeStream();
+  showView("settings");
+};
+
+$("new-title").addEventListener("keydown", async (e) => {
+  if (e.key !== "Enter") return;
+  const title = $("new-title").value.trim();
+  $("new-title").value = "";
+  try {
+    const r = await api("/api/session", { method: "POST", body: JSON.stringify({}) });
+    openSession(r.data.id);
+  } catch (err) {
+    toast("Create failed: " + err.message);
+  }
+});
+
+$("input").addEventListener("input", autoGrow);
+$("input").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+});
+$("send").onclick = sendMessage;
+
+/* init */
+$("cmd-hint").textContent =
+  "OPENCODE_SERVER_PASSWORD=your-pass librecode serve \\\n  --hostname 0.0.0.0 --port 4899 \\\n  --cors " + location.origin;
+const saved = localStorage.getItem("librecode");
+if (saved) {
+  try {
+    cfg = JSON.parse(saved);
+    $("s-url").value = cfg.url;
+    $("s-pass").value = cfg.pass;
+    showView("sessions");
+    loadSessions();
+    checkHealth();
+  } catch {}
+}
+</script>
+</body>
+</html>

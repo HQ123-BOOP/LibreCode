@@ -1,0 +1,60 @@
+name: build-mobile
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "mobile/**"
+      - "docs/mobile/**"
+      - ".github/workflows/build-mobile.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install dependencies
+        working-directory: mobile
+        run: npm install
+
+      - name: Sync web assets
+        run: cp -r docs/mobile/* mobile/www/
+
+      - name: Add Android platform
+        working-directory: mobile
+        run: npx cap add android
+
+      - name: Build APK
+        working-directory: mobile/android
+        run: ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: librecode-android
+          path: mobile/android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+
+      - name: Attach to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$GITHUB_REF_NAME" mobile/android/app/build/outputs/apk/debug/app-debug.apk --clobber || true
