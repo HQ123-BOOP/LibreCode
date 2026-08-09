@@ -38,9 +38,13 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Lowercase registry
+        id: registry
+        run: echo "value=ghcr.io/${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_OUTPUT"
+
       - name: Build and push containers
         run: bun ./packages/containers/script/build.ts --push
         env:
-          REGISTRY: ${{ env.REGISTRY }}
+          REGISTRY: ${{ steps.registry.outputs.value }}
           TAG: ${{ env.TAG }}
 
