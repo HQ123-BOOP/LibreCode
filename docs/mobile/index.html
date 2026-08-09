@@ -143,6 +143,13 @@ textarea { resize: none; min-height: 44px; max-height: 140px; }
 
 .empty { flex: 1; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 14px; text-align: center; padding: 20px; }
 .toast { position: fixed; left: 50%; bottom: 80px; transform: translateX(-50%); background: var(--danger); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 13px; z-index: 10; max-width: 90%; display: none; }
+
+/* Scan view */
+#view-scan { align-items: center; justify-content: center; padding: 16px; }
+.scan-box { width: 100%; max-width: 420px; text-align: center; }
+#scan-video { width: 100%; border-radius: 12px; border: 1px solid var(--border); background: #000; }
+#scan-msg { color: var(--muted); font-size: 13px; margin: 10px 0; }
+#scan-cancel { margin-top: 0; }
 </style>
 </head>
 <body>
@@ -170,6 +177,19 @@ textarea { resize: none; min-height: 44px; max-height: 140px; }
     <option value="en">English</option>
   </select>
   <button class="btn" id="connect" data-i18n="settings.connect">Connect</button>
+  <button class="btn secondary" id="scan-btn" data-i18n="mobile.scan">Scan QR code</button>
+  <label for="paste-input" data-i18n="mobile.paste">Or paste a config link</label>
+  <input type="text" id="paste-input" placeholder="librecode://192.168.1.5:4899?token=..." data-i18n-ph="mobile.pastePh">
+  <button class="btn secondary" id="paste-btn" data-i18n="mobile.apply">Apply</button>
+</div>
+
+<div id="view-scan" class="view">
+  <div class="scan-box">
+    <video id="scan-video" playsinline muted></video>
+    <canvas id="scan-canvas" style="display:none"></canvas>
+    <p id="scan-msg" data-i18n="mobile.scanning">Point the camera at the QR code</p>
+    <button class="btn secondary" id="scan-cancel" data-i18n="mobile.scanCancel">Cancel</button>
+  </div>
 </div>
 
 <div id="view-sessions" class="view">
@@ -190,6 +210,7 @@ textarea { resize: none; min-height: 44px; max-height: 140px; }
 
 <div class="toast" id="toast"></div>
 
+<script src="vendor/jsqr.js"></script>
 <script>
 "use strict";
 if ("serviceWorker" in navigator) {
@@ -228,6 +249,14 @@ const I18N = {
     "err.create": "Create failed: {msg}",
     "err.url": "Enter server URL",
     "toast.tool": "tool: {name}",
+    "mobile.scan": "Scan QR code",
+    "mobile.scanning": "Point the camera at the QR code",
+    "mobile.scanCancel": "Cancel",
+    "mobile.paste": "Or paste a config link",
+    "mobile.pastePh": "librecode://192.168.1.5:4899?token=...",
+    "mobile.apply": "Apply",
+    "mobile.scanFailed": "Could not access camera: {msg}",
+    "mobile.invalid": "Invalid config link",
   },
   zh: {
     "app.title": "LibreCode 手机端",
@@ -260,6 +289,14 @@ const I18N = {
     "err.create": "创建失败: {msg}",
     "err.url": "请输入服务器地址",
     "toast.tool": "工具: {name}",
+    "mobile.scan": "扫描二维码",
+    "mobile.scanning": "将相机对准二维码",
+    "mobile.scanCancel": "取消",
+    "mobile.paste": "或粘贴配置链接",
+    "mobile.pastePh": "librecode://192.168.1.5:4899?token=...",
+    "mobile.apply": "应用",
+    "mobile.scanFailed": "无法访问相机: {msg}",
+    "mobile.invalid": "配置链接无效",
   },
 };
 const savedLang = localStorage.getItem("lc-lang");
@@ -644,6 +681,97 @@ $("lang-select").onchange = (e) => {
   localStorage.setItem("lc-lang", lang);
   applyI18n();
 };
+
+/* ---- scan / config link ---- */
+function parseConfigLink(text) {
+  try {
+    const u = new URL(text.trim());
+    const host = u.hostname;
+    const port = u.port;
+    if (!host || !port) return null;
+    let pass = "";
+    const token = u.searchParams.get("token") || u.searchParams.get("auth_token");
+    if (token) {
+      try { pass = atob(token).split(":").slice(1).join(":") || ""; } catch {}
+    }
+    return { url: "http://" + host + ":" + port, pass };
+  } catch {
+    return null;
+  }
+}
+
+function applyConfig(cfg) {
+  cfg.url = cfg.url.replace(/\/+$/, "");
+  $("s-url").value = cfg.url;
+  $("s-pass").value = cfg.pass;
+  showView("settings");
+  $("connect").click();
+}
+
+let scanStream = null;
+let scanRaf = null;
+
+function stopScan() {
+  if (scanRaf) { cancelAnimationFrame(scanRaf); scanRaf = null; }
+  if (scanStream) { scanStream.getTracks().forEach((tr) => tr.stop()); scanStream = null; }
+  const video = $("scan-video");
+  if (video) video.srcObject = null;
+}
+
+async function startScan() {
+  stopScan();
+  showView("scan");
+  const video = $("scan-video");
+  const canvas = $("scan-canvas");
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  try {
+    scanStream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: "environment", width: { ideal: 1280 } },
+      audio: false,
+    });
+  } catch (e) {
+    toast(t("mobile.scanFailed", { msg: e.message }));
+    showView("settings");
+    return;
+  }
+  video.srcObject = scanStream;
+  await video.play().catch(() => {});
+
+  const tick = () => {
+    if (!scanStream || !video.videoWidth) { scanRaf = requestAnimationFrame(tick); return; }
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    ctx.drawImage(video, 0, 0);
+    const img = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const code = window.jsQR ? window.jsQR(img.data, img.width, img.height) : null;
+    if (code && code.data) {
+      const cfg = parseConfigLink(code.data);
+      if (cfg) {
+        stopScan();
+        applyConfig(cfg);
+        return;
+      }
+    }
+    scanRaf = requestAnimationFrame(tick);
+  };
+  tick();
+}
+
+$("scan-btn").onclick = startScan;
+$("scan-cancel").onclick = () => {
+  stopScan();
+  showView("settings");
+};
+
+$("paste-btn").onclick = () => {
+  const text = $("paste-input").value;
+  const cfg = parseConfigLink(text);
+  if (!cfg) return toast(t("mobile.invalid"));
+  applyConfig(cfg);
+};
+$("paste-input").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") $("paste-btn").click();
+});
 
 /* init */
 applyI18n();
