@@ -36,7 +36,7 @@ jobs:
         run: npm install
 
       - name: Sync web assets
-        run: cp -r docs/mobile/* mobile/www/
+        run: mkdir -p mobile/www && cp -r docs/mobile/* mobile/www/
 
       - name: Add Android platform
         working-directory: mobile
