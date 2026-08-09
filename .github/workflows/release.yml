@@ -44,9 +44,7 @@ jobs:
 
       - name: Reinstall dependencies (Windows)
         if: runner.os == 'Windows'
-        continue-on-error: true
-        run: bun install
-        working-directory: packages/opencode
+        run: bun install --linker hoisted --ignore-scripts
 
       - name: Build binary
         run: bun run build --single --skip-embed-web-ui
