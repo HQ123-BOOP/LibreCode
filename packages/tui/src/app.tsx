@@ -46,6 +46,7 @@ import { DialogStatus } from "./component/dialog-status"
 import { DialogDebug } from "./component/dialog-debug"
 import { DialogThemeList } from "./component/dialog-theme-list"
 import { DialogLanguageList } from "./component/dialog-language-list"
+import { DialogMobile } from "./component/dialog-mobile"
 import { setLanguage, t } from "./util/i18n"
 import { DialogHelp } from "./ui/dialog-help"
 import { DialogAgent } from "./component/dialog-agent"
@@ -784,6 +785,15 @@ function App(props: { onSnapshot?: () => Promise<string[]>; pluginHost: TuiPlugi
         slashName: "language",
         run: () => {
           dialog.replace(() => <DialogLanguageList />)
+        },
+        category: "System",
+      },
+      {
+        name: "mobile.devices",
+        title: t("mobile.title"),
+        slashName: "mobile devices",
+        run: () => {
+          dialog.replace(() => <DialogMobile />)
         },
         category: "System",
       },
