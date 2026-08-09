@@ -54,10 +54,11 @@ header .conn {
 #view-settings h2 { font-size: 18px; margin-bottom: 4px; }
 #view-settings p.hint { color: var(--muted); font-size: 13px; }
 label { font-size: 13px; color: var(--muted); display: block; margin: 12px 0 5px; }
-input[type=text], input[type=password], textarea {
+input[type=text], input[type=password], textarea, select {
   width: 100%; background: var(--panel); border: 1px solid var(--border);
   border-radius: 8px; padding: 10px 12px; color: var(--text);
 }
+select { appearance: none; -webkit-appearance: none; }
 textarea { resize: none; min-height: 44px; max-height: 140px; }
 .btn {
   background: var(--accent); color: #fff; border-radius: 10px;
@@ -156,28 +157,33 @@ textarea { resize: none; min-height: 44px; max-height: 140px; }
 </header>
 
 <div id="view-settings" class="view active">
-  <h2>Connect to your computer</h2>
-  <p class="hint">Run on your computer (same network or Tailscale):</p>
+  <h2 data-i18n="settings.title">Connect to your computer</h2>
+  <p class="hint" data-i18n="settings.hint">Run on your computer (same network or Tailscale):</p>
   <pre id="cmd-hint" style="background:var(--code);border:1px solid var(--border);border-radius:8px;padding:10px;font-size:12px;overflow-x:auto;margin-top:8px"></pre>
-  <label for="s-url">Server URL</label>
-  <input type="text" id="s-url" placeholder="http://192.168.1.100:4899">
-  <label for="s-pass">Password (OPENCODE_SERVER_PASSWORD)</label>
-  <input type="password" id="s-pass" placeholder="leave empty if server is unsecured">
-  <button class="btn" id="connect">Connect</button>
+  <label for="s-url" data-i18n="settings.urlLabel">Server URL</label>
+  <input type="text" id="s-url" placeholder="http://192.168.1.100:4899" data-i18n-ph="settings.urlPh">
+  <label for="s-pass" data-i18n="settings.passLabel">Password (OPENCODE_SERVER_PASSWORD)</label>
+  <input type="password" id="s-pass" placeholder="leave empty if server is unsecured" data-i18n-ph="settings.passPh">
+  <label for="lang-select" data-i18n="settings.lang">Language / 语言</label>
+  <select id="lang-select">
+    <option value="zh">中文</option>
+    <option value="en">English</option>
+  </select>
+  <button class="btn" id="connect" data-i18n="settings.connect">Connect</button>
 </div>
 
 <div id="view-sessions" class="view">
   <div class="list" id="session-list"></div>
   <div class="new-session">
-    <div>New session</div>
-    <input type="text" id="new-title" placeholder="What do you want to do?">
+    <div data-i18n="sessions.newTitle">New session</div>
+    <input type="text" id="new-title" placeholder="What do you want to do?" data-i18n-ph="sessions.newPh">
   </div>
 </div>
 
 <div id="view-chat" class="view">
   <div id="messages"></div>
   <div id="composer">
-    <textarea id="input" rows="1" placeholder="Message..."></textarea>
+    <textarea id="input" rows="1" placeholder="Message..." data-i18n-ph="chat.ph"></textarea>
     <button id="send">&#10148;</button>
   </div>
 </div>
@@ -190,6 +196,92 @@ if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js").catch(() => {});
 }
 const $ = (id) => document.getElementById(id);
+const I18N = {
+  en: {
+    "app.title": "LibreCode Mobile",
+    "conn.checking": "checking",
+    "conn.offline": "offline",
+    "settings.title": "Connect to your computer",
+    "settings.hint": "Run on your computer (same network or Tailscale):",
+    "settings.urlLabel": "Server URL",
+    "settings.urlPh": "http://192.168.1.100:4899",
+    "settings.passLabel": "Password (OPENCODE_SERVER_PASSWORD)",
+    "settings.passPh": "leave empty if server is unsecured",
+    "settings.connect": "Connect",
+    "settings.lang": "Language / 语言",
+    "sessions.newTitle": "New session",
+    "sessions.newPh": "What do you want to do?",
+    "sessions.empty": "No sessions yet.\nCreate one below.",
+    "chat.ph": "Message...",
+    "chat.you": "You",
+    "chat.assistant": "assistant",
+    "chat.busy": "working",
+    "chat.empty": "No messages yet.",
+    "tool.pending": "pending",
+    "tool.running": "running",
+    "tool.done": "done",
+    "tool.failed": "failed",
+    "err.health": "Cannot reach server: {msg}",
+    "err.loadSessions": "Failed to load sessions: {msg}",
+    "err.loadMessages": "Failed to load messages: {msg}",
+    "err.send": "Send failed: {msg}",
+    "err.create": "Create failed: {msg}",
+    "err.url": "Enter server URL",
+    "toast.tool": "tool: {name}",
+  },
+  zh: {
+    "app.title": "LibreCode 手机端",
+    "conn.checking": "检查中",
+    "conn.offline": "离线",
+    "settings.title": "连接到你的电脑",
+    "settings.hint": "在你的电脑上运行(同一网络或 Tailscale):",
+    "settings.urlLabel": "服务器地址",
+    "settings.urlPh": "http://192.168.1.100:4899",
+    "settings.passLabel": "密码 (OPENCODE_SERVER_PASSWORD)",
+    "settings.passPh": "服务器未设置密码可留空",
+    "settings.connect": "连接",
+    "settings.lang": "语言 / Language",
+    "sessions.newTitle": "新建会话",
+    "sessions.newPh": "你想做什么?",
+    "sessions.empty": "还没有会话。\n在下面新建一个。",
+    "chat.ph": "输入消息...",
+    "chat.you": "你",
+    "chat.assistant": "助手",
+    "chat.busy": "处理中",
+    "chat.empty": "暂无消息。",
+    "tool.pending": "等待中",
+    "tool.running": "进行中",
+    "tool.done": "完成",
+    "tool.failed": "失败",
+    "err.health": "无法连接服务器: {msg}",
+    "err.loadSessions": "加载会话失败: {msg}",
+    "err.loadMessages": "加载消息失败: {msg}",
+    "err.send": "发送失败: {msg}",
+    "err.create": "创建失败: {msg}",
+    "err.url": "请输入服务器地址",
+    "toast.tool": "工具: {name}",
+  },
+};
+const savedLang = localStorage.getItem("lc-lang");
+let lang = savedLang
+  ? savedLang
+  : (navigator.language || "en").toLowerCase().startsWith("zh")
+    ? "zh"
+    : "en";
+const dict = () => I18N[lang] || I18N.en;
+function t(key, vars) {
+  let s = dict()[key] ?? key;
+  if (vars) for (const [k, v] of Object.entries(vars)) s = s.replaceAll("{" + k + "}", v);
+  return s;
+}
+function applyI18n() {
+  document.documentElement.lang = lang;
+  document.title = t("app.title");
+  document.querySelectorAll("[data-i18n]").forEach((el) => (el.textContent = t(el.dataset.i18n)));
+  document.querySelectorAll("[data-i18n-ph]").forEach((el) => (el.placeholder = t(el.dataset.i18nPh)));
+  const sel = $("lang-select");
+  if (sel) sel.value = lang;
+}
 let cfg = { url: "", pass: "" };
 let sessions = [];
 let active = null;
@@ -272,12 +364,12 @@ function inline(s) {
 async function checkHealth() {
   if (!cfg.url) return;
   const dot = $("conn-dot"), txt = $("conn-text");
-  dot.className = "dot busy"; txt.textContent = "checking";
+  dot.className = "dot busy"; txt.textContent = t("conn.checking");
   try {
     await fetch(cfg.url + "/api/health", { headers: headers() });
     dot.className = "dot ok"; txt.textContent = cfg.url.replace(/^https?:\/\//, "");
   } catch (e) {
-    dot.className = "dot err"; txt.textContent = "offline";
+    dot.className = "dot err"; txt.textContent = t("conn.offline");
   }
 }
 
@@ -287,13 +379,13 @@ async function loadSessions() {
     const r = await api("/api/session?order=desc&limit=50");
     sessions = r.data || [];
     renderSessions();
-  } catch (e) { toast("Failed to load sessions: " + e.message); }
+  } catch (e) { toast(t("err.loadSessions", { msg: e.message })); }
 }
 
 function renderSessions() {
   const list = $("session-list");
   if (!sessions.length) {
-    list.innerHTML = '<div class="empty">No sessions yet.<br>Create one below.</div>';
+    list.innerHTML = `<div class="empty">${t("sessions.empty").replaceAll("\n", "<br>")}</div>`;
     return;
   }
   list.innerHTML = "";
@@ -320,15 +412,16 @@ function renderMessage(m) {
   wrap.className = "msg " + (m.type === "user" ? "user" : "");
   let body = "";
   if (m.type === "user") {
-    body = `<div class="who">You</div><div class="body">${renderMd(m.text || "")}</div>`;
+    body = `<div class="who">${t("chat.you")}</div><div class="body">${renderMd(m.text || "")}</div>`;
   } else if (m.type === "assistant") {
     const texts = m.content?.filter((c) => c.type === "text").map((c) => c.text).join("\n") || "";
     const tools = m.content?.filter((c) => c.type === "tool") || [];
-    const who = (m.agent || "assistant") + (m.model ? " · " + m.model : "");
+    const who = (m.agent || t("chat.assistant")) + (m.model ? " · " + m.model : "");
     body = `<div class="who">${esc(who)}</div><div class="body">${renderMd(texts)}</div>`;
-    for (const t of tools) {
-      const st = t.state?.status || "";
-      body += `<div class="tool ${st === "error" ? "error" : ""}" id="tool-${esc(m.id)}-${esc(t.id)}"><span class="tname">${esc(t.name)}</span> ${st === "error" ? "failed" : st === "completed" ? "done" : st}</div>`;
+    for (const tool of tools) {
+      const st = tool.state?.status || "";
+      const label = st === "error" ? t("tool.failed") : st === "completed" ? t("tool.done") : st;
+      body += `<div class="tool ${st === "error" ? "error" : ""}" id="tool-${esc(m.id)}-${esc(tool.id)}"><span class="tname">${esc(tool.name)}</span> ${label}</div>`;
     }
     if (m.finish) body += `<div class="meta">${esc(m.finish)}</div>`;
     if (m.error) { wrap.className = "msg error"; body += `<div class="meta">${esc(m.error.message)}</div>`; }
@@ -350,17 +443,17 @@ function updateMessage(m) {
     const body = el.querySelector(".body");
     if (body) body.innerHTML = renderMd(texts);
     const tools = m.content?.filter((c) => c.type === "tool") || [];
-    for (const t of tools) {
-      const key = `tool-${m.id}-${t.id}`;
+    for (const tool of tools) {
+      const key = `tool-${m.id}-${tool.id}`;
       let tel = document.getElementById(key);
-      const st = t.state?.status || "";
-      const label = st === "error" ? "failed" : st === "completed" ? "done" : st;
-      if (tel) tel.innerHTML = `<span class="tname">${esc(t.name)}</span> ${label}`;
+      const st = tool.state?.status || "";
+      const label = st === "error" ? t("tool.failed") : st === "completed" ? t("tool.done") : st;
+      if (tel) tel.innerHTML = `<span class="tname">${esc(tool.name)}</span> ${label}`;
       else {
         tel = document.createElement("div");
         tel.id = key;
         tel.className = "tool" + (st === "error" ? " error" : "");
-        tel.innerHTML = `<span class="tname">${esc(t.name)}</span> ${label}`;
+        tel.innerHTML = `<span class="tname">${esc(tool.name)}</span> ${label}`;
         el.appendChild(tel);
       }
     }
@@ -383,10 +476,10 @@ async function loadMessages(id) {
     messages = r.data || [];
     for (const m of messages) renderMessage(m);
     if (!messages.length) {
-      mbox.innerHTML = '<div class="empty">No messages yet.</div>';
+      mbox.innerHTML = `<div class="empty">${t("chat.empty")}</div>`;
     }
   } catch (e) {
-    mbox.innerHTML = `<div class="empty">Failed to load messages:<br>${esc(e.message)}</div>`;
+    mbox.innerHTML = `<div class="empty">${t("err.loadMessages", { msg: e.message })}</div>`;
   }
 }
 
@@ -408,7 +501,7 @@ function openStream(id) {
       const wrap = document.createElement("div");
       wrap.id = "msg-stream-" + msgID;
       wrap.className = "msg";
-      wrap.innerHTML = `<div class="who">assistant</div><div class="body typing"></div>`;
+      wrap.innerHTML = `<div class="who">${t("chat.assistant")}</div><div class="body typing"></div>`;
       $("messages").appendChild(wrap);
       p.el = wrap.querySelector(".body");
     }
@@ -429,7 +522,7 @@ function openStream(id) {
     } else if (t === "session.next.step.ended" || t === "session.next.step.failed") {
       setBusy(false);
     } else if (t === "session.next.tool.called") {
-      toast("tool: " + ev.tool);
+      toast(t("toast.tool", { name: ev.tool }));
     }
   };
   es.onerror = () => {
@@ -460,7 +553,7 @@ async function sendMessage() {
       body: JSON.stringify({ prompt: { text } }),
     });
   } catch (e) {
-    toast("Send failed: " + e.message);
+    toast(t("err.send", { msg: e.message }));
     setBusy(false);
   }
 }
@@ -471,7 +564,7 @@ function setBusy(b) {
   if (b) {
     const wrap = document.createElement("div");
     wrap.className = "typing"; wrap.id = "busy-ind";
-    wrap.textContent = "working";
+    wrap.textContent = t("chat.busy");
     $("messages").appendChild(wrap);
     scrollBottom();
   } else {
@@ -509,13 +602,13 @@ function openSession(id) {
 $("connect").onclick = async () => {
   const url = $("s-url").value.trim().replace(/\/+$/, "");
   const pass = $("s-pass").value;
-  if (!url) return toast("Enter server URL");
+  if (!url) return toast(t("err.url"));
   cfg = { url, pass };
   localStorage.setItem("librecode", JSON.stringify(cfg));
   try {
     await fetch(url + "/api/health", { headers: headers() });
   } catch (e) {
-    toast("Cannot reach server: " + e.message);
+    toast(t("err.health", { msg: e.message }));
     return;
   }
   showView("sessions");
@@ -536,7 +629,7 @@ $("new-title").addEventListener("keydown", async (e) => {
     const r = await api("/api/session", { method: "POST", body: JSON.stringify({}) });
     openSession(r.data.id);
   } catch (err) {
-    toast("Create failed: " + err.message);
+    toast(t("err.create", { msg: err.message }));
   }
 });
 
@@ -546,7 +639,14 @@ $("input").addEventListener("keydown", (e) => {
 });
 $("send").onclick = sendMessage;
 
+$("lang-select").onchange = (e) => {
+  lang = e.target.value;
+  localStorage.setItem("lc-lang", lang);
+  applyI18n();
+};
+
 /* init */
+applyI18n();
 $("cmd-hint").textContent =
   "OPENCODE_SERVER_PASSWORD=your-pass librecode serve \\\n  --hostname 0.0.0.0 --port 4899 \\\n  --cors " + location.origin;
 const saved = localStorage.getItem("librecode");
