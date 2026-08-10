@@ -1,6 +1,7 @@
 import type { TuiPlugin, TuiPluginApi } from "@opencode-ai/plugin/tui"
 import type { BuiltinTuiPlugin } from "../builtins"
 import { createMemo, For, Match, Show, Switch, createSignal } from "solid-js"
+import { t } from "../../util/i18n"
 
 const id = "internal:sidebar-mcp"
 
@@ -59,13 +60,13 @@ function View(props: { api: TuiPluginApi }) {
                   {item.name}{" "}
                   <span style={{ fg: theme().textMuted }}>
                     <Switch fallback={item.status}>
-                      <Match when={item.status === "connected"}>Connected</Match>
+                      <Match when={item.status === "connected"}>{t("sidebar.mcpConnected")}</Match>
                       <Match when={item.status === "failed"}>
                         <i>{item.error}</i>
                       </Match>
-                      <Match when={item.status === "disabled"}>Disabled</Match>
-                      <Match when={item.status === "needs_auth"}>Needs auth</Match>
-                      <Match when={item.status === "needs_client_registration"}>Needs client ID</Match>
+                      <Match when={item.status === "disabled"}>{t("sidebar.mcpDisabled")}</Match>
+                      <Match when={item.status === "needs_auth"}>{t("sidebar.mcpNeedsAuth")}</Match>
+                      <Match when={item.status === "needs_client_registration"}>{t("sidebar.mcpNeedsClient")}</Match>
                     </Switch>
                   </span>
                 </text>

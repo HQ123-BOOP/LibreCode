@@ -122,6 +122,15 @@ export const en = {
   "tip.noModels": "Run {highlight}/connect{/highlight} to add an AI provider and start coding",
   "tip.inputUndo": "Press {key} to undo changes in your prompt",
   "tip.terminalSuspend": "Press {key} to suspend the terminal and return to your shell",
+  "sidebar.context": "Context",
+  "sidebar.used": "{percent}% used",
+  "sidebar.spent": "{cost} spent",
+  "sidebar.mcpConnected": "Connected",
+  "sidebar.mcpDisabled": "Disabled",
+  "sidebar.mcpNeedsAuth": "Needs auth",
+  "sidebar.mcpNeedsClient": "Needs client ID",
+  "sidebar.lspDisabled": "LSPs are disabled",
+  "sidebar.lspPending": "LSPs will activate as files are read",
 } as const
 
 export const zh: Record<keyof typeof en, string> = {
@@ -246,6 +255,15 @@ export const zh: Record<keyof typeof en, string> = {
   "tip.noModels": "运行 {highlight}/connect{/highlight} 添加 AI 服务商开始编码",
   "tip.inputUndo": "按 {key} 撤销输入框中的更改",
   "tip.terminalSuspend": "按 {key} 挂起终端返回 shell",
+  "sidebar.context": "上下文",
+  "sidebar.used": "{percent}% 上下文用量",
+  "sidebar.spent": "{cost} 费用",
+  "sidebar.mcpConnected": "已连接",
+  "sidebar.mcpDisabled": "已禁用",
+  "sidebar.mcpNeedsAuth": "需要认证",
+  "sidebar.mcpNeedsClient": "需要客户端 ID",
+  "sidebar.lspDisabled": "LSPs 已关闭",
+  "sidebar.lspPending": "LSPs 将在读取文件时启动",
 }
 
 export type Lang = "en" | "zh"
