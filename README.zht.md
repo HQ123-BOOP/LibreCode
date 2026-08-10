@@ -1,8 +1,8 @@
 <p align="center">開源的 AI Coding Agent。</p>
 <p align="center">
-  <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
-  <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
-  <a href="https://github.com/anomalyco/opencode/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/opencode/publish.yml?style=flat-square&branch=dev" /></a>
+  <a href="https://github.com/HQ123-BOOP/LibreCode/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/HQ123-BOOP/LibreCode?style=flat-square" /></a>
+  <a href="https://github.com/HQ123-BOOP/LibreCode/releases"><img alt="Releases" src="https://img.shields.io/github/v/release/HQ123-BOOP/LibreCode?style=flat-square" /></a>
+  <a href="https://github.com/HQ123-BOOP/LibreCode/actions/workflows/release.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/HQ123-BOOP/LibreCode/release.yml?style=flat-square&branch=dev" /></a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![LibreCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://github.com/HQ123-BOOP/LibreCode)
 
 ---
 
@@ -38,40 +38,39 @@
 
 ```bash
 # 直接安裝 (YOLO)
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash
 
 # 套件管理員
-npm i -g opencode-ai@latest        # 也可使用 bun/pnpm/yarn
-scoop install opencode             # Windows
-choco install opencode             # Windows
-brew install anomalyco/tap/opencode # macOS 與 Linux（推薦，始終保持最新）
-brew install opencode              # macOS 與 Linux（官方 brew formula，更新頻率較低）
-sudo pacman -S opencode            # Arch Linux (Stable)
-paru -S opencode-bin               # Arch Linux (Latest from AUR)
-mise use -g opencode               # 任何作業系統
-nix run nixpkgs#opencode           # 或使用 github:anomalyco/opencode 以取得最新開發分支
+
+
+
+
+
+
+
+
+
 ```
 
 > [!TIP]
 > 安裝前請先移除 0.1.x 以前的舊版本。
 
-### 桌面應用程式 (BETA)
+### 桌面應用
 
-OpenCode 也提供桌面版應用程式。您可以直接從 [發佈頁面 (releases page)](https://github.com/anomalyco/opencode/releases) 或 [opencode.ai/download](https://opencode.ai/download) 下載。
+LibreCode 也提供桌面應用。可從[發布頁](https://github.com/HQ123-BOOP/LibreCode/releases)下載安裝檔(`librecode-desktop-*.dmg` / `.exe` / `.AppImage` / `.deb` / `.rpm`)。
 
-| 平台                  | 下載連結                           |
-| --------------------- | ---------------------------------- |
-| macOS (Apple Silicon) | `opencode-desktop-mac-arm64.dmg`   |
-| macOS (Intel)         | `opencode-desktop-mac-x64.dmg`     |
-| Windows               | `opencode-desktop-windows-x64.exe` |
-| Linux                 | `.deb`, `.rpm`, 或 AppImage        |
+自行建置桌面應用:
 
 ```bash
-# macOS (Homebrew Cask)
-brew install --cask opencode-desktop
-# Windows (Scoop)
-scoop bucket add extras; scoop install extras/opencode-desktop
+cd packages/desktop
+bun scripts/package-release.ts mac   # or: win | linux
 ```
+
+產物輸出到 `packages/desktop/dist`。
+
+#### 行動應用
+
+LibreCode 也提供 Android 應用。可從[發布頁](https://github.com/HQ123-BOOP/LibreCode/releases)下載 APK。應用透過區域網路或 Tailscale 連線電腦上的 `librecode serve`,並支援 TUI 中 `/mobile devices` 指令的二維碼配對。
 
 #### 安裝目錄
 
@@ -84,8 +83,8 @@ scoop bucket add extras; scoop install extras/opencode-desktop
 
 ```bash
 # 範例
-OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://opencode.ai/install | bash
-XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
+OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash
+XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash
 ```
 
 ### Agents

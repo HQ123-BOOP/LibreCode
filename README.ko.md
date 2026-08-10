@@ -1,8 +1,8 @@
 <p align="center">오픈 소스 AI 코딩 에이전트.</p>
 <p align="center">
-  <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
-  <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
-  <a href="https://github.com/anomalyco/opencode/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/opencode/publish.yml?style=flat-square&branch=dev" /></a>
+  <a href="https://github.com/HQ123-BOOP/LibreCode/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/HQ123-BOOP/LibreCode?style=flat-square" /></a>
+  <a href="https://github.com/HQ123-BOOP/LibreCode/releases"><img alt="Releases" src="https://img.shields.io/github/v/release/HQ123-BOOP/LibreCode?style=flat-square" /></a>
+  <a href="https://github.com/HQ123-BOOP/LibreCode/actions/workflows/release.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/HQ123-BOOP/LibreCode/release.yml?style=flat-square&branch=dev" /></a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![LibreCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://github.com/HQ123-BOOP/LibreCode)
 
 ---
 
@@ -38,40 +38,39 @@
 
 ```bash
 # YOLO
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash
 
 # 패키지 매니저
-npm i -g opencode-ai@latest        # bun/pnpm/yarn 도 가능
-scoop install opencode             # Windows
-choco install opencode             # Windows
-brew install anomalyco/tap/opencode # macOS 및 Linux (권장, 항상 최신)
-brew install opencode              # macOS 및 Linux (공식 brew formula, 업데이트 빈도 낮음)
-sudo pacman -S opencode            # Arch Linux (Stable)
-paru -S opencode-bin               # Arch Linux (Latest from AUR)
-mise use -g opencode               # 어떤 OS든
-nix run nixpkgs#opencode           # 또는 github:anomalyco/opencode 로 최신 dev 브랜치
+
+
+
+
+
+
+
+
+
 ```
 
 > [!TIP]
 > 설치 전에 0.1.x 보다 오래된 버전을 제거하세요.
 
-### 데스크톱 앱 (BETA)
+### 데스크톱 앱
 
-OpenCode 는 데스크톱 앱으로도 제공됩니다. [releases page](https://github.com/anomalyco/opencode/releases) 에서 직접 다운로드하거나 [opencode.ai/download](https://opencode.ai/download) 를 이용하세요.
+LibreCode는 데스크톱 앱으로도 제공됩니다.[릴리스 페이지](https://github.com/HQ123-BOOP/LibreCode/releases)에서 설치 프로그램(`librecode-desktop-*.dmg` / `.exe` / `.AppImage` / `.deb` / `.rpm`)을 다운로드하세요.
 
-| 플랫폼                | 다운로드                           |
-| --------------------- | ---------------------------------- |
-| macOS (Apple Silicon) | `opencode-desktop-mac-arm64.dmg`   |
-| macOS (Intel)         | `opencode-desktop-mac-x64.dmg`     |
-| Windows               | `opencode-desktop-windows-x64.exe` |
-| Linux                 | `.deb`, `.rpm`, 또는 AppImage      |
+직접 빌드하려면:
 
 ```bash
-# macOS (Homebrew)
-brew install --cask opencode-desktop
-# Windows (Scoop)
-scoop bucket add extras; scoop install extras/opencode-desktop
+cd packages/desktop
+bun scripts/package-release.ts mac   # or: win | linux
 ```
+
+산출물은 `packages/desktop/dist`에 생성됩니다.
+
+#### 모바일 앱
+
+LibreCode는 Android 앱으로도 제공됩니다.[릴리스 페이지](https://github.com/HQ123-BOOP/LibreCode/releases)에서 APK를 다운로드하세요. 앱은 LAN 또는 Tailscale을 통해 컴퓨터의 `librecode serve`에 연결되며, TUI의 `/mobile devices` 명령으로 QR 코드 페어링을 지원합니다.
 
 #### 설치 디렉터리
 
@@ -84,8 +83,8 @@ scoop bucket add extras; scoop install extras/opencode-desktop
 
 ```bash
 # 예시
-OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://opencode.ai/install | bash
-XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
+OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash
+XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash
 ```
 
 ### Agents

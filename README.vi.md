@@ -1,8 +1,8 @@
 <p align="center">Trợ lý lập trình AI mã nguồn mở.</p>
 <p align="center">
-  <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
-  <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
-  <a href="https://github.com/anomalyco/opencode/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/anomalyco/opencode/publish.yml?style=flat-square&branch=dev" /></a>
+  <a href="https://github.com/HQ123-BOOP/LibreCode/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/HQ123-BOOP/LibreCode?style=flat-square" /></a>
+  <a href="https://github.com/HQ123-BOOP/LibreCode/releases"><img alt="Releases" src="https://img.shields.io/github/v/release/HQ123-BOOP/LibreCode?style=flat-square" /></a>
+  <a href="https://github.com/HQ123-BOOP/LibreCode/actions/workflows/release.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/HQ123-BOOP/LibreCode/release.yml?style=flat-square&branch=dev" /></a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![LibreCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://github.com/HQ123-BOOP/LibreCode)
 
 ---
 
@@ -38,40 +38,39 @@
 
 ```bash
 # YOLO
-curl -fsSL https://opencode.ai/install | bash
+curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash
 
 # Các trình quản lý gói (Package managers)
-npm i -g opencode-ai@latest        # hoặc bun/pnpm/yarn
-scoop install opencode             # Windows
-choco install opencode             # Windows
-brew install anomalyco/tap/opencode # macOS và Linux (khuyên dùng, luôn cập nhật)
-brew install opencode              # macOS và Linux (công thức brew chính thức, ít cập nhật hơn)
-sudo pacman -S opencode            # Arch Linux (Bản ổn định)
-paru -S opencode-bin               # Arch Linux (Bản mới nhất từ AUR)
-mise use -g opencode               # Mọi hệ điều hành
-nix run nixpkgs#opencode           # hoặc github:anomalyco/opencode cho nhánh dev mới nhất
+
+
+
+
+
+
+
+
+
 ```
 
 > [!TIP]
 > Hãy xóa các phiên bản cũ hơn 0.1.x trước khi cài đặt.
 
-### Ứng dụng Desktop (BETA)
+### Ứng dụng máy tính
 
-OpenCode cũng có sẵn dưới dạng ứng dụng desktop. Tải trực tiếp từ [trang releases](https://github.com/anomalyco/opencode/releases) hoặc [opencode.ai/download](https://opencode.ai/download).
+LibreCode cũng có sẵn dưới dạng ứng dụng máy tính. Tải trình cài đặt từ [trang phát hành](https://github.com/HQ123-BOOP/LibreCode/releases) (`librecode-desktop-*.dmg` / `.exe` / `.AppImage` / `.deb` / `.rpm`).
 
-| Nền tảng              | Tải xuống                          |
-| --------------------- | ---------------------------------- |
-| macOS (Apple Silicon) | `opencode-desktop-mac-arm64.dmg`   |
-| macOS (Intel)         | `opencode-desktop-mac-x64.dmg`     |
-| Windows               | `opencode-desktop-windows-x64.exe` |
-| Linux                 | `.deb`, `.rpm`, hoặc AppImage      |
+Để tự xây dựng ứng dụng:
 
 ```bash
-# macOS (Homebrew)
-brew install --cask opencode-desktop
-# Windows (Scoop)
-scoop bucket add extras; scoop install extras/opencode-desktop
+cd packages/desktop
+bun scripts/package-release.ts mac   # or: win | linux
 ```
+
+Các tệp tạo ra được ghi vào `packages/desktop/dist`.
+
+#### Ứng dụng di động
+
+LibreCode cũng có sẵn dưới dạng ứng dụng Android. Tải APK từ [trang phát hành](https://github.com/HQ123-BOOP/LibreCode/releases). Ứng dụng kết nối với một phiên bản `librecode serve` trên máy tính của bạn qua LAN hoặc Tailscale và hỗ trợ ghép nối mã QR qua lệnh `/mobile devices` trong TUI.
 
 #### Thư mục cài đặt
 
@@ -84,8 +83,8 @@ Tập lệnh cài đặt tuân theo thứ tự ưu tiên sau cho đường dẫn
 
 ```bash
 # Ví dụ
-OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://opencode.ai/install | bash
-XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
+OPENCODE_INSTALL_DIR=/usr/local/bin curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash
+XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://hq123-boop.github.io/LibreCode/install.sh | bash
 ```
 
 ### Agents (Đại diện)
