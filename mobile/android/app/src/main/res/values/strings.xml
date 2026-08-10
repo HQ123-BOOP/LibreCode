@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LibreCode</string>
+    <string name="title_activity_main">LibreCode</string>
+    <string name="package_name">io.github.hq123boop.librecode</string>
+    <string name="custom_url_scheme">io.github.hq123boop.librecode</string>
+</resources>

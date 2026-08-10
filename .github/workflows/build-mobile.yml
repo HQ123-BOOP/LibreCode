@@ -38,9 +38,9 @@ jobs:
       - name: Sync web assets
         run: mkdir -p mobile/www && cp -r docs/mobile/* mobile/www/
 
-      - name: Add Android platform
+      - name: Sync Capacitor
         working-directory: mobile
-        run: npx cap add android
+        run: npx cap sync android
 
       - name: Build APK
         working-directory: mobile/android
