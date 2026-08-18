@@ -1,4 +1,4 @@
-<p align="center">The open source AI coding agent.</p>
+<p align="center">此项目暂时中止维护，归档于 2026年8月.</p>
 <p align="center">
   <a href="https://github.com/HQ123-BOOP/LibreCode/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/HQ123-BOOP/LibreCode?style=flat-square" /></a>
   <a href="https://github.com/HQ123-BOOP/LibreCode/releases"><img alt="Releases" src="https://img.shields.io/github/v/release/HQ123-BOOP/LibreCode?style=flat-square" /></a>
